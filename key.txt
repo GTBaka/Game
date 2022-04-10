@@ -1,67 +1,65 @@
 The difficulty of NPC trainers including Rivals, Gym Leaders, E4 Members, Evil Team Members, and more can be adjusted to your liking.
-	Easy		= NPC's will have weaker Pokémon and won't use items.
+	Easy	= NPC's will have weaker Pokémon and won't use items.
 	Normal	= NPC's and their Pokémon will be balanced. Not too hard yet not too easy. 
-	Hard		= NPC's will have stronger Pokémon and will use healing items. Be prepared!
+	Hard	= NPC's will have stronger Pokémon and will use healing items. Be prepared!
 GAME_DIFFICULTY = Normal
 
 Changes the species of the player's starter Pokémon, great for challenge runs!
-	Default	 = You will receive the standard starting Pokémon for the region. 
-	Select 	 = Choose any Pokémon to be your starter, just input the Pokémon's name. #Example: Magikarp
-	Kanto		 = The starter Pokémon from the Kanto region: Bulbasaur, Charmander, and Squirtle.
-	Johto		 = The starter Pokémon from the Johto region: Chikorita, Cyndaquil, and Totodile.
-	Hoenn		 = The starter Pokémon from the Hoenn region: Treeko, Torchic, and Mudkip.
-	Sinnoh	 = The starter Pokémon from the Sinnoh region: Turtwig, Chimchar, and Piplup.
-	Unova		 = The starter Pokémon from the Unova region: Snivy, Tepig, and Oshawott.
-	Kalos		 = The starter Pokémon from the Kalos region: Chespin, Fennekin, and Froakie.
-	Alola		 = The starter Pokémon from the Alola region: Rowlet, Litten, and Popplio.
-	Galar		 = The starter Pokémon from the Galar region: Grookey, Scorbunny, and Sobble.
-	Let's GO = The starter Pokémon from Let's GO Kanto region: Pikachu, Eevee, and Clefairy.
-	Hisui		 = The starter Pokémon from the Hisui region: Rowlet, Cyndaquil, and Oshawott.
-	New			 = The starter Pokémon from the New region: Sprigatito, Fuecoco, and Quaxly.
-	Random	 = This will generate a Pokémon at random, good luck!
+	Default		= You will receive the standard starting Pokémon for the region. 
+	Select 		= Choose any Pokémon to be your starter, just input the Pokémon's name. #Example: Magikarp
+	Kanto		= The starter Pokémon from the Kanto region: Bulbasaur, Charmander, and Squirtle.
+	Johto		= The starter Pokémon from the Johto region: Chikorita, Cyndaquil, and Totodile.
+	Hoenn		= The starter Pokémon from the Hoenn region: Treeko, Torchic, and Mudkip.
+	Sinnoh		= The starter Pokémon from the Sinnoh region: Turtwig, Chimchar, and Piplup.
+	Unova		= The starter Pokémon from the Unova region: Snivy, Tepig, and Oshawott.
+	Kalos		= The starter Pokémon from the Kalos region: Chespin, Fennekin, and Froakie.
+	Alola		= The starter Pokémon from the Alola region: Rowlet, Litten, and Popplio.
+	Galar		= The starter Pokémon from the Galar region: Grookey, Scorbunny, and Sobble.
+	Let's GO 	= The starter Pokémon from Let's GO Kanto region: Pikachu, Eevee, and Clefairy.
+	Hisui		= The starter Pokémon from the Hisui region: Rowlet, Cyndaquil, and Oshawott.
+	Gen 9		= The starter Pokémon from the New region: Sprigatito, Fuecoco, and Quaxly.
+	Random		= This will generate a Pokémon at random, good luck!
 STARTER_SELECT = Default
 
 Changes the form of the player's starter Pokémon, if applicable.
 Battle exclusive forms, fusions, time limited forms, and held item forms are not eligible.
-	Default	= You will receive the base form or random if the Pokémon's form is encounted randomly.
-	Random = A random eligible form if the Pokémon has multiple forms.
-	Gender Forms = Male/Female #For Nidoran, Pyroar, Indeedee
-	Reginal Forms = Alolan/Galarian/Hisuian
-	Pichu = Spiky-Eared
-	Pikachu = Partner/Cosplay/Rock Star/Belle/Pop Star/PH. D/Libre/Original Cap/Hoenn Cap/Sinnoh Cap/Unova Cap/Kalos Cap/Alola Cap/Partner Cap/World Cap/Balloon/Surfboard
-	Eevee = Partner
-	Unown = A/B/C/D/E/F/G/H/I/J/K/L/M/N/O/P/Q/R/S/T/U/V/W/X/Y/Z/?/!
-	Deoxys = Normal Forme/Attack Forme/Defense Forme/Speed Forme
-	Burmy = Plant Cloak/Sand Cloak/Trash Cloak
-	Wormadam = Plant Cloak/Sand Cloak/Trash Cloak
-	Shellos = West Sea/East Sea
-	Gastrodon = West Sea/East Sea
-	Rotom = Cut Rotom/Frost Rotom/Heat Rotom/Spin Rotom/Wash Rotom
-	Basculin = Red-Striped/Blue-Striped/White-Striped
-	Tornadus = Incarnation/Therian
-	Thundurus = Incarnation/Therian
-	Landorus = Incarnation/Therian
-	Enamorus = Incarnation/Therian
-	Greninja = Battle Bond
-	Vivillon = Meadow Pattern/Continental Pattern/Elegant Pattern/Garden Pattern/High Plains Pattern/
+	Default			= You will receive the base form or random if the Pokémon's form is encounted randomly.
+	Random			= A random eligible form if the Pokémon has multiple forms.
+	Gender Forms		= Male/Female #For Nidoran, Pyroar, Indeedee
+	Reginal Forms		= Alolan/Galarian/Hisuian
+	Pichu			= Spiky-Eared
+	Pikachu			= Partner/Cosplay/Rock Star/Belle/Pop Star/PH. D/Libre/Original Cap/Hoenn Cap/Sinnoh Cap/Unova Cap/Kalos Cap/Alola Cap/Partner Cap/World Cap/Balloon/Surfboard
+	Eevee			= Partner
+	Unown			= A/B/C/D/E/F/G/H/I/J/K/L/M/N/O/P/Q/R/S/T/U/V/W/X/Y/Z/?/!
+	Deoxys			= Normal Forme/Attack Forme/Defense Forme/Speed Forme
+	Burmy/Wormadam		= Plant Cloak/Sand Cloak/Trash Cloak
+	Shellos/Gastrodon	= West Sea/East Sea
+	Rotom			= Cut Rotom/Frost Rotom/Heat Rotom/Spin Rotom/Wash Rotom
+	Basculin		= Red-Striped/Blue-Striped/White-Striped
+	Tornadus		= Incarnation/Therian
+	Thundurus		= Incarnation/Therian
+	Landorus		= Incarnation/Therian
+	Enamorus		= Incarnation/Therian
+	Greninja	    	= Battle Bond
+	Vivillon	    	= Meadow Pattern/Continental Pattern/Elegant Pattern/Garden Pattern/High Plains Pattern/
 		Icy Snow Pattern/Jungle Pattern/Marine Pattern/Meadow Pattern/Modern Pattern/Monsoon Pattern/
 		Ocean Pattern/Polar Pattern/River Pattern/Sandstorm Pattern/Savanna Pattern/Sun Pattern/
 		Tundra Pattern/Fancy Pattern/PokeBall Pattern
-	Flabébé = Red Flower/Blue Flower/Orange Flower/White Flower/Yellow Flower
-	Floette = Red Flower/Blue Flower/Orange Flower/White Flower/Yellow Flower/Eternal Flower
-	Florges = Red Flower/Blue Flower/Orange Flower/White Flower/Yellow Flower
-	Pumpkaboo/Gourgeist = Small Size/Average Size/Large Size/Super Size
-	Zygarde = Cell/Core/10/50
-	Oricorio = Pom-Pom/Baile/P'au/Sensu
-	Lycanroc = Midday/Midnight/Dusk
-	Minior = Red Core/Orange Core/Yellow Core/Green Core/Blue Core/Indigo Core/Violet Core
-	Magearna = Tarnished/Original Color
-	Toxtricity = Amped/Low Key
-	Sinistea = Phony/Antique
-	Polteageist = Phony/Antique
-	Alcremie = Strawberry/Berry/Love/Star/Clover/Flower/Ribbon + Vanilla Cream/Ruby Cream/Matcha Cream/Mint Cream/Lemon Cream/Salted Cream/Ruby Swirl/Caramel Swirl/Rainbow Swirl #Example: Strawberry Vanilla Cream
-	Urshifu = Single Strike/Rapid Strike
-	Zarude = Jungle/Dada
+	Flabébé		    	= Red Flower/Blue Flower/Orange Flower/White Flower/Yellow Flower
+	Floette		    	= Red Flower/Blue Flower/Orange Flower/White Flower/Yellow Flower/Eternal Flower
+	Florges		    	= Red Flower/Blue Flower/Orange Flower/White Flower/Yellow Flower
+	Pumpkaboo/Gourgeist	= Small Size/Average Size/Large Size/Super Size
+	Zygarde			= Cell/Core/10/50
+	Oricorio		= Pom-Pom/Baile/P'au/Sensu
+	Lycanroc		= Midday/Midnight/Dusk
+	Minior			= Red Core/Orange Core/Yellow Core/Green Core/Blue Core/Indigo Core/Violet Core
+	Magearna		= Tarnished/Original Color
+	Toxtricity		= Amped/Low Key
+	Sinistea		= Phony/Antique
+	Polteageist		= Phony/Antique
+	Alcremie		= Strawberry/Berry/Love/Star/Clover/Flower/Ribbon + Vanilla Cream/Ruby Cream/Matcha Cream/Mint Cream/Lemon Cream/Salted Cream/Ruby Swirl/Caramel Swirl/Rainbow Swirl #Example: Strawberry Vanilla Cream
+	Urshifu			= Single Strike/Rapid Strike
+	Zarude			= Jungle/Dada
 STARTER_FORM = Default
 
 Your avatar in the Pokémon World.
@@ -69,12 +67,12 @@ Your avatar in the Pokémon World.
 	1		= Classic Red for male and Green for female.
 	2		= FRLG Red for male and Leaf for female.
 	3		= Let's GO Chase for male and Elaine for female.
-	Ash = Play as the main character from the Anime, comes with a Pikachu wearing a hat. 
+	Ash		= Play as the main character from the Anime, comes with a Pikachu wearing a hat. 
 PLAYER_CHARACTER = 1
 
 Set how many Pokémon are obtainable.
-	Regional = Select Pokémon native to the region.
-	National = Every Pokémon totaling over 900 species.
+	Regional	= Select Pokémon native to the region.
+	National	= Every Pokémon totaling over 900 species.
 POKEDEX = Regional
 
 Infinity Energy is a gimmick to enhance your battling experince. Different gimmicks depending on your region.
@@ -144,3 +142,5 @@ Change how the battlers will appear.
 	Moemon = Poeple (mostly female) cosplaying as Pokémon.
 	Pokemusu = Pocket Monsters merged with humans (mostly female).
 BATTLER_APPEARANCE=Pokemon
+
+More to be added ( Alpha Pokemon, Lucky Pokemon, Marks)
