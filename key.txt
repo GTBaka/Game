@@ -141,6 +141,6 @@ Change how the battlers will appear.
 	Pokémon = Pocket Monsters as you know and love.
 	Moemon = Poeple (mostly female) cosplaying as Pokémon.
 	Pokemusu = Pocket Monsters merged with humans (mostly female).
-BATTLER_APPEARANCE=Pokemon
+BATTLER_APPEARANCE = Pokemon
 
 More to be added ( Alpha Pokemon, Lucky Pokemon, Marks)
