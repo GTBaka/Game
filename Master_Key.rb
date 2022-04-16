@@ -35,7 +35,7 @@ def read_key
     key = Hash.new
     File.readlines('key.txt').each do |line|
     var,val = line.chomp.split('=')
-    key[var] = val
+    key[var.strip] = val.strip
     end
   end
 
