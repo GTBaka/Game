@@ -1,0 +1,640 @@
+﻿#-------------------------------
+[PAINSPLIT]
+Name = Pain Split
+Type = NORMAL
+Category = Status
+Accuracy = 0
+TotalPP = 20
+Target = NearOther
+FunctionCode = UserTargetAverageHP
+Flags = CanProtect,CanMirrorMove
+Description = The user adds its HP to the target's HP, then equally shares the combined HP with the target.
+#-------------------------------
+[PARABOLICCHARGE]
+Name = Parabolic Charge
+Type = ELECTRIC
+Category = Special
+Power = 65
+Accuracy = 100
+TotalPP = 20
+Target = AllNearOthers
+FunctionCode = HealUserByHalfOfDamageDone
+Flags = CanProtect,CanMirrorMove
+Description = The user attacks everything around it. The user's HP is restored by half the damage dealt.
+#-------------------------------
+[PARTINGSHOT]
+Name = Parting Shot
+Type = DARK
+Category = Status
+Accuracy = 100
+TotalPP = 20
+Target = NearOther
+FunctionCode = LowerTargetAtkSpAtk1SwitchOutUser
+Flags = CanProtect,CanMirrorMove,Sound
+Description = With a parting threat, the user lowers the target's Attack and Sp. Atk stats. Then it switches out.
+#-------------------------------
+[PAYBACK]
+Name = Payback
+Type = DARK
+Category = Physical
+Power = 50
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = DoublePowerIfTargetActed
+Flags = Contact,CanProtect,CanMirrorMove
+Description = If the user moves after the target, this attack's power will be doubled.
+#-------------------------------
+[PAYDAY]
+Name = Pay Day
+Type = NORMAL
+Category = Physical
+Power = 40
+Accuracy = 100
+TotalPP = 20
+Target = NearOther
+FunctionCode = AddMoneyGainedFromBattle
+Flags = CanProtect,CanMirrorMove
+Description = Numerous coins are hurled at the target to inflict damage. Money is earned after battle.
+#-------------------------------
+[PECK]
+Name = Peck
+Type = FLYING
+Category = Physical
+Power = 35
+Accuracy = 100
+TotalPP = 35
+Target = Other
+FunctionCode = None
+Flags = Contact,CanProtect,CanMirrorMove
+Description = The target is jabbed with a sharply pointed beak or horn.
+#-------------------------------
+[PERISHSONG]
+Name = Perish Song
+Type = NORMAL
+Category = Status
+Accuracy = 0
+TotalPP = 5
+Target = AllBattlers
+FunctionCode = StartPerishCountsForAllBattlers
+Flags = Sound
+Description = Any Pokémon that hears this song faints in three turns, unless it switches out of battle.
+#-------------------------------
+[PETALBLIZZARD]
+Name = Petal Blizzard
+Type = GRASS
+Category = Physical
+Power = 90
+Accuracy = 100
+TotalPP = 15
+Target = AllNearOthers
+FunctionCode = None
+Flags = CanProtect,CanMirrorMove
+Description = The user stirs up a violent petal blizzard and attacks everything around it.
+#-------------------------------
+[PETALDANCE]
+Name = Petal Dance
+Type = GRASS
+Category = Special
+Power = 120
+Accuracy = 100
+TotalPP = 10
+Target = RandomNearFoe
+FunctionCode = MultiTurnAttackConfuseUserAtEnd
+Flags = Contact,CanProtect,CanMirrorMove,Dance
+Description = The user attacks by scattering petals for two to three turns. The user then becomes confused.
+#-------------------------------
+[PHANTOMFORCE]
+Name = Phantom Force
+Type = GHOST
+Category = Physical
+Power = 90
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = TwoTurnAttackInvulnerableRemoveProtections
+Flags = Contact,CanMirrorMove
+Description = The user vanishes somewhere, then strikes on the next turn. Hits through protections.
+#-------------------------------
+[PHOTONGEYSER]
+Name = Photon Geyser
+Type = PSYCHIC
+Category = Special
+Power = 100
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = CategoryDependsOnHigherDamageIgnoreTargetAbility
+Flags = CanProtect,CanMirrorMove,CannotMetronome
+Description = The user attacks with a pillar of light. This move the higher of the user's Attack or Sp. Atk stat.
+#-------------------------------
+[PIKAPAPOW]
+Name = Pika Papow
+Type = ELECTRIC
+Category = Special
+Power = 1
+Accuracy = 0
+TotalPP = 20
+Target = NearOther
+FunctionCode = None
+Flags = CanProtect,CannnotMetronome
+Description = The more Pikachu loves its Trainer, the greater the move’s power. It never misses.
+#-------------------------------
+[PINMISSILE]
+Name = Pin Missile
+Type = BUG
+Category = Physical
+Power = 25
+Accuracy = 95
+TotalPP = 20
+Target = NearOther
+FunctionCode = HitTwoToFiveTimes
+Flags = CanProtect,CanMirrorMove
+Description = Sharp spikes are shot at the target in rapid succession. They hit two to five times in a row.
+#-------------------------------
+[PLASMAFISTS]
+Name = Plasma Fists
+Type = ELECTRIC
+Category = Physical
+Power = 100
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = NormalMovesBecomeElectric
+Flags = Contact,CanProtect,CanMirrorMove,Punching,CannotMetronome
+Description = The user attacks with electrically charged fists. Normal-type moves become Electric-type.
+#-------------------------------
+[PLAYNICE]
+Name = Play Nice
+Type = NORMAL
+Category = Status
+Accuracy = 0
+TotalPP = 20
+Target = NearOther
+FunctionCode = LowerTargetAttack1BypassSubstitute
+Flags = CanMirrorMove
+Description = The user and target become friends. The target loses its will to fight, lowering its Attack stat.
+#-------------------------------
+[PLAYROUGH]
+Name = Play Rough
+Type = FAIRY
+Category = Physical
+Power = 90
+Accuracy = 90
+TotalPP = 10
+Target = NearOther
+FunctionCode = LowerTargetAttack1
+Flags = Contact,CanProtect,CanMirrorMove
+EffectChance = 10
+Description = The user plays rough with the target and attacks it. This may also lower the target's Attack stat.
+#-------------------------------
+[PLUCK]
+Name = Pluck
+Type = FLYING
+Category = Physical
+Power = 60
+Accuracy = 100
+TotalPP = 20
+Target = Other
+FunctionCode = UserConsumeTargetBerry
+Flags = Contact,CanProtect,CanMirrorMove
+Description = The user pecks the target. If the target is holding a Berry, the user eats it and gains its effect.
+#-------------------------------
+[POISONFANG]
+Name = Poison Fang
+Type = POISON
+Category = Physical
+Power = 50
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = BadPoisonTarget
+Flags = Contact,CanProtect,CanMirrorMove,Biting
+EffectChance = 50
+Description = The user bites the target with toxic fangs. It may also leave the target badly poisoned.
+#-------------------------------
+[POISONGAS]
+Name = Poison Gas
+Type = POISON
+Category = Status
+Accuracy = 90
+TotalPP = 40
+Target = AllNearFoes
+FunctionCode = PoisonTarget
+Flags = CanProtect,CanMirrorMove
+Description = A cloud of poison gas is sprayed in the face of opposing Pokémon. It may poison those hit.
+#-------------------------------
+[POISONJAB]
+Name = Poison Jab
+Type = POISON
+Category = Physical
+Power = 80
+Accuracy = 100
+TotalPP = 20
+Target = NearOther
+FunctionCode = PoisonTarget
+Flags = Contact,CanProtect,CanMirrorMove
+EffectChance = 30
+Description = The target is stabbed with a tentacle or arm seeped with poison. It may also poison the target.
+#-------------------------------
+[POISONPOWDER]
+Name = Poison Powder
+Type = POISON
+Category = Status
+Accuracy = 75
+TotalPP = 35
+Target = NearOther
+FunctionCode = PoisonTarget
+Flags = CanProtect,CanMirrorMove,Powder
+Description = The user scatters a cloud of poisonous dust on the target. It may poison the target.
+#-------------------------------
+[POISONSTING]
+Name = Poison Sting
+Type = POISON
+Category = Physical
+Power = 15
+Accuracy = 100
+TotalPP = 35
+Target = NearOther
+FunctionCode = PoisonTarget
+Flags = CanProtect,CanMirrorMove
+EffectChance = 30
+Description = The user stabs the target with a poisonous stinger. This may also poison the target.
+#-------------------------------
+[POISONTAIL]
+Name = Poison Tail
+Type = POISON
+Category = Physical
+Power = 50
+Accuracy = 100
+TotalPP = 25
+Target = NearOther
+FunctionCode = PoisonTarget
+Flags = Contact,CanProtect,CanMirrorMove,HighCriticalHitRate
+EffectChance = 10
+Description = The user hits the target with its tail. It may also poison the target. Critical hits land more easily.
+#-------------------------------
+[POLLENPUFF]
+Name = Pollen Puff
+Type = BUG
+Category = Special
+Power = 90
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = HealAllyOrDamageFoe
+Flags = CanProtect,CanMirrorMove,Bomb
+Description = Fires an exploding pollen puff at enemies, or a HP-restoring one at allies.
+#-------------------------------
+[POLTERGEIST]
+Name = Poltergeist
+Type = GHOST
+Category = Physical
+Power = 110
+Accuracy = 90
+TotalPP = 5
+Target = NearOther
+FunctionCode = FailsIfTargetHasNoItem
+Flags = CanProtect,CanMirrorMove
+Description = Attacks the target by controlling its item. The move fails if the target doesn't have an item.
+#-------------------------------
+[POUND]
+Name = Pound
+Type = NORMAL
+Category = Physical
+Power = 40
+Accuracy = 100
+TotalPP = 35
+Target = NearOther
+FunctionCode = None
+Flags = Contact,CanProtect,CanMirrorMove
+Description = The target is physically pounded with a long tail or a foreleg, etc.
+#-------------------------------
+[POWDER]
+Name = Powder
+Type = BUG
+Category = Status
+Accuracy = 100
+TotalPP = 20
+Target = NearOther
+FunctionCode = TargetNextFireMoveDamagesTarget
+Flags = CanProtect,CanMirrorMove,Powder
+Description = The target is covered in a powder that explodes and damages it if it uses a Fire-type move.
+#-------------------------------
+[POWDERSNOW]
+Name = Powder Snow
+Type = ICE
+Category = Special
+Power = 40
+Accuracy = 100
+TotalPP = 25
+Target = AllNearFoes
+FunctionCode = FreezeTarget
+Flags = CanProtect,CanMirrorMove
+EffectChance = 10
+Description = The user attacks with a chilling gust of powdery snow. It may also freeze the targets.
+#-------------------------------
+[POWERGEM]
+Name = Power Gem
+Type = ROCK
+Category = Special
+Power = 80
+Accuracy = 100
+TotalPP = 20
+Target = NearOther
+FunctionCode = None
+Flags = CanProtect,CanMirrorMove
+Description = The user attacks with a ray of light that sparkles as if it were made of gemstones.
+#-------------------------------
+[POWERSPLIT]
+Name = Power Split
+Type = PSYCHIC
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = NearOther
+FunctionCode = UserTargetAverageBaseAtkSpAtk
+Flags = CanProtect
+Description = The user employs its psychic power to average its Attack and Sp. Atk stats with those of the target.
+#-------------------------------
+[POWERSWAP]
+Name = Power Swap
+Type = PSYCHIC
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = NearOther
+FunctionCode = UserTargetSwapAtkSpAtkStages
+Flags = CanProtect,CanMirrorMove
+Description = The user employs its psychic power to switch changes to its Attack and Sp. Atk with the target.
+#-------------------------------
+[POWERTRICK]
+Name = Power Trick
+Type = PSYCHIC
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = User
+FunctionCode = UserSwapBaseAtkDef
+Description = The user employs its psychic power to switch its Attack with its Defense stat.
+#-------------------------------
+[POWERTRIP]
+Name = Power Trip
+Type = DARK
+Category = Physical
+Power = 1
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = PowerHigherWithUserPositiveStatStages
+Flags = Contact,CanProtect,CanMirrorMove
+Description = The user boasts of its strength. Power increases the more the user's stats are raised.
+#-------------------------------
+[POWERUPPUNCH]
+Name = Power-Up Punch
+Type = FIGHTING
+Category = Physical
+Power = 40
+Accuracy = 100
+TotalPP = 20
+Target = NearOther
+FunctionCode = RaiseUserAttack1
+Flags = Contact,CanProtect,CanMirrorMove,Punching
+EffectChance = 100
+Description = Striking opponents repeatedly makes the user's fists harder, raising the user's Attack stat.
+#-------------------------------
+[POWERWHIP]
+Name = Power Whip
+Type = GRASS
+Category = Physical
+Power = 120
+Accuracy = 85
+TotalPP = 10
+Target = NearOther
+FunctionCode = None
+Flags = Contact,CanProtect,CanMirrorMove
+Description = The user violently whirls its vines or tentacles to harshly lash the target.
+#-------------------------------
+[PRECIPICEBLADES]
+Name = Precipice Blades
+Type = GROUND
+Category = Physical
+Power = 120
+Accuracy = 85
+TotalPP = 10
+Target = AllNearFoes
+FunctionCode = None
+Flags = CanProtect,CanMirrorMove,CannotMetronome
+Description = The user attacks its foes by manifesting the power of the land in fearsome blades of stone.
+#-------------------------------
+[PRESENT]
+Name = Present
+Type = NORMAL
+Category = Physical
+Power = 1
+Accuracy = 90
+TotalPP = 15
+Target = NearOther
+FunctionCode = RandomlyDamageOrHealTarget
+Flags = CanProtect,CanMirrorMove
+Description = The user attacks by giving the target a gift with a hidden trap. It restores HP sometimes, however.
+#-------------------------------
+[PRISMATICLASER]
+Name = Prismatic Laser
+Type = PSYCHIC
+Category = Special
+Power = 160
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = AttackAndSkipNextTurn
+Flags = CanProtect,CanMirrorMove
+Description = The user shoots powerful lasers using the power of a prism. The user can't move on the next turn.
+#-------------------------------
+[PROTECT]
+Name = Protect
+Type = NORMAL
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = User
+Priority = 4
+FunctionCode = ProtectUser
+Description = It enables the user to evade all attacks. Its chance of failing rises if it is used in succession.
+#-------------------------------
+[PSYBEAM]
+Name = Psybeam
+Type = PSYCHIC
+Category = Special
+Power = 65
+Accuracy = 100
+TotalPP = 20
+Target = NearOther
+FunctionCode = ConfuseTarget
+Flags = CanProtect,CanMirrorMove
+EffectChance = 10
+Description = The target is attacked with a peculiar ray. It may also cause confusion.
+#-------------------------------
+[PSYCHIC]
+Name = Psychic
+Type = PSYCHIC
+Category = Special
+Power = 90
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = LowerTargetSpDef1
+Flags = CanProtect,CanMirrorMove
+EffectChance = 10
+Description = The target is hit by a strong telekinetic force. It may also reduce the target's Sp. Def stat.
+#-------------------------------
+[PSYCHICFANGS]
+Name = Psychic Fangs
+Type = PSYCHIC
+Category = Physical
+Power = 85
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = RemoveScreens
+Flags = Contact,CanProtect,CanMirrorMove,Biting
+Description = The user bites the target using psychic capabilities. This can also destroy Light Screen and Reflect.
+#-------------------------------
+[PSYCHICTERRAIN]
+Name = Psychic Terrain
+Type = PSYCHIC
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = BothSides
+FunctionCode = StartPsychicTerrain
+Description = Protects grounded Pokémon from priority moves and powers up Psychic-type moves for five turns.
+#-------------------------------
+[PSYCHOBOOST]
+Name = Psycho Boost
+Type = PSYCHIC
+Category = Special
+Power = 140
+Accuracy = 90
+TotalPP = 5
+Target = NearOther
+FunctionCode = LowerUserSpAtk2
+Flags = CanProtect,CanMirrorMove
+Description = The user attacks the target at full power. The attack's recoil harshly reduces the user's Sp. Atk stat.
+#-------------------------------
+[PSYCHOCUT]
+Name = Psycho Cut
+Type = PSYCHIC
+Category = Physical
+Power = 70
+Accuracy = 100
+TotalPP = 20
+Target = NearOther
+FunctionCode = None
+Flags = CanProtect,CanMirrorMove,HighCriticalHitRate
+Description = The user tears at the target with blades formed by psychic power. Critical hits land more easily.
+#-------------------------------
+[PSYCHOSHIFT]
+Name = Psycho Shift
+Type = PSYCHIC
+Category = Status
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = GiveUserStatusToTarget
+Flags = CanProtect,CanMirrorMove
+Description = Using its psychic power of suggestion, the user transfers its status problems to the target.
+#-------------------------------
+[PSYCHUP]
+Name = Psych Up
+Type = NORMAL
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = NearOther
+FunctionCode = UserCopyTargetStatStages
+Description = The user hypnotizes itself into copying any stat change made by the target.
+#-------------------------------
+[PSYSHOCK]
+Name = Psyshock
+Type = PSYCHIC
+Category = Special
+Power = 80
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = UseTargetDefenseInsteadOfTargetSpDef
+Flags = CanProtect,CanMirrorMove
+Description = The user materializes an odd psychic wave to attack the target. This attack does physical damage.
+#-------------------------------
+[PSYSTRIKE]
+Name = Psystrike
+Type = PSYCHIC
+Category = Special
+Power = 100
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = UseTargetDefenseInsteadOfTargetSpDef
+Flags = CanProtect,CanMirrorMove
+Description = The user materializes an odd psychic wave to attack the target. This attack does physical damage.
+#-------------------------------
+[PSYWAVE]
+Name = Psywave
+Type = PSYCHIC
+Category = Special
+Power = 1
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = FixedDamageUserLevelRandom
+Flags = CanProtect,CanMirrorMove
+Description = The target is attacked with an odd psychic wave. The attack varies in intensity.
+#-------------------------------
+[PUNISHMENT]
+Name = Punishment
+Type = DARK
+Category = Physical
+Power = 1
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = PowerHigherWithTargetPositiveStatStages
+Flags = Contact,CanProtect,CanMirrorMove
+Description = This attack's power increases the more the target has powered up with stat changes.
+#-------------------------------
+[PURIFY]
+Name = Purify
+Type = POISON
+Category = Status
+Accuracy = 0
+TotalPP = 20
+Target = NearOther
+FunctionCode = CureTargetStatusHealUserHalfOfTotalHP
+Flags = CanProtect,CanMirrorMove
+Description = The user heals the target's status condition. If so, it also restores the user's own HP.
+#-------------------------------
+[PURSUIT]
+Name = Pursuit
+Type = DARK
+Category = Physical
+Power = 40
+Accuracy = 100
+TotalPP = 20
+Target = NearOther
+FunctionCode = PursueSwitchingFoe
+Flags = Contact,CanProtect,CanMirrorMove
+Description = An attack move that inflicts double damage if used on a target that is switching out of battle.
+#-------------------------------
+[PYROBALL]
+Name = Pyro Ball
+Type = FIRE
+Category = Physical
+Power = 120
+Accuracy = 90
+TotalPP = 5
+Target = NearOther
+FunctionCode = BurnTarget
+Flags = CanProtect,CanMirrorMove,ThawsUser,Bomb,CannotMetronome
+EffectChance = 10
+Description = Attacks by igniting a small stone and launching it as a fiery ball. May also burn the target.

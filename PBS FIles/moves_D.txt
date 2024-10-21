@@ -1,0 +1,547 @@
+﻿#-------------------------------
+[DARKESTLARIAT]
+Name = Darkest Lariat
+Type = DARK
+Category = Physical
+Power = 85
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = IgnoreTargetDefSpDefEvaStatStages
+Flags = Contact,CanProtect,CanMirrorMove
+Description = The user swings both arms and hits the target. Ignores the target's stat changes.
+#-------------------------------
+[DARKPULSE]
+Name = Dark Pulse
+Type = DARK
+Category = Special
+Power = 80
+Accuracy = 100
+TotalPP = 15
+Target = Other
+FunctionCode = FlinchTarget
+Flags = CanProtect,CanMirrorMove,Pulse
+EffectChance = 20
+Description = The user releases a horrible aura imbued with dark thoughts. It may also make the target flinch.
+#-------------------------------
+[DARKVOID]
+Name = Dark Void
+Type = DARK
+Category = Status
+Accuracy = 50
+TotalPP = 10
+Target = AllNearFoes
+FunctionCode = SleepTargetIfUserDarkrai
+Flags = CanProtect,CanMirrorMove
+Description = Opposing Pokémon are dragged into a world of total darkness that makes them sleep.
+#-------------------------------
+[DAZZLINGGLEAM]
+Name = Dazzling Gleam
+Type = FAIRY
+Category = Special
+Power = 80
+Accuracy = 100
+TotalPP = 10
+Target = AllNearFoes
+FunctionCode = None
+Flags = CanProtect,CanMirrorMove
+Description = The user damages opposing Pokémon by emitting a powerful flash.
+#-------------------------------
+[DECORATE]
+Name = Decorate
+Type = FAIRY
+Category = Status
+Accuracy = 0
+TotalPP = 15
+Target = NearOther
+FunctionCode = RaiseTargetAtkSpAtk2
+Flags = CannotMetronome
+Description = The user sharply raises the target's Attack and Sp. Atk stats by decorating the target.
+#-------------------------------
+[DEFENDORDER]
+Name = Defend Order
+Type = BUG
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = User
+FunctionCode = RaiseUserDefSpDef1
+Description = The user calls out its underlings to shield its body, raising its Defense and Sp. Def stats.
+#-------------------------------
+[DEFENSECURL]
+Name = Defense Curl
+Type = NORMAL
+Category = Status
+Accuracy = 0
+TotalPP = 40
+Target = User
+FunctionCode = RaiseUserDefense1CurlUpUser
+Description = The user curls up to conceal weak spots and raise its Defense stat.
+#-------------------------------
+[DEFOG]
+Name = Defog
+Type = FLYING
+Category = Status
+Accuracy = 0
+TotalPP = 15
+Target = NearOther
+FunctionCode = LowerTargetEvasion1RemoveSideEffects
+Flags = CanProtect,CanMirrorMove
+Description = A strong wind blows away the foe's obstacles such as Light Screen. It also lowers their evasion.
+#-------------------------------
+[DESTINYBOND]
+Name = Destiny Bond
+Type = GHOST
+Category = Status
+Accuracy = 0
+TotalPP = 5
+Target = User
+FunctionCode = AttackerFaintsIfUserFaints
+Description = When this move is used, if the user faints, the foe that landed the knockout hit also faints.
+#-------------------------------
+[DETECT]
+Name = Detect
+Type = FIGHTING
+Category = Status
+Accuracy = 0
+TotalPP = 5
+Target = User
+Priority = 4
+FunctionCode = ProtectUser
+Description = It enables the user to evade all attacks. Its chance of failing rises if it is used in succession.
+#-------------------------------
+[DIAMONDSTORM]
+Name = Diamond Storm
+Type = ROCK
+Category = Physical
+Power = 100
+Accuracy = 95
+TotalPP = 5
+Target = AllNearFoes
+FunctionCode = RaiseUserDefense2
+Flags = CanProtect,CanMirrorMove,CannotMetronome
+EffectChance = 50
+Description = The user whips up a storm of diamonds to damage foes. This may also sharply raise the user's Defense stat.
+#-------------------------------
+[DIG]
+Name = Dig
+Type = GROUND
+Category = Physical
+Power = 80
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = TwoTurnAttackInvulnerableUnderground
+Flags = Contact,CanProtect,CanMirrorMove
+Description = The user burrows, then attacks on the second turn. It can also be used to exit dungeons.
+#-------------------------------
+[DISABLE]
+Name = Disable
+Type = NORMAL
+Category = Status
+Accuracy = 100
+TotalPP = 20
+Target = NearOther
+FunctionCode = DisableTargetLastMoveUsed
+Flags = CanProtect,CanMirrorMove
+Description = For four turns, this move prevents the target from using the move it last used.
+#-------------------------------
+[DISARMINGVOICE]
+Name = Disarming Voice
+Type = FAIRY
+Category = Special
+Power = 40
+Accuracy = 0
+TotalPP = 15
+Target = AllNearFoes
+FunctionCode = None
+Flags = CanProtect,CanMirrorMove,Sound
+Description = Letting out a charming cry, the user does emotional damage to foes. This attack never misses.
+#-------------------------------
+[DISCHARGE]
+Name = Discharge
+Type = ELECTRIC
+Category = Special
+Power = 80
+Accuracy = 100
+TotalPP = 15
+Target = AllNearOthers
+FunctionCode = ParalyzeTarget
+Flags = CanProtect,CanMirrorMove
+EffectChance = 30
+Description = A flare of electricity is loosed to strike the area around the user. It may also cause paralysis.
+#-------------------------------
+[DIVE]
+Name = Dive
+Type = WATER
+Category = Physical
+Power = 80
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = TwoTurnAttackInvulnerableUnderwater
+Flags = Contact,CanProtect,CanMirrorMove
+Description = Diving on the first turn, the user rises and hits on the next turn. It can be used to dive in the ocean.
+#-------------------------------
+[DIZZYPUNCH]
+Name = Dizzy Punch
+Type = NORMAL
+Category = Physical
+Power = 70
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = ConfuseTarget
+Flags = Contact,CanProtect,CanMirrorMove,Punching
+EffectChance = 20
+Description = The target is hit with rhythmically launched punches that may also leave it confused.
+#-------------------------------
+[DOOMDESIRE]
+Name = Doom Desire
+Type = STEEL
+Category = Special
+Power = 140
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = AttackTwoTurnsLater
+Description = Two turns after this move is used, the user blasts the target with a concentrated bundle of light.
+#-------------------------------
+[DOUBLEEDGE]
+Name = Double-Edge
+Type = NORMAL
+Category = Physical
+Power = 120
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = RecoilThirdOfDamageDealt
+Flags = Contact,CanProtect,CanMirrorMove
+Description = A reckless, life-risking tackle. It also damages the user by a fairly large amount, however.
+#-------------------------------
+[DOUBLEHIT]
+Name = Double Hit
+Type = NORMAL
+Category = Physical
+Power = 35
+Accuracy = 90
+TotalPP = 10
+Target = NearOther
+FunctionCode = HitTwoTimes
+Flags = Contact,CanProtect,CanMirrorMove
+Description = The user slams the target with a long tail, vines, or tentacle. The target is hit twice in a row.
+#-------------------------------
+[DOUBLEIRONBASH]
+Name = Double Iron Bash
+Type = STEEL
+Category = Physical
+Power = 60
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = HitTwoTimesFlinchTarget
+Flags = Contact,CanProtect,Punching,CannotMetronome
+EffectChance = 30
+Description = The user rotates, centering the hex nut in its chest, and then strikes twice. May cause flinching.
+#-------------------------------
+[DOUBLEKICK]
+Name = Double Kick
+Type = FIGHTING
+Category = Physical
+Power = 30
+Accuracy = 100
+TotalPP = 30
+Target = NearOther
+FunctionCode = HitTwoTimes
+Flags = Contact,CanProtect,CanMirrorMove
+Description = The target is quickly kicked twice in succession using both feet.
+#-------------------------------
+[DOUBLESLAP]
+Name = Double Slap
+Type = NORMAL
+Category = Physical
+Power = 15
+Accuracy = 85
+TotalPP = 10
+Target = NearOther
+FunctionCode = HitTwoToFiveTimes
+Flags = Contact,CanProtect,CanMirrorMove
+Description = The target is slapped repeatedly, back and forth, two to five times in a row.
+#-------------------------------
+[DOUBLETEAM]
+Name = Double Team
+Type = NORMAL
+Category = Status
+Accuracy = 0
+TotalPP = 15
+Target = User
+FunctionCode = RaiseUserEvasion1
+Description = By moving rapidly, the user makes illusory copies of itself to raise its evasiveness.
+#-------------------------------
+[DRACOMETEOR]
+Name = Draco Meteor
+Type = DRAGON
+Category = Special
+Power = 130
+Accuracy = 90
+TotalPP = 5
+Target = NearOther
+FunctionCode = LowerUserSpAtk2
+Flags = CanProtect,CanMirrorMove
+Description = Comets are summoned down from the sky. The attack's recoil harshly reduces the user's Sp. Atk stat.
+#-------------------------------
+[DRAGONASCENT]
+Name = Dragon Ascent
+Type = FLYING
+Category = Physical
+Power = 120
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = LowerUserDefSpDef1
+Flags = Contact,CanProtect,CanMirrorMove,CannotMetronome
+Description = The user soars upward and drops at high speeds. Its Defense and Sp. Def stats are lowered.
+#-------------------------------
+[DRAGONBREATH]
+Name = Dragon Breath
+Type = DRAGON
+Category = Special
+Power = 60
+Accuracy = 100
+TotalPP = 20
+Target = NearOther
+FunctionCode = ParalyzeTarget
+Flags = CanProtect,CanMirrorMove
+EffectChance = 30
+Description = The user exhales a mighty gust that inflicts damage. It may also leave the target with paralysis.
+#-------------------------------
+[DRAGONCLAW]
+Name = Dragon Claw
+Type = DRAGON
+Category = Physical
+Power = 80
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = None
+Flags = Contact,CanProtect,CanMirrorMove
+Description = The user slashes the target with huge, sharp claws.
+#-------------------------------
+[DRAGONDANCE]
+Name = Dragon Dance
+Type = DRAGON
+Category = Status
+Accuracy = 0
+TotalPP = 20
+Target = User
+FunctionCode = RaiseUserAtkSpd1
+Flags = Dance
+Description = The user vigorously performs a mystic, powerful dance that boosts its Attack and Speed stats.
+#-------------------------------
+[DRAGONDARTS]
+Name = Dragon Darts
+Type = DRAGON
+Category = Physical
+Power = 50
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = HitTwoTimesTargetThenTargetAlly
+Flags = CanProtect,CanMirrorMove
+Description = The user attacks twice using Dreepy. If there are two targets, this move hits each one once.
+#-------------------------------
+[DRAGONENERGY]
+Name = Dragon Energy
+Type = DRAGON
+Category = Special
+Power = 150
+Accuracy = 100
+TotalPP = 5
+Target = AllNearFoes
+FunctionCode = PowerHigherWithUserHP
+Flags = CanProtect,CanMirrorMove,CannotMetronome
+Description = Converts life-force into power to attack. The lower the user's HP, the lower the move's power.
+#-------------------------------
+[DRAGONHAMMER]
+Name = Dragon Hammer
+Type = DRAGON
+Category = Physical
+Power = 90
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = None
+Flags = Contact,CanProtect,CanMirrorMove
+Description = The user uses its body like a hammer to attack the target and inflict damage.
+#-------------------------------
+[DRAGONPULSE]
+Name = Dragon Pulse
+Type = DRAGON
+Category = Special
+Power = 85
+Accuracy = 100
+TotalPP = 10
+Target = Other
+FunctionCode = None
+Flags = CanProtect,CanMirrorMove,Pulse
+Description = The target is attacked with a shock wave generated by the user's gaping mouth.
+#-------------------------------
+[DRAGONRAGE]
+Name = Dragon Rage
+Type = DRAGON
+Category = Special
+Power = 1
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = FixedDamage40
+Flags = CanProtect,CanMirrorMove
+Description = This attack hits the target with a shock wave of pure rage. This attack always inflicts 40 HP damage.
+#-------------------------------
+[DRAGONRUSH]
+Name = Dragon Rush
+Type = DRAGON
+Category = Physical
+Power = 100
+Accuracy = 75
+TotalPP = 10
+Target = NearOther
+FunctionCode = FlinchTarget
+Flags = Contact,CanProtect,CanMirrorMove,TramplesMinimize
+EffectChance = 20
+Description = The user tackles the foe while exhibiting overwhelming menace. It may also make the target flinch.
+#-------------------------------
+[DRAGONTAIL]
+Name = Dragon Tail
+Type = DRAGON
+Category = Physical
+Power = 60
+Accuracy = 90
+TotalPP = 10
+Target = NearOther
+Priority = -6
+FunctionCode = SwitchOutTargetDamagingMove
+Flags = Contact,CanProtect,CanMirrorMove
+Description = The user knocks away the target and drags out another Pokémon in its party. In the wild, the battle ends.
+#-------------------------------
+[DRAININGKISS]
+Name = Draining Kiss
+Type = FAIRY
+Category = Special
+Power = 50
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = HealUserByThreeQuartersOfDamageDone
+Flags = Contact,CanProtect,CanMirrorMove
+Description = The user steals the target's HP with a kiss. The user's HP is restored by over half of the damage dealt.
+#-------------------------------
+[DRAINPUNCH]
+Name = Drain Punch
+Type = FIGHTING
+Category = Physical
+Power = 75
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = HealUserByHalfOfDamageDone
+Flags = Contact,CanProtect,CanMirrorMove,Punching
+Description = An energy-draining punch. The user's HP is restored by half the damage taken by the target.
+#-------------------------------
+[DREAMEATER]
+Name = Dream Eater
+Type = PSYCHIC
+Category = Special
+Power = 100
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = HealUserByHalfOfDamageDoneIfTargetAsleep
+Flags = CanProtect,CanMirrorMove
+Description = The user eats the dreams of a sleeping foe. It absorbs half the damage caused to heal the user's HP.
+#-------------------------------
+[DRILLPECK]
+Name = Drill Peck
+Type = FLYING
+Category = Physical
+Power = 80
+Accuracy = 100
+TotalPP = 20
+Target = Other
+FunctionCode = None
+Flags = Contact,CanProtect,CanMirrorMove
+Description = A corkscrewing attack with the sharp beak acting as a drill.
+#-------------------------------
+[DRILLRUN]
+Name = Drill Run
+Type = GROUND
+Category = Physical
+Power = 80
+Accuracy = 95
+TotalPP = 10
+Target = NearOther
+FunctionCode = None
+Flags = Contact,CanProtect,CanMirrorMove,HighCriticalHitRate
+Description = The user crashes into its target while rotating its body like a drill. Critical hits land more easily.
+#-------------------------------
+[DRUMBEATING]
+Name = Drum Beating
+Type = GRASS
+Category = Physical
+Power = 80
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = LowerTargetSpeed1
+Flags = CanProtect,CanMirrorMove,CannotMetronome
+EffectChance = 100
+Description = The user plays its drum, controlling roots to attack. This also lowers the target's Speed stat.
+#-------------------------------
+[DUALCHOP]
+Name = Dual Chop
+Type = DRAGON
+Category = Physical
+Power = 40
+Accuracy = 90
+TotalPP = 15
+Target = NearOther
+FunctionCode = HitTwoTimes
+Flags = Contact,CanProtect,CanMirrorMove
+Description = The user attacks its target by hitting it with brutal strikes. The target is hit twice in a row.
+#-------------------------------
+[DUALWINGBEAT]
+Name = Dual Wingbeat
+Type = FLYING
+Category = Physical
+Power = 40
+Accuracy = 90
+TotalPP = 10
+Target = NearOther
+FunctionCode = HitTwoTimes
+Flags = Contact,CanProtect,CanMirrorMove
+Description = The user slams the target with its wings. The target is hit twice in a row.
+#-------------------------------
+[DYNAMAXCANNON]
+Name = Dynamax Cannon
+Type = DRAGON
+Category = Special
+Power = 100
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = None
+Flags = CanProtect,CannotMetronome
+Description = The user unleashes a strong beam from its core.
+#-------------------------------
+[DYNAMICPUNCH]
+Name = Dynamic Punch
+Type = FIGHTING
+Category = Physical
+Power = 100
+Accuracy = 50
+TotalPP = 5
+Target = NearOther
+FunctionCode = ConfuseTarget
+Flags = Contact,CanProtect,CanMirrorMove,Punching
+EffectChance = 100
+Description = The user punches the target with full, concentrated power. It confuses the target if it hits.

@@ -1,0 +1,450 @@
+﻿#-------------------------------
+[HAIL]
+Name = Hail
+Type = ICE
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = BothSides
+FunctionCode = StartHailWeather
+Description = The user summons a hail storm lasting five turns. It damages all Pokémon except the Ice type.
+#-------------------------------
+[HAMMERARM]
+Name = Hammer Arm
+Type = FIGHTING
+Category = Physical
+Power = 100
+Accuracy = 90
+TotalPP = 10
+Target = NearOther
+FunctionCode = LowerUserSpeed1
+Flags = Contact,CanProtect,CanMirrorMove,Punching
+Description = The user swings and hits with its strong and heavy fist. It lowers the user's Speed, however.
+#-------------------------------
+[HAPPYHOUR]
+Name = Happy Hour
+Type = NORMAL
+Category = Status
+Accuracy = 0
+TotalPP = 30
+Target = UserSide
+FunctionCode = DoubleMoneyGainedFromBattle
+Description = Using Happy Hour doubles the amount of prize money received after battle.
+#-------------------------------
+[HARDEN]
+Name = Harden
+Type = NORMAL
+Category = Status
+Accuracy = 0
+TotalPP = 30
+Target = User
+FunctionCode = RaiseUserDefense1
+Description = The user stiffens all the muscles in its body to raise its Defense stat.
+#-------------------------------
+[HAZE]
+Name = Haze
+Type = ICE
+Category = Status
+Accuracy = 0
+TotalPP = 30
+Target = BothSides
+FunctionCode = ResetAllBattlersStatStages
+Description = The user creates a haze that eliminates every stat change among all the Pokémon engaged in battle.
+#-------------------------------
+[HEADBUTT]
+Name = Headbutt
+Type = NORMAL
+Category = Physical
+Power = 70
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = FlinchTarget
+Flags = Contact,CanProtect,CanMirrorMove
+EffectChance = 30
+Description = The user sticks out its head and attacks by charging into the foe. It may also make the target flinch.
+#-------------------------------
+[HEADCHARGE]
+Name = Head Charge
+Type = NORMAL
+Category = Physical
+Power = 120
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = RecoilQuarterOfDamageDealt
+Flags = Contact,CanProtect,CanMirrorMove
+Description = The user charges its head into the foe, using its powerful guard hair. The user also takes damage.
+#-------------------------------
+[HEADSMASH]
+Name = Head Smash
+Type = ROCK
+Category = Physical
+Power = 150
+Accuracy = 80
+TotalPP = 5
+Target = NearOther
+FunctionCode = RecoilHalfOfDamageDealt
+Flags = Contact,CanProtect,CanMirrorMove
+Description = The user attacks the foe with a hazardous, full-power headbutt. The user also takes terrible damage.
+#-------------------------------
+[HEALBELL]
+Name = Heal Bell
+Type = NORMAL
+Category = Status
+Accuracy = 0
+TotalPP = 5
+Target = UserAndAllies
+FunctionCode = CureUserPartyStatus
+Flags = Sound
+Description = The user makes a soothing bell chime to heal the status problems of all the party Pokémon.
+#-------------------------------
+[HEALBLOCK]
+Name = Heal Block
+Type = PSYCHIC
+Category = Status
+Accuracy = 100
+TotalPP = 15
+Target = AllNearFoes
+FunctionCode = DisableTargetHealingMoves
+Flags = CanProtect,CanMirrorMove
+Description = For five turns, the foe is prevented from using any moves, Abilities, or held items that recover HP.
+#-------------------------------
+[HEALINGWISH]
+Name = Healing Wish
+Type = PSYCHIC
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = User
+FunctionCode = UserFaintsHealAndCureReplacement
+Description = The user faints. In return, the Pokémon taking its place will have its HP restored and status cured.
+#-------------------------------
+[HEALORDER]
+Name = Heal Order
+Type = BUG
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = User
+FunctionCode = HealUserHalfOfTotalHP
+Description = The user calls out its underlings to heal it. The user regains up to half of its max HP.
+#-------------------------------
+[HEALPULSE]
+Name = Heal Pulse
+Type = PSYCHIC
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = Other
+FunctionCode = HealTargetHalfOfTotalHP
+Flags = CanProtect,Pulse
+Description = The user emits a healing pulse which restores the target's HP by up to half of its max HP.
+#-------------------------------
+[HEARTSTAMP]
+Name = Heart Stamp
+Type = PSYCHIC
+Category = Physical
+Power = 60
+Accuracy = 100
+TotalPP = 25
+Target = NearOther
+FunctionCode = FlinchTarget
+Flags = Contact,CanProtect,CanMirrorMove
+EffectChance = 30
+Description = The user unleashes a vicious blow after its cute act makes the foe less wary. It may also cause flinching.
+#-------------------------------
+[HEARTSWAP]
+Name = Heart Swap
+Type = PSYCHIC
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = NearOther
+FunctionCode = UserTargetSwapStatStages
+Flags = CanProtect,CanMirrorMove
+Description = The user employs its psychic power to switch stat changes with the target.
+#-------------------------------
+[HEATCRASH]
+Name = Heat Crash
+Type = FIRE
+Category = Physical
+Power = 1
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = PowerHigherWithUserHeavierThanTarget
+Flags = Contact,CanProtect,CanMirrorMove,TramplesMinimize
+Description = The user slams the foe with its flaming body. The heavier the user is, the greater the damage.
+#-------------------------------
+[HEATWAVE]
+Name = Heat Wave
+Type = FIRE
+Category = Special
+Power = 95
+Accuracy = 90
+TotalPP = 10
+Target = AllNearFoes
+FunctionCode = BurnTarget
+Flags = CanProtect,CanMirrorMove
+EffectChance = 10
+Description = The user attacks by exhaling hot breath on the opposing team. It may also leave targets with a burn.
+#-------------------------------
+[HEAVYSLAM]
+Name = Heavy Slam
+Type = STEEL
+Category = Physical
+Power = 1
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = PowerHigherWithUserHeavierThanTarget
+Flags = Contact,CanProtect,CanMirrorMove,TramplesMinimize
+Description = The user slams into the foe with its heavy body. The heavier the user, the greater the damage.
+#-------------------------------
+[HELPINGHAND]
+Name = Helping Hand
+Type = NORMAL
+Category = Status
+Accuracy = 0
+TotalPP = 20
+Target = NearAlly
+Priority = 5
+FunctionCode = PowerUpAllyMove
+Description = The user assists an ally by boosting the power of its attack.
+#-------------------------------
+[HEX]
+Name = Hex
+Type = GHOST
+Category = Special
+Power = 65
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = DoublePowerIfTargetStatusProblem
+Flags = CanProtect,CanMirrorMove
+Description = This relentless attack does massive damage to a target affected by status problems.
+#-------------------------------
+[HIDDENPOWER]
+Name = Hidden Power
+Type = NORMAL
+Category = Special
+Power = 60
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = TypeDependsOnUserIVs
+Flags = CanProtect,CanMirrorMove
+Description = A unique attack that varies in type and intensity depending on the Pokémon using it.
+#-------------------------------
+[HIGHHORSEPOWER]
+Name = High Horsepower
+Type = GROUND
+Category = Physical
+Power = 95
+Accuracy = 95
+TotalPP = 10
+Target = NearOther
+FunctionCode = None
+Flags = Contact,CanProtect,CanMirrorMove
+Description = The user fiercely attacks the target using its entire body.
+#-------------------------------
+[HIGHJUMPKICK]
+Name = High Jump Kick
+Type = FIGHTING
+Category = Physical
+Power = 130
+Accuracy = 90
+TotalPP = 10
+Target = NearOther
+FunctionCode = CrashDamageIfFailsUnusableInGravity
+Flags = Contact,CanProtect,CanMirrorMove
+Description = The target is attacked with a knee kick from a jump. If it misses, the user is hurt instead.
+#-------------------------------
+[HOLDBACK]
+Name = Hold Back
+Type = NORMAL
+Category = Physical
+Power = 40
+Accuracy = 100
+TotalPP = 40
+Target = NearOther
+FunctionCode = CannotMakeTargetFaint
+Flags = Contact,CanProtect,CanMirrorMove
+Description = The user holds back when it attacks, and the target is left with at least 1 HP.
+#-------------------------------
+[HOLDHANDS]
+Name = Hold Hands
+Type = NORMAL
+Category = Status
+Accuracy = 0
+TotalPP = 40
+Target = NearAlly
+FunctionCode = DoesNothingFailsIfNoAlly
+Description = The user and an ally hold hands. This makes them very happy.
+#-------------------------------
+[HONECLAWS]
+Name = Hone Claws
+Type = DARK
+Category = Status
+Accuracy = 0
+TotalPP = 15
+Target = User
+FunctionCode = RaiseUserAtkAcc1
+Description = The user sharpens its claws to boost its Attack stat and accuracy.
+#-------------------------------
+[HORNATTACK]
+Name = Horn Attack
+Type = NORMAL
+Category = Physical
+Power = 65
+Accuracy = 100
+TotalPP = 25
+Target = NearOther
+FunctionCode = None
+Flags = Contact,CanProtect,CanMirrorMove
+Description = The target is jabbed with a sharply pointed horn to inflict damage.
+#-------------------------------
+[HORNDRILL]
+Name = Horn Drill
+Type = NORMAL
+Category = Physical
+Power = 1
+Accuracy = 30
+TotalPP = 5
+Target = NearOther
+FunctionCode = OHKO
+Flags = Contact,CanProtect,CanMirrorMove
+Description = The user stabs the foe with a horn that rotates like a drill. If it hits, the target faints instantly.
+#-------------------------------
+[HORNLEECH]
+Name = Horn Leech
+Type = GRASS
+Category = Physical
+Power = 75
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = HealUserByHalfOfDamageDone
+Flags = Contact,CanProtect,CanMirrorMove
+Description = The user drains the foe's energy with its horns. The user's HP is restored by half the damage inflicted.
+#-------------------------------
+[HOWL]
+Name = Howl
+Type = NORMAL
+Category = Status
+Accuracy = 0
+TotalPP = 40
+Target = UserAndAllies
+FunctionCode = RaiseTargetAttack1
+Flags = Sound
+Description = The user howls loudly to raise the spirit of itself and allies, boosting their Attack stats.
+#-------------------------------
+[HURRICANE]
+Name = Hurricane
+Type = FLYING
+Category = Special
+Power = 110
+Accuracy = 70
+TotalPP = 10
+Target = Other
+FunctionCode = ConfuseTargetAlwaysHitsInRainHitsTargetInSky
+Flags = CanProtect,CanMirrorMove
+EffectChance = 30
+Description = The user wraps its foe in a fierce wind that flies up into the sky. It may also confuse the foe.
+#-------------------------------
+[HYDROCANNON]
+Name = Hydro Cannon
+Type = WATER
+Category = Special
+Power = 150
+Accuracy = 90
+TotalPP = 5
+Target = NearOther
+FunctionCode = AttackAndSkipNextTurn
+Flags = CanProtect,CanMirrorMove
+Description = The target is hit with a watery blast. The user must rest on the next turn, however.
+#-------------------------------
+[HYDROPUMP]
+Name = Hydro Pump
+Type = WATER
+Category = Special
+Power = 110
+Accuracy = 80
+TotalPP = 5
+Target = NearOther
+FunctionCode = None
+Flags = CanProtect,CanMirrorMove
+Description = The target is blasted by a huge volume of water launched under great pressure.
+#-------------------------------
+[HYPERBEAM]
+Name = Hyper Beam
+Type = NORMAL
+Category = Special
+Power = 150
+Accuracy = 90
+TotalPP = 5
+Target = NearOther
+FunctionCode = AttackAndSkipNextTurn
+Flags = CanProtect,CanMirrorMove
+Description = The foe is attacked with a powerful beam. The user must rest on the next turn to regain its energy.
+#-------------------------------
+[HYPERFANG]
+Name = Hyper Fang
+Type = NORMAL
+Category = Physical
+Power = 80
+Accuracy = 90
+TotalPP = 15
+Target = NearOther
+FunctionCode = FlinchTarget
+Flags = Contact,CanProtect,CanMirrorMove,Biting
+EffectChance = 10
+Description = The user bites hard on the target with its sharp front fangs. It may also make the target flinch.
+#-------------------------------
+[HYPERSPACEFURY]
+Name = Hyperspace Fury
+Type = DARK
+Category = Physical
+Power = 100
+Accuracy = 0
+TotalPP = 5
+Target = NearOther
+FunctionCode = HoopaRemoveProtectionsBypassSubstituteLowerUserDef1
+Flags = CanMirrorMove,CannotMetronome
+Description = Unleashes a barrage of multi-arm attacks, skipping protections. The user's Defense stat falls.
+#-------------------------------
+[HYPERSPACEHOLE]
+Name = Hyperspace Hole
+Type = PSYCHIC
+Category = Special
+Power = 80
+Accuracy = 0
+TotalPP = 5
+Target = NearOther
+FunctionCode = RemoveProtectionsBypassSubstitute
+Flags = CanMirrorMove,CannotMetronome
+Description = Using a hyperspace hole, the user appears right next to the target and strikes. Skips protections.
+#-------------------------------
+[HYPERVOICE]
+Name = Hyper Voice
+Type = NORMAL
+Category = Special
+Power = 90
+Accuracy = 100
+TotalPP = 10
+Target = AllNearFoes
+FunctionCode = None
+Flags = CanProtect,CanMirrorMove,Sound
+Description = The user lets loose a horribly echoing shout with the power to inflict damage.
+#-------------------------------
+[HYPNOSIS]
+Name = Hypnosis
+Type = PSYCHIC
+Category = Status
+Accuracy = 60
+TotalPP = 20
+Target = NearOther
+FunctionCode = SleepTarget
+Flags = CanProtect,CanMirrorMove
+Description = The user employs hypnotic suggestion to make the target fall into a deep sleep.

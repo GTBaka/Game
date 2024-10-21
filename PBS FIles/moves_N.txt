@@ -1,0 +1,139 @@
+﻿#-------------------------------
+[NASTYPLOT]
+Name = Nasty Plot
+Type = DARK
+Category = Status
+Accuracy = 0
+TotalPP = 20
+Target = User
+FunctionCode = RaiseUserSpAtk2
+Description = The user stimulates its brain by thinking bad thoughts. It sharply raises the user's Sp. Atk.
+#-------------------------------
+[NATURALGIFT]
+Name = Natural Gift
+Type = NORMAL
+Category = Physical
+Power = 1
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = TypeAndPowerDependOnUserBerry
+Flags = CanProtect,CanMirrorMove
+Description = The user draws power to attack by using its held Berry. The Berry determines its type and power.
+#-------------------------------
+[NATUREPOWER]
+Name = Nature Power
+Type = NORMAL
+Category = Status
+Accuracy = 0
+TotalPP = 20
+Target = NearOther
+FunctionCode = UseMoveDependingOnEnvironment
+Description = An attack that makes use of nature's power. Its effects vary depending on the user's environment.
+#-------------------------------
+[NATURESMADNESS]
+Name = Nature's Madness
+Type = FAIRY
+Category = Special
+Power = 1
+Accuracy = 90
+TotalPP = 10
+Target = NearOther
+FunctionCode = FixedDamageHalfTargetHP
+Flags = CanProtect,CanMirrorMove,CannotMetronome
+Description = The user hits the target with the force of nature. It halves the target's HP.
+#-------------------------------
+[NEEDLEARM]
+Name = Needle Arm
+Type = GRASS
+Category = Physical
+Power = 60
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = FlinchTarget
+Flags = Contact,CanProtect,CanMirrorMove
+EffectChance = 30
+Description = The user attacks by wildly swinging its thorny arms. It may also make the target flinch.
+#-------------------------------
+[NIGHTDAZE]
+Name = Night Daze
+Type = DARK
+Category = Special
+Power = 85
+Accuracy = 95
+TotalPP = 10
+Target = NearOther
+FunctionCode = LowerTargetAccuracy1
+Flags = CanProtect,CanMirrorMove
+EffectChance = 40
+Description = The user lets loose a pitch-black shock wave at its target. It may also lower the target's accuracy.
+#-------------------------------
+[NIGHTMARE]
+Name = Nightmare
+Type = GHOST
+Category = Status
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = StartDamageTargetEachTurnIfTargetAsleep
+Flags = CanProtect,CanMirrorMove
+Description = A sleeping target sees a nightmare that inflicts some damage every turn.
+#-------------------------------
+[NIGHTSHADE]
+Name = Night Shade
+Type = GHOST
+Category = Special
+Power = 1
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = FixedDamageUserLevel
+Flags = CanProtect,CanMirrorMove
+Description = The user makes the foe see a frightening mirage. It inflicts damage matching the user's level.
+#-------------------------------
+[NIGHTSLASH]
+Name = Night Slash
+Type = DARK
+Category = Physical
+Power = 70
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = None
+Flags = Contact,CanProtect,CanMirrorMove,HighCriticalHitRate
+Description = The user slashes the target the instant an opportunity arises. Critical hits land more easily.
+#-------------------------------
+[NOBLEROAR]
+Name = Noble Roar
+Type = NORMAL
+Category = Status
+Accuracy = 0
+TotalPP = 30
+Target = NearOther
+FunctionCode = LowerTargetAtkSpAtk1
+Flags = CanProtect,CanMirrorMove,Sound
+Description = Letting out a noble roar, the user intimidates the target and lowers its Attack and Sp. Atk.
+#-------------------------------
+[NORETREAT]
+Name = No Retreat
+Type = FIGHTING
+Category = Status
+Accuracy = 0
+TotalPP = 5
+Target = User
+FunctionCode = RaiseUserMainStats1TrapUserInBattle
+Description = This move raises all the user's stats but prevents the user from switching out or fleeing.
+#-------------------------------
+[NUZZLE]
+Name = Nuzzle
+Type = ELECTRIC
+Category = Physical
+Power = 20
+Accuracy = 100
+TotalPP = 20
+Target = NearOther
+FunctionCode = ParalyzeTarget
+Flags = Contact,CanProtect,CanMirrorMove
+EffectChance = 100
+Description = The user nuzzles its electrified cheeks against the target. This also leaves the target with paralysis.

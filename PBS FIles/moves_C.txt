@@ -1,0 +1,481 @@
+﻿#-------------------------------
+[CALMMIND]
+Name = Calm Mind
+Type = PSYCHIC
+Category = Status
+Accuracy = 0
+TotalPP = 20
+Target = User
+FunctionCode = RaiseUserSpAtkSpDef1
+Description = The user quietly focuses its mind and calms its spirit to raise its Sp. Atk and Sp. Def stats.
+#-------------------------------
+[CAMOUFLAGE]
+Name = Camouflage
+Type = NORMAL
+Category = Status
+Accuracy = 0
+TotalPP = 20
+Target = User
+FunctionCode = SetUserTypesBasedOnEnvironment
+Description = The user's type is changed depending on its environment, such as at water's edge, in grass, or in a cave.
+#-------------------------------
+[CAPTIVATE]
+Name = Captivate
+Type = NORMAL
+Category = Status
+Accuracy = 100
+TotalPP = 20
+Target = AllNearFoes
+FunctionCode = LowerTargetSpAtk2IfCanAttract
+Flags = CanProtect,CanMirrorMove
+Description = If it is the opposite gender of the user, the target is charmed into harshly lowering its Sp. Atk stat.
+#-------------------------------
+[CELEBRATE]
+Name = Celebrate
+Type = NORMAL
+Category = Status
+Accuracy = 0
+TotalPP = 40
+Target = User
+FunctionCode = DoesNothingCongratulations
+Description = The Pokémon congratulates you on your special day!
+#-------------------------------
+[CHARGE]
+Name = Charge
+Type = ELECTRIC
+Category = Status
+Accuracy = 0
+TotalPP = 20
+Target = User
+FunctionCode = RaiseUserSpDef1PowerUpElectricMove
+Description = The user boosts the power of the Electric move it uses next. It also raises the user's Sp. Def stat.
+#-------------------------------
+[CHARGEBEAM]
+Name = Charge Beam
+Type = ELECTRIC
+Category = Special
+Power = 50
+Accuracy = 90
+TotalPP = 10
+Target = NearOther
+FunctionCode = RaiseUserSpAtk1
+Flags = CanProtect,CanMirrorMove
+EffectChance = 70
+Description = The user fires a concentrated bundle of electricity. It may also raise the user's Sp. Atk stat.
+#-------------------------------
+[CHARM]
+Name = Charm
+Type = FAIRY
+Category = Status
+Accuracy = 100
+TotalPP = 20
+Target = NearOther
+FunctionCode = LowerTargetAttack2
+Flags = CanProtect,CanMirrorMove
+Description = The user charmingly gazes at the foe, making it less wary. The target's Attack is harshly lowered.
+#-------------------------------
+[CHATTER]
+Name = Chatter
+Type = FLYING
+Category = Special
+Power = 65
+Accuracy = 100
+TotalPP = 20
+Target = Other
+FunctionCode = ConfuseTarget
+Flags = CanProtect,CanMirrorMove,Sound
+EffectChance = 100
+Description = The user attacks using a sound wave based on words it has learned. It may also confuse the target.
+#-------------------------------
+[CHIPAWAY]
+Name = Chip Away
+Type = NORMAL
+Category = Physical
+Power = 70
+Accuracy = 100
+TotalPP = 20
+Target = NearOther
+FunctionCode = IgnoreTargetDefSpDefEvaStatStages
+Flags = Contact,CanProtect,CanMirrorMove
+Description = Seeking an opening, the user strikes continually. The foe's stat changes don't affect the damage.
+#-------------------------------
+[CIRCLETHROW]
+Name = Circle Throw
+Type = FIGHTING
+Category = Physical
+Power = 60
+Accuracy = 90
+TotalPP = 10
+Target = NearOther
+Priority = -6
+FunctionCode = SwitchOutTargetDamagingMove
+Flags = Contact,CanProtect,CanMirrorMove
+Description = The user throws the target and drags out another Pokémon in its party. In the wild, the battle ends.
+#-------------------------------
+[CLAMP]
+Name = Clamp
+Type = WATER
+Category = Physical
+Power = 35
+Accuracy = 85
+TotalPP = 15
+Target = NearOther
+FunctionCode = BindTarget
+Flags = Contact,CanProtect,CanMirrorMove
+Description = The target is clamped and squeezed by the user's very thick and sturdy shell for four to five turns.
+#-------------------------------
+[CLANGINGSCALES]
+Name = Clanging Scales
+Type = DRAGON
+Category = Special
+Power = 110
+Accuracy = 100
+TotalPP = 5
+Target = AllNearFoes
+FunctionCode = LowerUserDefense1
+Flags = CanProtect,CanMirrorMove,Sound
+Description = The user rubs its scales and makes a huge noise. Also lowers the user's Defense stat.
+#-------------------------------
+[CLANGOROUSSOUL]
+Name = Clangorous Soul
+Type = DRAGON
+Category = Status
+Accuracy = 0
+TotalPP = 5
+Target = User
+FunctionCode = RaiseUserMainStats1LoseThirdOfTotalHP
+Flags = Sound,CannotMetronome,Dance
+Description = The user raises all its stats by using some of its HP.
+#-------------------------------
+[CLEARSMOG]
+Name = Clear Smog
+Type = POISON
+Category = Special
+Power = 50
+Accuracy = 0
+TotalPP = 15
+Target = NearOther
+FunctionCode = ResetTargetStatStages
+Flags = CanProtect,CanMirrorMove
+Description = The user attacks by throwing a clump of special mud. All status changes are returned to normal.
+#-------------------------------
+[CLOSECOMBAT]
+Name = Close Combat
+Type = FIGHTING
+Category = Physical
+Power = 120
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = LowerUserDefSpDef1
+Flags = Contact,CanProtect,CanMirrorMove
+Description = The user fights the foe up close without guarding itself. It also cuts the user's Defense and Sp. Def.
+#-------------------------------
+[COACHING]
+Name = Coaching
+Type = FIGHTING
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = AllAllies
+FunctionCode = RaiseAlliesAtkDef1
+Flags = CanMirrorMove
+Description = The user properly coaches its ally Pokémon, boosting their Attack and Defense stats.
+#-------------------------------
+[COIL]
+Name = Coil
+Type = POISON
+Category = Status
+Accuracy = 0
+TotalPP = 20
+Target = User
+FunctionCode = RaiseUserAtkDefAcc1
+Description = The user coils up and concentrates. This raises its Attack and Defense stats as well as its accuracy.
+#-------------------------------
+[COMETPUNCH]
+Name = Comet Punch
+Type = NORMAL
+Category = Physical
+Power = 18
+Accuracy = 85
+TotalPP = 15
+Target = NearOther
+FunctionCode = HitTwoToFiveTimes
+Flags = Contact,CanProtect,CanMirrorMove,Punching
+Description = The target is hit with a flurry of punches that strike two to five times in a row.
+#-------------------------------
+[COSMICPOWER]
+Name = Cosmic Power
+Type = PSYCHIC
+Category = Status
+Accuracy = 0
+TotalPP = 20
+Target = User
+FunctionCode = RaiseUserDefSpDef1
+Description = The user absorbs a mystical power from space to raise its Defense and Sp. Def stats.
+#-------------------------------
+[CONFIDE]
+Name = Confide
+Type = NORMAL
+Category = Status
+Accuracy = 0
+TotalPP = 20
+Target = NearOther
+FunctionCode = LowerTargetSpAtk1
+Flags = CanMirrorMove,Sound
+Description = The user tells the target a secret. The target loses focus and its Sp. Atk stat is lowered.
+#-------------------------------
+[CONFUSERAY]
+Name = Confuse Ray
+Type = GHOST
+Category = Status
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = ConfuseTarget
+Flags = CanProtect,CanMirrorMove
+Description = The target is exposed to a sinister ray that triggers confusion.
+#-------------------------------
+[CONFUSION]
+Name = Confusion
+Type = PSYCHIC
+Category = Special
+Power = 50
+Accuracy = 100
+TotalPP = 25
+Target = NearOther
+FunctionCode = ConfuseTarget
+Flags = CanProtect,CanMirrorMove
+EffectChance = 10
+Description = The target is hit by a weak telekinetic force. It may also leave the target confused.
+#-------------------------------
+[CONSTRICT]
+Name = Constrict
+Type = NORMAL
+Category = Physical
+Power = 10
+Accuracy = 100
+TotalPP = 35
+Target = NearOther
+FunctionCode = LowerTargetSpeed1
+Flags = Contact,CanProtect,CanMirrorMove
+EffectChance = 10
+Description = The foe is attacked with long, creeping tentacles or vines. It may also lower the target's Speed.
+#-------------------------------
+[CONVERSION]
+Name = Conversion
+Type = NORMAL
+Category = Status
+Accuracy = 0
+TotalPP = 30
+Target = User
+FunctionCode = SetUserTypesToUserMoveType
+Description = The user changes its type to become the same type as one of its moves.
+#-------------------------------
+[CONVERSION2]
+Name = Conversion 2
+Type = NORMAL
+Category = Status
+Accuracy = 0
+TotalPP = 30
+Target = NearOther
+FunctionCode = SetUserTypesToResistLastAttack
+Description = The user changes its type to make itself resistant to the type of the attack the opponent used last.
+#-------------------------------
+[COPYCAT]
+Name = Copycat
+Type = NORMAL
+Category = Status
+Accuracy = 0
+TotalPP = 20
+Target = User
+FunctionCode = UseLastMoveUsed
+Description = The user mimics the move used immediately before it. The move fails if no other move has been used yet.
+#-------------------------------
+[COREENFORCER]
+Name = Core Enforcer
+Type = DRAGON
+Category = Special
+Power = 100
+Accuracy = 100
+TotalPP = 10
+Target = AllNearFoes
+FunctionCode = NegateTargetAbilityIfTargetActed
+Flags = CanProtect,CanMirrorMove
+Description = If the target has already moved this turn, the effect of its Ability is negated.
+#-------------------------------
+[CORROSIVEGAS]
+Name = Corrosive Gas
+Type = POISON
+Category = Status
+Accuracy = 100
+TotalPP = 40
+Target = AllNearOthers
+FunctionCode = CorrodeTargetItem
+Flags = CanProtect,CanMirrorMove
+Description = The user surrounds everything around it with highly acidic gas and melts away items they hold.
+#-------------------------------
+[COTTONGUARD]
+Name = Cotton Guard
+Type = GRASS
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = User
+FunctionCode = RaiseUserDefense3
+Description = The user protects itself by wrapping its body in soft cotton, drastically raising its Defense stat.
+#-------------------------------
+[COTTONSPORE]
+Name = Cotton Spore
+Type = GRASS
+Category = Status
+Accuracy = 100
+TotalPP = 40
+Target = AllNearFoes
+FunctionCode = LowerTargetSpeed2
+Flags = CanProtect,CanMirrorMove,Powder
+Description = The user releases cotton-like spores that cling to the foe, harshly reducing its Speed stat.
+#-------------------------------
+[COUNTER]
+Name = Counter
+Type = FIGHTING
+Category = Physical
+Power = 1
+Accuracy = 100
+TotalPP = 20
+Target = None
+Priority = -5
+FunctionCode = CounterPhysicalDamage
+Flags = Contact,CanProtect
+Description = A retaliation move that counters any physical attack, inflicting double the damage taken.
+#-------------------------------
+[COURTCHANGE]
+Name = Court Change
+Type = NORMAL
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = BothSides
+FunctionCode = SwapSideEffects
+Flags = CanMirrorMove
+Description = With its mysterious power, the user swaps the effects on either side of the field.
+#-------------------------------
+[COVET]
+Name = Covet
+Type = NORMAL
+Category = Physical
+Power = 60
+Accuracy = 100
+TotalPP = 25
+Target = NearOther
+FunctionCode = UserTakesTargetItem
+Flags = Contact,CanProtect,CanMirrorMove
+Description = The user endearingly approaches the target, then steals the target's held item.
+#-------------------------------
+[CRABHAMMER]
+Name = Crabhammer
+Type = WATER
+Category = Physical
+Power = 100
+Accuracy = 90
+TotalPP = 10
+Target = NearOther
+FunctionCode = None
+Flags = Contact,CanProtect,CanMirrorMove,HighCriticalHitRate
+Description = The target is hammered with a large pincer. Critical hits land more easily.
+#-------------------------------
+[CRAFTYSHIELD]
+Name = Crafty Shield
+Type = FAIRY
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = UserSide
+Priority = 3
+FunctionCode = ProtectUserSideFromStatusMoves
+Description = The user protects itself and its allies from status moves with a mysterious power.
+#-------------------------------
+[CROSSCHOP]
+Name = Cross Chop
+Type = FIGHTING
+Category = Physical
+Power = 100
+Accuracy = 80
+TotalPP = 5
+Target = NearOther
+FunctionCode = None
+Flags = Contact,CanProtect,CanMirrorMove,HighCriticalHitRate
+Description = The user delivers a double chop with its forearms crossed. Critical hits land more easily.
+#-------------------------------
+[CROSSPOISON]
+Name = Cross Poison
+Type = POISON
+Category = Physical
+Power = 70
+Accuracy = 100
+TotalPP = 20
+Target = NearOther
+FunctionCode = PoisonTarget
+Flags = Contact,CanProtect,CanMirrorMove,HighCriticalHitRate
+EffectChance = 10
+Description = A slashing attack with a poisonous blade that may also poison the foe. Critical hits land more easily.
+#-------------------------------
+[CRUNCH]
+Name = Crunch
+Type = DARK
+Category = Physical
+Power = 80
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = LowerTargetDefense1
+Flags = Contact,CanProtect,CanMirrorMove,Biting
+EffectChance = 20
+Description = The user crunches up the target with sharp fangs. It may also lower the target's Defense stat.
+#-------------------------------
+[CRUSHCLAW]
+Name = Crush Claw
+Type = NORMAL
+Category = Physical
+Power = 75
+Accuracy = 95
+TotalPP = 10
+Target = NearOther
+FunctionCode = LowerTargetDefense1
+Flags = Contact,CanProtect,CanMirrorMove
+EffectChance = 50
+Description = The user slashes the target with hard and sharp claws. It may also lower the target's Defense.
+#-------------------------------
+[CRUSHGRIP]
+Name = Crush Grip
+Type = NORMAL
+Category = Physical
+Power = 1
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = PowerHigherWithTargetHP
+Flags = Contact,CanProtect,CanMirrorMove
+Description = The target is crushed with great force. The attack is more powerful the more HP the target has left.
+#-------------------------------
+[CURSE]
+Name = Curse
+Type = GHOST
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = User
+FunctionCode = CurseTargetOrLowerUserSpd1RaiseUserAtkDef1
+Description = A move that works differently for the Ghost type than for all the other types.
+#-------------------------------
+[CUT]
+Name = Cut
+Type = NORMAL
+Category = Physical
+Power = 50
+Accuracy = 95
+TotalPP = 30
+Target = NearOther
+FunctionCode = None
+Flags = Contact,CanProtect,CanMirrorMove
+Description = The target is cut with a scythe or a claw. It can also be used to cut down thin trees.

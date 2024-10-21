@@ -1,0 +1,122 @@
+﻿#-------------------------------
+[VACUUMWAVE]
+Name = Vacuum Wave
+Type = FIGHTING
+Category = Special
+Power = 40
+Accuracy = 100
+TotalPP = 30
+Target = NearOther
+Priority = 1
+FunctionCode = None
+Flags = CanProtect,CanMirrorMove
+Description = The user whirls its fists to send a wave of pure vacuum at the target. This move always goes first.
+#-------------------------------
+[VCREATE]
+Name = V-create
+Type = FIRE
+Category = Physical
+Power = 180
+Accuracy = 95
+TotalPP = 5
+Target = NearOther
+FunctionCode = LowerUserDefSpDefSpd1
+Flags = Contact,CanProtect,CanMirrorMove,CannotMetronome
+Description = With a fiery forehead, the user hurls itself at the foe. It lowers the user's Defense, Sp. Def, and Speed.
+#-------------------------------
+[VEEVEEVOLLEY]
+Name = Veevee Volley
+Type = NORMAL
+Category = Physical
+Power = 1
+Accuracy = 0
+TotalPP = 20
+Target = NearOther
+FunctionCode = None
+Flags = CanProtect,CannnotMetronome
+Description = The more Eevee loves its Trainer, the greater the move’s power. It never misses.
+#-------------------------------
+[VENOMDRENCH]
+Name = Venom Drench
+Type = POISON
+Category = Status
+Accuracy = 100
+TotalPP = 20
+Target = AllNearFoes
+FunctionCode = LowerPoisonedTargetAtkSpAtkSpd1
+Flags = CanProtect
+Description = Foes are drenched in an odd liquid that lowers the Attack, Sp. Atk, and Speed of poisoned Pokémon.
+#-------------------------------
+[VENOSHOCK]
+Name = Venoshock
+Type = POISON
+Category = Special
+Power = 65
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = DoublePowerIfTargetPoisoned
+Flags = CanProtect,CanMirrorMove
+Description = The user drenches the foe in a special poisonous liquid. Its power doubles if the target is poisoned.
+#-------------------------------
+[VINEWHIP]
+Name = Vine Whip
+Type = GRASS
+Category = Physical
+Power = 45
+Accuracy = 100
+TotalPP = 25
+Target = NearOther
+FunctionCode = None
+Flags = Contact,CanProtect,CanMirrorMove
+Description = The target is struck with slender, whiplike vines to inflict damage.
+#-------------------------------
+[VISEGRIP]
+Name = Vise Grip
+Type = NORMAL
+Category = Physical
+Power = 55
+Accuracy = 100
+TotalPP = 30
+Target = NearOther
+FunctionCode = None
+Flags = Contact,CanProtect,CanMirrorMove
+Description = The target is gripped and squeezed from both sides to inflict damage.
+#-------------------------------
+[VITALTHROW]
+Name = Vital Throw
+Type = FIGHTING
+Category = Physical
+Power = 70
+Accuracy = 0
+TotalPP = 10
+Target = NearOther
+Priority = -1
+FunctionCode = None
+Flags = Contact,CanProtect,CanMirrorMove
+Description = The user attacks last. In return, this throw move is guaranteed not to miss.
+#-------------------------------
+[VOLTSWITCH]
+Name = Volt Switch
+Type = ELECTRIC
+Category = Special
+Power = 70
+Accuracy = 100
+TotalPP = 20
+Target = NearOther
+FunctionCode = SwitchOutUserDamagingMove
+Flags = CanProtect,CanMirrorMove
+Description = After making its attack, the user rushes back to switch places with a party Pokémon in waiting.
+#-------------------------------
+[VOLTTACKLE]
+Name = Volt Tackle
+Type = ELECTRIC
+Category = Physical
+Power = 120
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = RecoilThirdOfDamageDealtParalyzeTarget
+Flags = Contact,CanProtect,CanMirrorMove
+EffectChance = 10
+Description = The user electrifies itself, then charges at the foe. It causes considerable damage to the user as well.

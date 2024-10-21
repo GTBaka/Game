@@ -1,0 +1,420 @@
+﻿#-------------------------------
+[ABSORB]
+Name = Absorb
+Type = GRASS
+Category = Special
+Power = 20
+Accuracy = 100
+TotalPP = 25
+Target = NearOther
+FunctionCode = HealUserByHalfOfDamageDone
+Flags = CanProtect,CanMirrorMove
+Description = A nutrient-draining attack. The user's HP is restored by half the damage taken by the target.
+#-------------------------------
+[ACCELEROCK]
+Name = Accelerock
+Type = ROCK
+Category = Physical
+Power = 40
+Accuracy = 100
+TotalPP = 20
+Target = NearOther
+Priority = 1
+FunctionCode = None
+Flags = Contact,CanProtect,CanMirrorMove
+Description = The user smashes into the target at high speed. This move always goes first.
+#-------------------------------
+[ACID]
+Name = Acid
+Type = POISON
+Category = Special
+Power = 40
+Accuracy = 100
+TotalPP = 30
+Target = AllNearFoes
+FunctionCode = LowerTargetSpDef1
+Flags = CanProtect,CanMirrorMove
+EffectChance = 10
+Description = The foe is attacked with a spray of harsh acid. It may also lower the target's Sp. Def stat.
+#-------------------------------
+[ACIDARMOR]
+Name = Acid Armor
+Type = POISON
+Category = Status
+Accuracy = 0
+TotalPP = 20
+Target = User
+FunctionCode = RaiseUserDefense2
+Description = The user alters its cellular structure to liquefy itself, sharply raising its Defense stat.
+#-------------------------------
+[ACIDSPRAY]
+Name = Acid Spray
+Type = POISON
+Category = Special
+Power = 40
+Accuracy = 100
+TotalPP = 20
+Target = NearOther
+FunctionCode = LowerTargetSpDef2
+Flags = CanProtect,CanMirrorMove,Bomb
+EffectChance = 100
+Description = The user spits fluid that works to melt the target. This harshly reduces the target's Sp. Def stat.
+#-------------------------------
+[ACROBATICS]
+Name = Acrobatics
+Type = FLYING
+Category = Physical
+Power = 55
+Accuracy = 100
+TotalPP = 15
+Target = Other
+FunctionCode = DoublePowerIfUserHasNoItem
+Flags = Contact,CanProtect,CanMirrorMove
+Description = The user nimbly strikes the foe. This attack does more damage if the user is not holding an item.
+#-------------------------------
+[ACUPRESSURE]
+Name = Acupressure
+Type = NORMAL
+Category = Status
+Accuracy = 0
+TotalPP = 30
+Target = UserOrNearAlly
+FunctionCode = RaiseTargetRandomStat2
+Description = The user applies pressure to stress points, sharply boosting one of its stats.
+#-------------------------------
+[AERIALACE]
+Name = Aerial Ace
+Type = FLYING
+Category = Physical
+Power = 60
+Accuracy = 0
+TotalPP = 20
+Target = Other
+FunctionCode = None
+Flags = Contact,CanProtect,CanMirrorMove
+Description = The user confounds the foe with speed, then slashes. The attack lands without fail.
+#-------------------------------
+[AEROBLAST]
+Name = Aeroblast
+Type = FLYING
+Category = Special
+Power = 100
+Accuracy = 95
+TotalPP = 5
+Target = Other
+FunctionCode = None
+Flags = CanProtect,CanMirrorMove,HighCriticalHitRate
+Description = A vortex of air is shot at the target to inflict damage. Critical hits land more easily.
+#-------------------------------
+[AFTERYOU]
+Name = After You
+Type = NORMAL
+Category = Status
+Accuracy = 0
+TotalPP = 15
+Target = NearOther
+FunctionCode = TargetActsNext
+Description = The user helps the target and makes it use its move right after the user.
+#-------------------------------
+[AGILITY]
+Name = Agility
+Type = PSYCHIC
+Category = Status
+Accuracy = 0
+TotalPP = 30
+Target = User
+FunctionCode = RaiseUserSpeed2
+Description = The user relaxes and lightens its body to move faster. It sharply boosts the Speed stat.
+#-------------------------------
+[AIRCUTTER]
+Name = Air Cutter
+Type = FLYING
+Category = Special
+Power = 60
+Accuracy = 95
+TotalPP = 25
+Target = AllNearFoes
+FunctionCode = None
+Flags = CanProtect,CanMirrorMove,HighCriticalHitRate
+Description = The user launches razor-like wind to slash the opposing team. Critical hits land more easily.
+#-------------------------------
+[AIRSLASH]
+Name = Air Slash
+Type = FLYING
+Category = Special
+Power = 75
+Accuracy = 95
+TotalPP = 15
+Target = Other
+FunctionCode = FlinchTarget
+Flags = CanProtect,CanMirrorMove
+EffectChance = 30
+Description = The user attacks with a blade of air that slices even the sky. It may also make the target flinch.
+#-------------------------------
+[ALLYSWITCH]
+Name = Ally Switch
+Type = PSYCHIC
+Category = Status
+Accuracy = 0
+TotalPP = 15
+Target = User
+Priority = 2
+FunctionCode = UserSwapsPositionsWithAlly
+Description = The user teleports using a strange power and switches its place with one of its allies.
+#-------------------------------
+[AMNESIA]
+Name = Amnesia
+Type = PSYCHIC
+Category = Status
+Accuracy = 0
+TotalPP = 20
+Target = User
+FunctionCode = RaiseUserSpDef2
+Description = The user temporarily empties its mind to forget its concerns. It sharply raises the user's Sp. Def stat.
+#-------------------------------
+[ANCHORSHOT]
+Name = Anchor Shot
+Type = STEEL
+Category = Physical
+Power = 80
+Accuracy = 100
+TotalPP = 20
+Target = NearOther
+FunctionCode = TrapTargetInBattle
+Flags = Contact,CanProtect,CanMirrorMove
+EffectChance = 100
+Description = The user entangles the target with its anchor chain. The target becomes unable to flee.
+#-------------------------------
+[ANCIENTPOWER]
+Name = Ancient Power
+Type = ROCK
+Category = Special
+Power = 60
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = RaiseUserMainStats1
+Flags = CanProtect,CanMirrorMove
+EffectChance = 10
+Description = The user attacks with a prehistoric power. It may also raise all the user's stats at once.
+#-------------------------------
+[APPLEACID]
+Name = Apple Acid
+Type = GRASS
+Category = Special
+Power = 80
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = LowerTargetSpDef1
+Flags = CanProtect,CanMirrorMove,CannotMetronome
+EffectChance = 100
+Description = Attacks with an acidic liquid created from tart apples. This also lowers the target's Sp. Def.
+#-------------------------------
+[AQUAJET]
+Name = Aqua Jet
+Type = WATER
+Category = Physical
+Power = 40
+Accuracy = 100
+TotalPP = 20
+Target = NearOther
+Priority = 1
+FunctionCode = None
+Flags = Contact,CanProtect,CanMirrorMove
+Description = The user lunges at the target at a speed that makes it almost invisible. It is sure to strike first.
+#-------------------------------
+[AQUARING]
+Name = Aqua Ring
+Type = WATER
+Category = Status
+Accuracy = 0
+TotalPP = 20
+Target = User
+FunctionCode = StartHealUserEachTurn
+Description = The user envelops itself in a veil made of water. It regains some HP on every turn.
+#-------------------------------
+[AQUATAIL]
+Name = Aqua Tail
+Type = WATER
+Category = Physical
+Power = 90
+Accuracy = 90
+TotalPP = 10
+Target = NearOther
+FunctionCode = None
+Flags = Contact,CanProtect,CanMirrorMove
+Description = The user attacks by swinging its tail as if it were a vicious wave in a raging storm.
+#-------------------------------
+[ARMTHRUST]
+Name = Arm Thrust
+Type = FIGHTING
+Category = Physical
+Power = 15
+Accuracy = 100
+TotalPP = 20
+Target = NearOther
+FunctionCode = HitTwoToFiveTimes
+Flags = Contact,CanProtect,CanMirrorMove
+Description = The user looses a flurry of open-palmed arm thrusts that hit two to five times in a row.
+#-------------------------------
+[AROMATHERAPY]
+Name = Aromatherapy
+Type = GRASS
+Category = Status
+Accuracy = 0
+TotalPP = 5
+Target = UserAndAllies
+FunctionCode = CureUserPartyStatus
+Description = The user releases a soothing scent that heals all status problems affecting the user's party.
+#-------------------------------
+[AROMATICMIST]
+Name = Aromatic Mist
+Type = FAIRY
+Category = Status
+Accuracy = 0
+TotalPP = 20
+Target = NearAlly
+FunctionCode = RaiseTargetSpDef1
+Description = The user raises the Sp. Def stat of an ally Pokémon by using a mysterious aroma.
+#-------------------------------
+[ASSIST]
+Name = Assist
+Type = NORMAL
+Category = Status
+Accuracy = 0
+TotalPP = 20
+Target = User
+FunctionCode = UseRandomMoveFromUserParty
+Description = The user hurriedly and randomly uses a move among those known by other Pokémon in the party.
+#-------------------------------
+[ASSURANCE]
+Name = Assurance
+Type = DARK
+Category = Physical
+Power = 60
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = DoublePowerIfTargetLostHPThisTurn
+Flags = Contact,CanProtect,CanMirrorMove
+Description = If the target has already taken some damage in the same turn, this attack's power is doubled.
+#-------------------------------
+[ASTONISH]
+Name = Astonish
+Type = GHOST
+Category = Physical
+Power = 30
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = FlinchTarget
+Flags = Contact,CanProtect,CanMirrorMove
+EffectChance = 30
+Description = The user attacks the target while shouting in a startling fashion. It may also make the target flinch.
+#-------------------------------
+[ASTRALBARRAGE]
+Name = Astral Barrage
+Type = GHOST
+Category = Special
+Power = 120
+Accuracy = 100
+TotalPP = 5
+Target = AllNearFoes
+FunctionCode = None
+Flags = CanProtect,CanMirrorMove,CannotMetronome
+Description = The user attacks by sending a frightful amount of small ghosts at opposing Pokémon.
+#-------------------------------
+[ATTACKORDER]
+Name = Attack Order
+Type = BUG
+Category = Physical
+Power = 90
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = None
+Flags = CanProtect,CanMirrorMove,HighCriticalHitRate
+Description = The user calls out its underlings to pummel the target. Critical hits land more easily.
+#-------------------------------
+[ATTRACT]
+Name = Attract
+Type = NORMAL
+Category = Status
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = AttractTarget
+Flags = CanProtect,CanMirrorMove
+Description = If it is the opposite gender of the user, the target becomes infatuated and less likely to attack.
+#-------------------------------
+[AURASPHERE]
+Name = Aura Sphere
+Type = FIGHTING
+Category = Special
+Power = 80
+Accuracy = 0
+TotalPP = 20
+Target = Other
+FunctionCode = None
+Flags = CanProtect,CanMirrorMove,Pulse,Bomb
+Description = The user looses a blast of aura power from deep within its body. This move is certain to hit.
+#-------------------------------
+[AURAWHEEL]
+Name = Aura Wheel
+Type = ELECTRIC
+Category = Physical
+Power = 110
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = NoneTypeDependsOnUserMorpekoFormRaiseUserSpeed1
+Flags = CanProtect,CanMirrorMove,CannotMetronome
+EffectChance = 100
+Description = Morpeko attacks and raises its Speed with energy stored in its cheeks. Type changes with the user's form.
+#-------------------------------
+[AURORABEAM]
+Name = Aurora Beam
+Type = ICE
+Category = Special
+Power = 65
+Accuracy = 100
+TotalPP = 20
+Target = NearOther
+FunctionCode = LowerTargetAttack1
+Flags = CanProtect,CanMirrorMove
+EffectChance = 10
+Description = The target is hit with a rainbow-colored beam. This may also lower the target's Attack stat.
+#-------------------------------
+[AURORAVEIL]
+Name = Aurora Veil
+Type = ICE
+Category = Status
+Accuracy = 0
+TotalPP = 20
+Target = UserSide
+FunctionCode = StartWeakenDamageAgainstUserSideIfHail
+Description = This move reduces damage from attacks for five turns. This can be used only in a hailstorm.
+#-------------------------------
+[AUTOTOMIZE]
+Name = Autotomize
+Type = STEEL
+Category = Status
+Accuracy = 0
+TotalPP = 15
+Target = User
+FunctionCode = RaiseUserSpeed2LowerUserWeight
+Description = The user sheds part of its body to make itself lighter and sharply raise its Speed stat.
+#-------------------------------
+[AVALANCHE]
+Name = Avalanche
+Type = ICE
+Category = Physical
+Power = 60
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+Priority = -4
+FunctionCode = DoublePowerIfUserLostHPThisTurn
+Flags = Contact,CanProtect,CanMirrorMove
+Description = An attack move that inflicts double the damage if the user has been hurt by the foe in the same turn.

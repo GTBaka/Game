@@ -1,0 +1,275 @@
+﻿#-------------------------------
+[EARTHPOWER]
+Name = Earth Power
+Type = GROUND
+Category = Special
+Power = 90
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = LowerTargetSpDef1
+Flags = CanProtect,CanMirrorMove
+EffectChance = 10
+Description = The user makes the ground under the foe erupt with power. It may also lower the target's Sp. Def.
+#-------------------------------
+[EARTHQUAKE]
+Name = Earthquake
+Type = GROUND
+Category = Physical
+Power = 100
+Accuracy = 100
+TotalPP = 10
+Target = AllNearOthers
+FunctionCode = DoublePowerIfTargetUnderground
+Flags = CanProtect,CanMirrorMove
+Description = The user sets off an earthquake that strikes every Pokémon around it.
+#-------------------------------
+[ECHOEDVOICE]
+Name = Echoed Voice
+Type = NORMAL
+Category = Special
+Power = 40
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = PowerHigherWithConsecutiveUseOnUserSide
+Flags = CanProtect,CanMirrorMove,Sound
+Description = The user attacks the foe with an echoing voice. If this move is used every turn, it does greater damage.
+#-------------------------------
+[EERIEIMPULSE]
+Name = Eerie Impulse
+Type = ELECTRIC
+Category = Status
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = LowerTargetSpAtk2
+Flags = CanProtect,CanMirrorMove
+Description = The user's body generates an eerie impulse. Harshly lowers the target's Sp. Atk stat.
+#-------------------------------
+[EERIESPELL]
+Name = Eerie Spell
+Type = PSYCHIC
+Category = Special
+Power = 80
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = LowerPPOfTargetLastMoveBy3
+Flags = CanProtect,CanMirrorMove,Sound
+EffectChance = 100
+Description = The user attacks with tremendous psychic power. This also removes 3 PP from the target's last move.
+#-------------------------------
+[EGGBOMB]
+Name = Egg Bomb
+Type = NORMAL
+Category = Physical
+Power = 100
+Accuracy = 75
+TotalPP = 10
+Target = NearOther
+FunctionCode = None
+Flags = CanProtect,CanMirrorMove,Bomb
+Description = A large egg is hurled at the target with maximum force to inflict damage.
+#-------------------------------
+[ELECTRICTERRAIN]
+Name = Electric Terrain
+Type = ELECTRIC
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = BothSides
+FunctionCode = StartElectricTerrain
+Description = The user electrifies the ground for five turns. Pokémon on the ground no longer fall asleep.
+#-------------------------------
+[ELECTRIFY]
+Name = Electrify
+Type = ELECTRIC
+Category = Status
+Accuracy = 0
+TotalPP = 20
+Target = NearOther
+FunctionCode = TargetMovesBecomeElectric
+Flags = CanProtect,CanMirrorMove
+Description = If the target uses a move after being electrified, that move becomes Electric-type.
+#-------------------------------
+[ELECTROBALL]
+Name = Electro Ball
+Type = ELECTRIC
+Category = Special
+Power = 1
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = PowerHigherWithUserFasterThanTarget
+Flags = CanProtect,CanMirrorMove,Bomb
+Description = The user hurls an electric orb at the foe. It does more damage the faster the user is.
+#-------------------------------
+[ELECTROWEB]
+Name = Electroweb
+Type = ELECTRIC
+Category = Special
+Power = 55
+Accuracy = 95
+TotalPP = 15
+Target = AllNearFoes
+FunctionCode = LowerTargetSpeed1
+Flags = CanProtect,CanMirrorMove
+EffectChance = 100
+Description = The user captures and attacks foes by using an electric net, which lowers their Speed stat.
+#-------------------------------
+[EMBARGO]
+Name = Embargo
+Type = DARK
+Category = Status
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = StartTargetCannotUseItem
+Flags = CanProtect,CanMirrorMove
+Description = It prevents the target from using its held item. Its Trainer is also prevented from using items on it.
+#-------------------------------
+[EMBER]
+Name = Ember
+Type = FIRE
+Category = Special
+Power = 40
+Accuracy = 100
+TotalPP = 25
+Target = NearOther
+FunctionCode = BurnTarget
+Flags = CanProtect,CanMirrorMove
+EffectChance = 10
+Description = The target is attacked with small flames. It may also leave the target with a burn.
+#-------------------------------
+[ENCORE]
+Name = Encore
+Type = NORMAL
+Category = Status
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = DisableTargetUsingDifferentMove
+Flags = CanProtect,CanMirrorMove
+Description = The user compels the target to keep using only the move it last used for three turns.
+#-------------------------------
+[ENDEAVOR]
+Name = Endeavor
+Type = NORMAL
+Category = Physical
+Power = 1
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = LowerTargetHPToUserHP
+Flags = Contact,CanProtect,CanMirrorMove
+Description = An attack move that cuts down the target's HP to equal the user's HP.
+#-------------------------------
+[ENDURE]
+Name = Endure
+Type = NORMAL
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = User
+Priority = 4
+FunctionCode = UserEnduresFaintingThisTurn
+Description = The user endures any attack with at least 1 HP. Its chance of failing rises if it is used in succession.
+#-------------------------------
+[ENERGYBALL]
+Name = Energy Ball
+Type = GRASS
+Category = Special
+Power = 90
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = LowerTargetSpDef1
+Flags = CanProtect,CanMirrorMove,Bomb
+EffectChance = 10
+Description = The user draws power from nature and fires it at the target. It may also lower the target's Sp. Def.
+#-------------------------------
+[ENTRAINMENT]
+Name = Entrainment
+Type = NORMAL
+Category = Status
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = SetTargetAbilityToUserAbility
+Flags = CanProtect,CanMirrorMove
+Description = The user dances to compel the target to mimic it, making the target's Ability the same as the user's.
+#-------------------------------
+[ERUPTION]
+Name = Eruption
+Type = FIRE
+Category = Special
+Power = 150
+Accuracy = 100
+TotalPP = 5
+Target = AllNearFoes
+FunctionCode = PowerHigherWithUserHP
+Flags = CanProtect,CanMirrorMove
+Description = The user attacks in an explosive fury. The lower the user's HP, the less powerful this attack becomes.
+#-------------------------------
+[ETERNABEAM]
+Name = Eternabeam
+Type = DRAGON
+Category = Special
+Power = 160
+Accuracy = 90
+TotalPP = 5
+Target = NearOther
+FunctionCode = AttackAndSkipNextTurn
+Flags = CanProtect,CanMirrorMove,CannotMetronome
+Description = This is Eternatus's most powerful attack in its original form. The user can't move on the next turn.
+#-------------------------------
+[EXPANDINGFORCE]
+Name = Expanding Force
+Type = PSYCHIC
+Category = Special
+Power = 80
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = HitsAllFoesAndPowersUpInPsychicTerrain
+Flags = CanProtect,CanMirrorMove
+Description = The user attacks the target with psychic power. Powers up and hits all foes on Psychic Terrain.
+#-------------------------------
+[EXPLOSION]
+Name = Explosion
+Type = NORMAL
+Category = Physical
+Power = 250
+Accuracy = 100
+TotalPP = 5
+Target = AllNearOthers
+FunctionCode = UserFaintsExplosive
+Flags = CanProtect,CanMirrorMove
+Description = The user explodes to inflict damage on those around it. The user faints upon using this move.
+#-------------------------------
+[EXTRASENSORY]
+Name = Extrasensory
+Type = PSYCHIC
+Category = Special
+Power = 80
+Accuracy = 100
+TotalPP = 20
+Target = NearOther
+FunctionCode = FlinchTarget
+Flags = CanProtect,CanMirrorMove
+EffectChance = 10
+Description = The user attacks with an odd, unseeable power. It may also make the target flinch.
+#-------------------------------
+[EXTREMESPEED]
+Name = Extreme Speed
+Type = NORMAL
+Category = Physical
+Power = 80
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+Priority = 2
+FunctionCode = None
+Flags = Contact,CanProtect,CanMirrorMove
+Description = The user charges the target at blinding speed. This attack always goes before any other move.

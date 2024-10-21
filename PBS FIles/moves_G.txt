@@ -1,0 +1,297 @@
+﻿#-------------------------------
+[GASTROACID]
+Name = Gastro Acid
+Type = POISON
+Category = Status
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = NegateTargetAbility
+Flags = CanProtect,CanMirrorMove
+Description = The user hurls up its stomach acids on the foe. The fluid negates the effect of the target's Ability.
+#-------------------------------
+[GEARGRIND]
+Name = Gear Grind
+Type = STEEL
+Category = Physical
+Power = 50
+Accuracy = 85
+TotalPP = 15
+Target = NearOther
+FunctionCode = HitTwoTimes
+Flags = Contact,CanProtect,CanMirrorMove
+Description = The user attacks by throwing two steel gears at its target.
+#-------------------------------
+[GEARUP]
+Name = Gear Up
+Type = STEEL
+Category = Status
+Accuracy = 0
+TotalPP = 20
+Target = UserAndAllies
+FunctionCode = RaisePlusMinusUserAndAlliesAtkSpAtk1
+Description = The user engages its gears to raise the Attack and Sp. Atk of allies with the Plus or Minus Ability.
+#-------------------------------
+[GEOMANCY]
+Name = Geomancy
+Type = FAIRY
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = User
+FunctionCode = TwoTurnAttackRaiseUserSpAtkSpDefSpd2
+Description = The user absorbs energy and sharply raises its Sp. Atk, Sp. Def, and Speed stats on the next turn.
+#-------------------------------
+[GIGADRAIN]
+Name = Giga Drain
+Type = GRASS
+Category = Special
+Power = 75
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = HealUserByHalfOfDamageDone
+Flags = CanProtect,CanMirrorMove
+Description = A nutrient-draining attack. The user's HP is restored by half the damage taken by the target.
+#-------------------------------
+[GIGAIMPACT]
+Name = Giga Impact
+Type = NORMAL
+Category = Physical
+Power = 150
+Accuracy = 90
+TotalPP = 5
+Target = NearOther
+FunctionCode = AttackAndSkipNextTurn
+Flags = Contact,CanProtect,CanMirrorMove
+Description = The user charges at the target using every bit of its power. The user must rest on the next turn.
+#-------------------------------
+[GLACIALLANCE]
+Name = Glacial Lance
+Type = ICE
+Category = Physical
+Power = 130
+Accuracy = 100
+TotalPP = 5
+Target = AllNearFoes
+FunctionCode = None
+Flags = CanProtect,CanMirrorMove,CannotMetronome
+Description = The user attacks by hurling a blizzard-cloaked icicle lance at opposing Pokémon.
+#-------------------------------
+[GLACIATE]
+Name = Glaciate
+Type = ICE
+Category = Special
+Power = 65
+Accuracy = 95
+TotalPP = 10
+Target = AllNearFoes
+FunctionCode = LowerTargetSpeed1
+Flags = CanProtect,CanMirrorMove
+EffectChance = 100
+Description = The user attacks by blowing freezing cold air at the foe. This attack reduces the targets' Speed stat.
+#-------------------------------
+[GLARE]
+Name = Glare
+Type = NORMAL
+Category = Status
+Accuracy = 100
+TotalPP = 30
+Target = NearOther
+FunctionCode = ParalyzeTarget
+Flags = CanProtect,CanMirrorMove
+Description = The user intimidates the target with the pattern on its belly to cause paralysis.
+#-------------------------------
+[GLITZYGLOW]
+Name = Glitzy Glow
+Type = PSYCHIC
+Category = Special
+Power = 90
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = StartWeakenSpecialDamageAgainstUserSide
+Flags = CanProtect,CannnotMetronome
+Description = The user bombards the target with telekinetic force. A wondrous wall of light is put up to weaken the power of the opposing Pokémon’s special moves.
+#-------------------------------
+[GRASSKNOT]
+Name = Grass Knot
+Type = GRASS
+Category = Special
+Power = 1
+Accuracy = 100
+TotalPP = 20
+Target = NearOther
+FunctionCode = PowerHigherWithTargetWeight
+Flags = Contact,CanProtect,CanMirrorMove
+Description = The user snares the target with grass and trips it. The heavier the target, the greater the damage.
+#-------------------------------
+[GRASSPLEDGE]
+Name = Grass Pledge
+Type = GRASS
+Category = Special
+Power = 80
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = GrassPledge
+Flags = CanProtect,CanMirrorMove
+Description = A column of grass hits the foes. When used with its water equivalent, it creates a vast swamp.
+#-------------------------------
+[GRASSWHISTLE]
+Name = Grass Whistle
+Type = GRASS
+Category = Status
+Accuracy = 55
+TotalPP = 15
+Target = NearOther
+FunctionCode = SleepTarget
+Flags = CanProtect,CanMirrorMove,Sound
+Description = The user plays a pleasant melody that lulls the target into a deep sleep.
+#-------------------------------
+[GRASSYGLIDE]
+Name = Grassy Glide
+Type = GRASS
+Category = Physical
+Power = 70
+Accuracy = 100
+TotalPP = 20
+Target = NearOther
+FunctionCode = HigherPriorityInGrassyTerrain
+Flags = Contact,CanProtect,CanMirrorMove
+Description = Gliding on the ground, the user attacks the target. This move always goes first on Grassy Terrain.
+#-------------------------------
+[GRASSYTERRAIN]
+Name = Grassy Terrain
+Type = GRASS
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = BothSides
+FunctionCode = StartGrassyTerrain
+Description = The user turns the ground to grass for five turns. Grounded Pokémon restore a little HP every turn.
+#-------------------------------
+[GRAVAPPLE]
+Name = Grav Apple
+Type = GRASS
+Category = Physical
+Power = 80
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = LowerTargetDefense1PowersUpInGravity
+Flags = CanProtect,CanMirrorMove,CannotMetronome
+EffectChance = 100
+Description = The user inflicts damage by dropping an apple from high above. This also lowers the target's Defense.
+#-------------------------------
+[GRAVITY]
+Name = Gravity
+Type = PSYCHIC
+Category = Status
+Accuracy = 0
+TotalPP = 5
+Target = BothSides
+FunctionCode = StartGravity
+Description = Gravity is intensified for five turns, making moves involving flying unusable and negating Levitation.
+#-------------------------------
+[GROWL]
+Name = Growl
+Type = NORMAL
+Category = Status
+Accuracy = 100
+TotalPP = 40
+Target = AllNearFoes
+FunctionCode = LowerTargetAttack1
+Flags = CanProtect,CanMirrorMove,Sound
+Description = The user growls in an endearing way, making the foe less wary. The foe's Attack stat is lowered.
+#-------------------------------
+[GROWTH]
+Name = Growth
+Type = NORMAL
+Category = Status
+Accuracy = 0
+TotalPP = 20
+Target = User
+FunctionCode = RaiseUserAtkSpAtk1Or2InSun
+Description = The user's body grows all at once, raising the Atk and Sp. Atk stats.
+#-------------------------------
+[GRUDGE]
+Name = Grudge
+Type = GHOST
+Category = Status
+Accuracy = 0
+TotalPP = 5
+Target = User
+FunctionCode = SetAttackerMovePPTo0IfUserFaints
+Description = If the user faints, the user's grudge fully depletes the PP of the foe's move that knocked it out.
+#-------------------------------
+[GUARDSPLIT]
+Name = Guard Split
+Type = PSYCHIC
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = NearOther
+FunctionCode = UserTargetAverageBaseDefSpDef
+Flags = CanProtect
+Description = The user employs its psychic power to average its Defense and Sp. Def stats with those of its target.
+#-------------------------------
+[GUARDSWAP]
+Name = Guard Swap
+Type = PSYCHIC
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = NearOther
+FunctionCode = UserTargetSwapDefSpDefStages
+Flags = CanProtect,CanMirrorMove
+Description = The user employs its psychic power to switch changes to its Defense and Sp. Def with the target.
+#-------------------------------
+[GUILLOTINE]
+Name = Guillotine
+Type = NORMAL
+Category = Physical
+Power = 1
+Accuracy = 30
+TotalPP = 5
+Target = NearOther
+FunctionCode = OHKO
+Flags = Contact,CanProtect,CanMirrorMove
+Description = A vicious, tearing attack with big pincers. The target will faint instantly if this attack hits.
+#-------------------------------
+[GUNKSHOT]
+Name = Gunk Shot
+Type = POISON
+Category = Physical
+Power = 120
+Accuracy = 80
+TotalPP = 5
+Target = NearOther
+FunctionCode = PoisonTarget
+Flags = CanProtect,CanMirrorMove
+EffectChance = 30
+Description = The user shoots filthy garbage at the target to attack. It may also poison the target.
+#-------------------------------
+[GUST]
+Name = Gust
+Type = FLYING
+Category = Special
+Power = 40
+Accuracy = 100
+TotalPP = 35
+Target = Other
+FunctionCode = DoublePowerIfTargetInSky
+Flags = CanProtect,CanMirrorMove
+Description = A gust of wind is whipped up by wings and launched at the target to inflict damage.
+#-------------------------------
+[GYROBALL]
+Name = Gyro Ball
+Type = STEEL
+Category = Physical
+Power = 1
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = PowerHigherWithTargetFasterThanUser
+Flags = Contact,CanProtect,CanMirrorMove,Bomb
+Description = The user tackles the target with a high-speed spin. The slower the user, the greater the damage.

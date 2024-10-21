@@ -1,0 +1,577 @@
+﻿# See the documentation on the wiki to learn how to edit this file.
+#-------------------------------
+[MACHPUNCH]
+Name = Mach Punch
+Type = FIGHTING
+Category = Physical
+Power = 40
+Accuracy = 100
+TotalPP = 30
+Target = NearOther
+Priority = 1
+FunctionCode = None
+Flags = Contact,CanProtect,CanMirrorMove,Punching
+Description = The user throws a punch at blinding speed. It is certain to strike first.
+#-------------------------------
+[MAGICALLEAF]
+Name = Magical Leaf
+Type = GRASS
+Category = Special
+Power = 60
+Accuracy = 0
+TotalPP = 20
+Target = NearOther
+FunctionCode = None
+Flags = CanProtect,CanMirrorMove
+Description = The user scatters curious leaves that chase the target. This attack will not miss.
+#-------------------------------
+[MAGICCOAT]
+Name = Magic Coat
+Type = PSYCHIC
+Category = Status
+Accuracy = 0
+TotalPP = 15
+Target = User
+Priority = 4
+FunctionCode = BounceBackProblemCausingStatusMoves
+Description = A barrier reflects back to the target moves like Leech Seed and moves that damage status.
+#-------------------------------
+[MAGICPOWDER]
+Name = Magic Powder
+Type = PSYCHIC
+Category = Status
+Accuracy = 100
+TotalPP = 20
+Target = NearOther
+FunctionCode = SetTargetTypesToPsychic
+Flags = CanProtect,CanMirrorMove,Powder
+Description = The user scatters a cloud of magic powder that changes the target to Psychic type.
+#-------------------------------
+[MAGICROOM]
+Name = Magic Room
+Type = PSYCHIC
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = BothSides
+FunctionCode = StartNegateHeldItems
+Flags = CanMirrorMove
+Description = The user creates a bizarre area in which Pokémon's held items lose their effects for five turns.
+#-------------------------------
+[MAGMASTORM]
+Name = Magma Storm
+Type = FIRE
+Category = Special
+Power = 100
+Accuracy = 75
+TotalPP = 5
+Target = NearOther
+FunctionCode = BindTarget
+Flags = CanProtect,CanMirrorMove
+Description = The target becomes trapped within a maelstrom of fire that rages for four to five turns.
+#-------------------------------
+[MAGNETBOMB]
+Name = Magnet Bomb
+Type = STEEL
+Category = Physical
+Power = 60
+Accuracy = 0
+TotalPP = 20
+Target = NearOther
+FunctionCode = None
+Flags = CanProtect,CanMirrorMove,Bomb
+Description = The user launches steel bombs that stick to the target. This attack will not miss.
+#-------------------------------
+[MAGNETICFLUX]
+Name = Magnetic Flux
+Type = ELECTRIC
+Category = Status
+Accuracy = 0
+TotalPP = 20
+Target = UserAndAllies
+FunctionCode = RaisePlusMinusUserAndAlliesDefSpDef1
+Description = Manipulates magnetic fields to raise the Defense and Sp. Def stats of allies with Plus or Minus Abilities.
+#-------------------------------
+[MAGNETRISE]
+Name = Magnet Rise
+Type = ELECTRIC
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = User
+FunctionCode = StartUserAirborne
+Description = The user levitates using electrically generated magnetism for five turns.
+#-------------------------------
+[MAGNITUDE]
+Name = Magnitude
+Type = GROUND
+Category = Physical
+Power = 1
+Accuracy = 100
+TotalPP = 30
+Target = AllNearOthers
+FunctionCode = RandomPowerDoublePowerIfTargetUnderground
+Flags = CanProtect,CanMirrorMove
+Description = The user looses a ground-shaking quake affecting everyone around the user. Its power varies.
+#-------------------------------
+[MATBLOCK]
+Name = Mat Block
+Type = FIGHTING
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = UserSide
+FunctionCode = ProtectUserSideFromDamagingMovesIfUserFirstTurn
+Description = Using a pulled-up mat as a shield, the user protects itself and its allies from damaging moves.
+#-------------------------------
+[MEANLOOK]
+Name = Mean Look
+Type = NORMAL
+Category = Status
+Accuracy = 0
+TotalPP = 5
+Target = NearOther
+FunctionCode = TrapTargetInBattle
+Flags = CanMirrorMove
+Description = The user pins the target with a dark, arresting look. The target becomes unable to flee.
+#-------------------------------
+[MEDITATE]
+Name = Meditate
+Type = PSYCHIC
+Category = Status
+Accuracy = 0
+TotalPP = 40
+Target = User
+FunctionCode = RaiseUserAttack1
+Description = The user meditates to awaken the power deep within its body and raise its Attack stat.
+#-------------------------------
+[MEFIRST]
+Name = Me First
+Type = NORMAL
+Category = Status
+Accuracy = 0
+TotalPP = 20
+Target = NearFoe
+FunctionCode = UseMoveTargetIsAboutToUse
+Flags = CanProtect
+Description = The user tries to cut ahead of the foe to steal and use the foe's intended move with greater power.
+#-------------------------------
+[MEGADRAIN]
+Name = Mega Drain
+Type = GRASS
+Category = Special
+Power = 40
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = HealUserByHalfOfDamageDone
+Flags = CanProtect,CanMirrorMove
+Description = A nutrient-draining attack. The user's HP is restored by half the damage taken by the target.
+#-------------------------------
+[MEGAHORN]
+Name = Megahorn
+Type = BUG
+Category = Physical
+Power = 120
+Accuracy = 85
+TotalPP = 10
+Target = NearOther
+FunctionCode = None
+Flags = Contact,CanProtect,CanMirrorMove
+Description = Using its tough and impressive horn, the user rams into the target with no letup.
+#-------------------------------
+[MEGAKICK]
+Name = Mega Kick
+Type = NORMAL
+Category = Physical
+Power = 120
+Accuracy = 75
+TotalPP = 5
+Target = NearOther
+FunctionCode = None
+Flags = Contact,CanProtect,CanMirrorMove
+Description = The target is attacked by a kick launched with muscle-packed power.
+#-------------------------------
+[MEGAPUNCH]
+Name = Mega Punch
+Type = NORMAL
+Category = Physical
+Power = 80
+Accuracy = 85
+TotalPP = 20
+Target = NearOther
+FunctionCode = None
+Flags = Contact,CanProtect,CanMirrorMove,Punching
+Description = The target is slugged by a punch thrown with muscle-packed power.
+#-------------------------------
+[MEMENTO]
+Name = Memento
+Type = DARK
+Category = Status
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = UserFaintsLowerTargetAtkSpAtk2
+Flags = CanProtect,CanMirrorMove
+Description = The user faints when using this move. In return, it harshly lowers the target's Attack and Sp. Atk.
+#-------------------------------
+[METALBURST]
+Name = Metal Burst
+Type = STEEL
+Category = Physical
+Power = 1
+Accuracy = 100
+TotalPP = 10
+Target = None
+FunctionCode = CounterDamagePlusHalf
+Flags = CanProtect,CanMirrorMove
+Description = The user retaliates with much greater power against the target that last inflicted damage on it.
+#-------------------------------
+[METALCLAW]
+Name = Metal Claw
+Type = STEEL
+Category = Physical
+Power = 50
+Accuracy = 95
+TotalPP = 35
+Target = NearOther
+FunctionCode = RaiseUserAttack1
+Flags = Contact,CanProtect,CanMirrorMove
+EffectChance = 10
+Description = The target is raked with steel claws. It may also raise the user's Attack stat.
+#-------------------------------
+[METALSOUND]
+Name = Metal Sound
+Type = STEEL
+Category = Status
+Accuracy = 85
+TotalPP = 40
+Target = NearOther
+FunctionCode = LowerTargetSpDef2
+Flags = CanProtect,CanMirrorMove,Sound
+Description = A horrible sound like scraping metal harshly reduces the target's Sp. Def stat.
+#-------------------------------
+[METEORASSAULT]
+Name = Meteor Assault
+Type = FIGHTING
+Category = Physical
+Power = 150
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = AttackAndSkipNextTurn
+Flags = CanProtect,CanMirrorMove,CannotMetronome
+Description = The user attacks wildly with its thick leek. The user can't move on the next turn.
+#-------------------------------
+[METEORBEAM]
+Name = Meteor Beam
+Type = ROCK
+Category = Special
+Power = 120
+Accuracy = 90
+TotalPP = 10
+Target = NearOther
+FunctionCode = TwoTurnAttackChargeRaiseUserSpAtk1
+Flags = CanProtect,CanMirrorMove
+Description = Gathers space power and boosts its Sp. Atk stat on the first turn, attacks on the next turn.
+#-------------------------------
+[METEORMASH]
+Name = Meteor Mash
+Type = STEEL
+Category = Physical
+Power = 90
+Accuracy = 90
+TotalPP = 10
+Target = NearOther
+FunctionCode = RaiseUserAttack1
+Flags = Contact,CanProtect,CanMirrorMove,Punching
+EffectChance = 20
+Description = The target is hit with a hard punch fired like a meteor. It may also raise the user's Attack.
+#-------------------------------
+[METRONOME]
+Name = Metronome
+Type = NORMAL
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = User
+FunctionCode = UseRandomMove
+Description = The user waggles a finger and stimulates its brain into randomly using nearly any move.
+#-------------------------------
+[MINDBLOWN]
+Name = Mind Blown
+Type = FIRE
+Category = Special
+Power = 150
+Accuracy = 100
+TotalPP = 5
+Target = AllNearOthers
+FunctionCode = UserLosesHalfOfTotalHPExplosive
+Flags = CanProtect,CanMirrorMove,CannotMetronome
+Description = The user attacks everything by causing its own head to explode. This also damages the user.
+#-------------------------------
+[MILKDRINK]
+Name = Milk Drink
+Type = NORMAL
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = User
+FunctionCode = HealUserHalfOfTotalHP
+Description = The user restores its own HP by up to half of its maximum HP. May also be used in the field to heal HP.
+#-------------------------------
+[MIMIC]
+Name = Mimic
+Type = NORMAL
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = NearOther
+FunctionCode = ReplaceMoveThisBattleWithTargetLastMoveUsed
+Flags = CanProtect
+Description = The user copies the move last used by the foe. The move can be used until the user is switched out.
+#-------------------------------
+[MINDREADER]
+Name = Mind Reader
+Type = NORMAL
+Category = Status
+Accuracy = 0
+TotalPP = 5
+Target = NearOther
+FunctionCode = EnsureNextMoveAlwaysHits
+Flags = CanProtect,CanMirrorMove
+Description = The user senses the foe's movements with its mind to ensure its next attack does not miss the foe.
+#-------------------------------
+[MINIMIZE]
+Name = Minimize
+Type = NORMAL
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = User
+FunctionCode = RaiseUserEvasion2MinimizeUser
+Description = The user compresses its body to make itself look smaller, which sharply raises its evasiveness.
+#-------------------------------
+[MIRACLEEYE]
+Name = Miracle Eye
+Type = PSYCHIC
+Category = Status
+Accuracy = 0
+TotalPP = 40
+Target = NearOther
+FunctionCode = StartNegateTargetEvasionStatStageAndDarkImmunity
+Flags = CanProtect,CanMirrorMove
+Description = Enables the user to hit a Dark type with any type of move. It also enables the user to hit an evasive foe.
+#-------------------------------
+[MIRRORCOAT]
+Name = Mirror Coat
+Type = PSYCHIC
+Category = Special
+Power = 1
+Accuracy = 100
+TotalPP = 20
+Target = None
+Priority = -5
+FunctionCode = CounterSpecialDamage
+Flags = CanProtect
+Description = A retaliation move that counters any special attack, inflicting double the damage taken.
+#-------------------------------
+[MIRRORMOVE]
+Name = Mirror Move
+Type = FLYING
+Category = Status
+Accuracy = 0
+TotalPP = 20
+Target = NearOther
+FunctionCode = UseLastMoveUsedByTarget
+Description = The user counters the target by mimicking the target's last move.
+#-------------------------------
+[MIRRORSHOT]
+Name = Mirror Shot
+Type = STEEL
+Category = Special
+Power = 65
+Accuracy = 85
+TotalPP = 10
+Target = NearOther
+FunctionCode = LowerTargetAccuracy1
+Flags = CanProtect,CanMirrorMove
+EffectChance = 30
+Description = The user looses a flash of energy from its polished body. It may also lower the target's accuracy.
+#-------------------------------
+[MIST]
+Name = Mist
+Type = ICE
+Category = Status
+Accuracy = 0
+TotalPP = 30
+Target = UserSide
+FunctionCode = StartUserSideImmunityToStatStageLowering
+Description = The user cloaks its body with a white mist that prevents any of its stats from being cut for five turns.
+#-------------------------------
+[MISTBALL]
+Name = Mist Ball
+Type = PSYCHIC
+Category = Special
+Power = 70
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = LowerTargetSpAtk1
+Flags = CanProtect,CanMirrorMove,Bomb
+EffectChance = 50
+Description = A mistlike flurry of down envelops and damages the target. It may also lower the target's Sp. Atk.
+#-------------------------------
+[MISTYEXPLOSION]
+Name = Misty Explosion
+Type = FAIRY
+Category = Special
+Power = 100
+Accuracy = 100
+TotalPP = 5
+Target = AllNearOthers
+FunctionCode = UserFaintsPowersUpInMistyTerrainExplosive
+Flags = CanProtect,CanMirrorMove
+Description = The user attacks everything around and faints upon using this move. Power increases on Misty Terrain.
+#-------------------------------
+[MISTYTERRAIN]
+Name = Misty Terrain
+Type = FAIRY
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = BothSides
+FunctionCode = StartMistyTerrain
+Description = The user covers the ground with mist for five turns. Grounded Pokémon can't gain status conditions.
+#-------------------------------
+[MOONBLAST]
+Name = Moonblast
+Type = FAIRY
+Category = Special
+Power = 95
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = LowerTargetSpAtk1
+Flags = CanProtect,CanMirrorMove
+EffectChance = 30
+Description = The user attacks by borrowing the power of the moon. This may also lower the target's Sp. Atk stat.
+#-------------------------------
+[MOONGEISTBEAM]
+Name = Moongeist Beam
+Type = GHOST
+Category = Special
+Power = 100
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = IgnoreTargetAbility
+Flags = CanProtect,CanMirrorMove,CannotMetronome
+Description = The user emits a sinister ray. This move can be used on the target regardless of its Abilities.
+#-------------------------------
+[MOONLIGHT]
+Name = Moonlight
+Type = FAIRY
+Category = Status
+Accuracy = 0
+TotalPP = 5
+Target = User
+FunctionCode = HealUserDependingOnWeather
+Description = The user restores its own HP. The amount of HP regained varies with the weather.
+#-------------------------------
+[MORNINGSUN]
+Name = Morning Sun
+Type = NORMAL
+Category = Status
+Accuracy = 0
+TotalPP = 5
+Target = User
+FunctionCode = HealUserDependingOnWeather
+Description = The user restores its own HP. The amount of HP regained varies with the weather.
+#-------------------------------
+[MUDBOMB]
+Name = Mud Bomb
+Type = GROUND
+Category = Special
+Power = 65
+Accuracy = 85
+TotalPP = 10
+Target = NearOther
+FunctionCode = LowerTargetAccuracy1
+Flags = CanProtect,CanMirrorMove,Bomb
+EffectChance = 30
+Description = The user launches a hard-packed mud ball to attack. It may also lower the target's accuracy.
+#-------------------------------
+[MUDDYWATER]
+Name = Muddy Water
+Type = WATER
+Category = Special
+Power = 90
+Accuracy = 85
+TotalPP = 10
+Target = AllNearFoes
+FunctionCode = LowerTargetAccuracy1
+Flags = CanProtect,CanMirrorMove
+EffectChance = 30
+Description = The user attacks by shooting muddy water at the opposing team. It may also lower the target's accuracy.
+#-------------------------------
+[MUDSHOT]
+Name = Mud Shot
+Type = GROUND
+Category = Special
+Power = 55
+Accuracy = 95
+TotalPP = 15
+Target = NearOther
+FunctionCode = LowerTargetSpeed1
+Flags = CanProtect,CanMirrorMove
+EffectChance = 100
+Description = The user attacks by hurling a blob of mud at the target. It also reduces the target's Speed.
+#-------------------------------
+[MUDSLAP]
+Name = Mud-Slap
+Type = GROUND
+Category = Special
+Power = 20
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = LowerTargetAccuracy1
+Flags = CanProtect,CanMirrorMove
+EffectChance = 100
+Description = The user hurls mud in the target's face to inflict damage and lower its accuracy.
+#-------------------------------
+[MUDSPORT]
+Name = Mud Sport
+Type = GROUND
+Category = Status
+Accuracy = 0
+TotalPP = 15
+Target = BothSides
+FunctionCode = StartWeakenElectricMoves
+Description = The user covers itself with mud. It weakens Electric-type moves while the user is in the battle.
+#-------------------------------
+[MULTIATTACK]
+Name = Multi-Attack
+Type = NORMAL
+Category = Physical
+Power = 120
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = TypeDependsOnUserMemory
+Flags = Contact,CanProtect,CanMirrorMove
+Description = Cloaking itself in high energy, the user slams into the target. This move's type depends on the held memory.
+#-------------------------------
+[MYSTICALFIRE]
+Name = Mystical Fire
+Type = FIRE
+Category = Special
+Power = 75
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = LowerTargetSpAtk1
+Flags = CanProtect,CanMirrorMove
+EffectChance = 100
+Description = The user attacks by breathing a special, hot fire. This also lowers the target's Sp. Atk stat.

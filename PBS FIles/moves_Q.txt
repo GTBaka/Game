@@ -1,0 +1,46 @@
+﻿#-------------------------------
+[QUASH]
+Name = Quash
+Type = DARK
+Category = Status
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = TargetActsLast
+Flags = CanProtect,CanMirrorMove
+Description = The user suppresses the target and makes its move go last.
+#-------------------------------
+[QUICKATTACK]
+Name = Quick Attack
+Type = NORMAL
+Category = Physical
+Power = 40
+Accuracy = 100
+TotalPP = 30
+Target = NearOther
+Priority = 1
+FunctionCode = None
+Flags = Contact,CanProtect,CanMirrorMove
+Description = The user lunges at the target at a speed that makes it almost invisible. It is sure to strike first.
+#-------------------------------
+[QUICKGUARD]
+Name = Quick Guard
+Type = FIGHTING
+Category = Status
+Accuracy = 0
+TotalPP = 15
+Target = UserSide
+Priority = 3
+FunctionCode = ProtectUserSideFromPriorityMoves
+Description = The user protects itself and its allies from priority moves. If may fail if used in succession.
+#-------------------------------
+[QUIVERDANCE]
+Name = Quiver Dance
+Type = BUG
+Category = Status
+Accuracy = 0
+TotalPP = 20
+Target = User
+FunctionCode = RaiseUserSpAtkSpDefSpd1
+Flags = Dance
+Description = The user performs a beautiful dance. It boosts the user's Sp. Atk, Sp. Def, and Speed stats.

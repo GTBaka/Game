@@ -1,0 +1,11 @@
+﻿#-------------------------------
+[YAWN]
+Name = Yawn
+Type = NORMAL
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = NearOther
+FunctionCode = SleepTargetNextTurn
+Flags = CanProtect,CanMirrorMove
+Description = The user lets loose a huge yawn that lulls the target into falling asleep on the next turn.

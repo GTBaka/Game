@@ -1,0 +1,740 @@
+﻿#-------------------------------
+[FACADE]
+Name = Facade
+Type = NORMAL
+Category = Physical
+Power = 70
+Accuracy = 100
+TotalPP = 20
+Target = NearOther
+FunctionCode = DoublePowerIfUserPoisonedBurnedParalyzed
+Flags = Contact,CanProtect,CanMirrorMove
+Description = An attack move that doubles its power if the user is poisoned, burned, or has paralysis.
+#-------------------------------
+[FAIRYLOCK]
+Name = Fairy Lock
+Type = FAIRY
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = BothSides
+FunctionCode = TrapAllBattlersInBattleForOneTurn
+Flags = CanMirrorMove
+Description = By locking down the battlefield, the user keeps all Pokémon from fleeing during the next turn.
+#-------------------------------
+[FAIRYWIND]
+Name = Fairy Wind
+Type = FAIRY
+Category = Special
+Power = 40
+Accuracy = 100
+TotalPP = 30
+Target = NearOther
+FunctionCode = None
+Flags = CanProtect,CanMirrorMove
+Description = The user stirs up a fairy wind and strikes the target with it.
+#-------------------------------
+[FAKEOUT]
+Name = Fake Out
+Type = NORMAL
+Category = Physical
+Power = 40
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+Priority = 3
+FunctionCode = FlinchTargetFailsIfNotUserFirstTurn
+Flags = Contact,CanProtect,CanMirrorMove
+EffectChance = 100
+Description = An attack that hits first and makes the target flinch. It only works the first turn the user is in battle.
+#-------------------------------
+[FAKETEARS]
+Name = Fake Tears
+Type = DARK
+Category = Status
+Accuracy = 100
+TotalPP = 20
+Target = NearOther
+FunctionCode = LowerTargetSpDef2
+Flags = CanProtect,CanMirrorMove
+Description = The user feigns crying to fluster the target, harshly lowering its Sp. Def stat.
+#-------------------------------
+[FALSESURRENDER]
+Name = False Surrender
+Type = DARK
+Category = Physical
+Power = 80
+Accuracy = 0
+TotalPP = 10
+Target = NearOther
+FunctionCode = None
+Flags = Contact,CanProtect,CanMirrorMove,CannotMetronome
+Description = The user pretends to bow its head, but then it stabs the target with its disheveled hair. Never misses.
+#-------------------------------
+[FALSESWIPE]
+Name = False Swipe
+Type = NORMAL
+Category = Physical
+Power = 40
+Accuracy = 100
+TotalPP = 40
+Target = NearOther
+FunctionCode = CannotMakeTargetFaint
+Flags = Contact,CanProtect,CanMirrorMove
+Description = A restrained attack that prevents the target from fainting. The target is left with at least 1 HP.
+#-------------------------------
+[FEATHERDANCE]
+Name = Feather Dance
+Type = FLYING
+Category = Status
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = LowerTargetAttack2
+Flags = CanProtect,CanMirrorMove,Dance
+Description = The user covers the target's body with a mass of down that harshly lowers its Attack stat.
+#-------------------------------
+[FEINT]
+Name = Feint
+Type = NORMAL
+Category = Physical
+Power = 30
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+Priority = 2
+FunctionCode = RemoveProtections
+Flags = CanMirrorMove
+Description = An attack that hits a target using Protect or Detect. It also lifts the effects of those moves.
+#-------------------------------
+[FEINTATTACK]
+Name = Feint Attack
+Type = DARK
+Category = Physical
+Power = 60
+Accuracy = 0
+TotalPP = 20
+Target = NearOther
+FunctionCode = None
+Flags = Contact,CanProtect,CanMirrorMove
+Description = The user draws up to the foe disarmingly, then throws a sucker punch. It hits without fail.
+#-------------------------------
+[FELLSTINGER]
+Name = Fell Stinger
+Type = BUG
+Category = Physical
+Power = 50
+Accuracy = 100
+TotalPP = 25
+Target = NearOther
+FunctionCode = RaiseUserAttack3IfTargetFaints
+Flags = Contact,CanProtect,CanMirrorMove
+Description = When the user knocks out a target with this move, the user's Attack stat rises drastically.
+#-------------------------------
+[FIERYDANCE]
+Name = Fiery Dance
+Type = FIRE
+Category = Special
+Power = 80
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = RaiseUserSpAtk1
+Flags = CanProtect,CanMirrorMove,Dance
+EffectChance = 50
+Description = Cloaked in flames, the user dances and flaps its wings. It may also raise the user's Sp. Atk stat.
+#-------------------------------
+[FIERYWRATH]
+Name = Fiery Wrath
+Type = DARK
+Category = Special
+Power = 90
+Accuracy = 100
+TotalPP = 10
+Target = AllNearFoes
+FunctionCode = FlinchTarget
+Flags = CanProtect,CanMirrorMove,CannotMetronome
+EffectChance = 20
+Description = The user transforms its wrath into a fire-like aura to attack. This may also make foes flinch.
+#-------------------------------
+[FINALGAMBIT]
+Name = Final Gambit
+Type = FIGHTING
+Category = Special
+Power = 1
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = UserFaintsFixedDamageUserHP
+Flags = CanProtect
+Description = The user risks all to attack the foe. The user faints but does damage equal to its HP.
+#-------------------------------
+[FIREBLAST]
+Name = Fire Blast
+Type = FIRE
+Category = Special
+Power = 110
+Accuracy = 85
+TotalPP = 5
+Target = NearOther
+FunctionCode = BurnTarget
+Flags = CanProtect,CanMirrorMove
+EffectChance = 10
+Description = The foe is attacked with an intense blast of all-consuming fire. It may also leave the target with a burn.
+#-------------------------------
+[FIREFANG]
+Name = Fire Fang
+Type = FIRE
+Category = Physical
+Power = 65
+Accuracy = 95
+TotalPP = 15
+Target = NearOther
+FunctionCode = BurnFlinchTarget
+Flags = Contact,CanProtect,CanMirrorMove,Biting
+EffectChance = 101
+Description = The user bites with flame-cloaked fangs. It may also make the target flinch or leave it burned.
+#-------------------------------
+[FIRELASH]
+Name = Fire Lash
+Type = FIRE
+Category = Physical
+Power = 80
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = LowerTargetDefense1
+Flags = Contact,CanProtect,CanMirrorMove
+EffectChance = 100
+Description = The user strikes the target with a burning lash. This also lowers the target's Defense stat.
+#-------------------------------
+[FIREPLEDGE]
+Name = Fire Pledge
+Type = FIRE
+Category = Special
+Power = 80
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = FirePledge
+Flags = CanProtect,CanMirrorMove
+Description = A column of fire hits opposing Pokémon. When used with its Grass equivalent, it makes a sea of fire.
+#-------------------------------
+[FIREPUNCH]
+Name = Fire Punch
+Type = FIRE
+Category = Physical
+Power = 75
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = BurnTarget
+Flags = Contact,CanProtect,CanMirrorMove,Punching
+EffectChance = 10
+Description = The target is punched with a fiery fist. It may leave the target with a burn.
+#-------------------------------
+[FIRESPIN]
+Name = Fire Spin
+Type = FIRE
+Category = Special
+Power = 35
+Accuracy = 85
+TotalPP = 15
+Target = NearOther
+FunctionCode = BindTarget
+Flags = CanProtect,CanMirrorMove
+Description = The target becomes trapped within a fierce vortex of fire that rages for four to five turns.
+#-------------------------------
+[FIRSTIMPRESSION]
+Name = First Impression
+Type = BUG
+Category = Physical
+Power = 90
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+Priority = 2
+FunctionCode = FailsIfNotUserFirstTurn
+Flags = Contact,CanProtect,CanMirrorMove
+Description = Although this move has great power, it only works the first turn the user is in battle.
+#-------------------------------
+[FISHIOUSREND]
+Name = Fishious Rend
+Type = WATER
+Category = Physical
+Power = 85
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = DoublePowerIfTargetNotActed
+Flags = Contact,CanProtect,CanMirrorMove
+Description = The user rends the target with its hard gills. Power doubles if the user moves first.
+#-------------------------------
+[FISSURE]
+Name = Fissure
+Type = GROUND
+Category = Physical
+Power = 1
+Accuracy = 30
+TotalPP = 5
+Target = NearOther
+FunctionCode = OHKOHitsUndergroundTarget
+Flags = CanProtect,CanMirrorMove
+Description = The user opens up a fissure in the ground and drops the foe in. The target instantly faints if it hits.
+#-------------------------------
+[FLAIL]
+Name = Flail
+Type = NORMAL
+Category = Physical
+Power = 1
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = PowerLowerWithUserHP
+Flags = Contact,CanProtect,CanMirrorMove
+Description = The user flails about aimlessly to attack. It becomes more powerful the less HP the user has.
+#-------------------------------
+[FLAMEBURST]
+Name = Flame Burst
+Type = FIRE
+Category = Special
+Power = 70
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = DamageTargetAlly
+Flags = CanProtect,CanMirrorMove
+Description = The user attacks the foe with a bursting flame. It also damages Pokémon next to the target.
+#-------------------------------
+[FLAMECHARGE]
+Name = Flame Charge
+Type = FIRE
+Category = Physical
+Power = 50
+Accuracy = 100
+TotalPP = 20
+Target = NearOther
+FunctionCode = RaiseUserSpeed1
+Flags = Contact,CanProtect,CanMirrorMove
+EffectChance = 100
+Description = The user cloaks itself in flame and attacks. Building up more power, it raises the user's Speed stat.
+#-------------------------------
+[FLAMETHROWER]
+Name = Flamethrower
+Type = FIRE
+Category = Special
+Power = 90
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = BurnTarget
+Flags = CanProtect,CanMirrorMove
+EffectChance = 10
+Description = The target is scorched with an intense blast of fire. It may also leave the target with a burn.
+#-------------------------------
+[FLAMEWHEEL]
+Name = Flame Wheel
+Type = FIRE
+Category = Physical
+Power = 60
+Accuracy = 100
+TotalPP = 25
+Target = NearOther
+FunctionCode = BurnTarget
+Flags = Contact,CanProtect,CanMirrorMove,ThawsUser
+EffectChance = 10
+Description = The user cloaks itself in fire and charges at the target. It may also leave the target with a burn.
+#-------------------------------
+[FLAREBLITZ]
+Name = Flare Blitz
+Type = FIRE
+Category = Physical
+Power = 120
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = RecoilThirdOfDamageDealtBurnTarget
+Flags = Contact,CanProtect,CanMirrorMove,ThawsUser
+EffectChance = 10
+Description = The user cloaks itself in fire and charges at the foe. The user also takes damage and may burn the target.
+#-------------------------------
+[FLASH]
+Name = Flash
+Type = NORMAL
+Category = Status
+Accuracy = 100
+TotalPP = 20
+Target = NearOther
+FunctionCode = LowerTargetAccuracy1
+Flags = CanProtect,CanMirrorMove
+Description = The user flashes a light that cuts the target's accuracy. It can also be used to illuminate caves.
+#-------------------------------
+[FLASHCANNON]
+Name = Flash Cannon
+Type = STEEL
+Category = Special
+Power = 80
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = LowerTargetSpDef1
+Flags = CanProtect,CanMirrorMove
+EffectChance = 10
+Description = The user gathers all its light energy and releases it at once. It may also lower the target's Sp. Def stat.
+#-------------------------------
+[FLATTER]
+Name = Flatter
+Type = DARK
+Category = Status
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = RaiseTargetSpAtk1ConfuseTarget
+Flags = CanProtect,CanMirrorMove
+Description = Flattery is used to confuse the target. However, it also raises the target's Sp. Atk stat.
+#-------------------------------
+[FLEURCANNON]
+Name = Fleur Cannon
+Type = FAIRY
+Category = Special
+Power = 130
+Accuracy = 90
+TotalPP = 5
+Target = NearOther
+FunctionCode = LowerUserSpAtk2
+Flags = CanProtect,CanMirrorMove,CannotMetronome
+Description = The user unleashes a strong beam. The attack's recoil harshly lowers the user's Sp. Atk stat.
+#-------------------------------
+[FLING]
+Name = Fling
+Type = DARK
+Category = Physical
+Power = 1
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = ThrowUserItemAtTarget
+Flags = CanProtect,CanMirrorMove
+Description = The user flings its held item at the target to attack. Its power and effects depend on the item.
+#-------------------------------
+[FLIPTURN]
+Name = Flip Turn
+Type = WATER
+Category = Physical
+Power = 60
+Accuracy = 100
+TotalPP = 20
+Target = NearOther
+FunctionCode = SwitchOutUserDamagingMove
+Flags = Contact,CanProtect,CanMirrorMove
+Description = After making its attack, the user rushes back to switch places with a party Pokémon in waiting.
+#-------------------------------
+[FLOATYFALL]
+Name = Floaty Fall
+Type = FLYING
+Category = Physical
+Power = 90
+Accuracy = 95
+TotalPP = 15
+Target = NearOther
+FunctionCode = FlinchTarget
+Flags = CanProtect,CannnotMetronome
+EffectChance = 30
+Description = The user floats in the air, and then dives at a steep angle to attack the target. This may also make the target flinch. 
+#-------------------------------
+[FLORALHEALING]
+Name = Floral Healing
+Type = FAIRY
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = NearOther
+FunctionCode = HealTargetDependingOnGrassyTerrain
+Flags = CanProtect
+Description = The user restores the target's HP by up to half of its max HP. It restores more HP when the terrain is grass.
+#-------------------------------
+[FLOWERSHIELD]
+Name = Flower Shield
+Type = FAIRY
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = AllBattlers
+FunctionCode = RaiseGrassBattlersDef1
+Description = The user raises the Defense stats of all Grass-type Pokémon in battle with a mysterious power.
+#-------------------------------
+[FLY]
+Name = Fly
+Type = FLYING
+Category = Physical
+Power = 90
+Accuracy = 95
+TotalPP = 15
+Target = Other
+FunctionCode = TwoTurnAttackInvulnerableInSky
+Flags = Contact,CanProtect,CanMirrorMove
+Description = The user soars, then strikes on the second turn. It can also be used for flying to any familiar town.
+#-------------------------------
+[FLYINGPRESS]
+Name = Flying Press
+Type = FIGHTING
+Category = Physical
+Power = 100
+Accuracy = 95
+TotalPP = 10
+Target = Other
+FunctionCode = EffectivenessIncludesFlyingType
+Flags = Contact,CanProtect,CanMirrorMove,TramplesMinimize
+Description = The user dives down onto the target from the sky. This move is Fighting and Flying type simultaneously.
+#-------------------------------
+[FOCUSBLAST]
+Name = Focus Blast
+Type = FIGHTING
+Category = Special
+Power = 120
+Accuracy = 70
+TotalPP = 5
+Target = NearOther
+FunctionCode = LowerTargetSpDef1
+Flags = CanProtect,CanMirrorMove,Bomb
+EffectChance = 10
+Description = The user heightens its mental focus and unleashes its power. It may also lower the target's Sp. Def.
+#-------------------------------
+[FOCUSENERGY]
+Name = Focus Energy
+Type = NORMAL
+Category = Status
+Accuracy = 0
+TotalPP = 30
+Target = User
+FunctionCode = RaiseUserCriticalHitRate2
+Description = The user takes a deep breath and focuses so that critical hits land more easily.
+#-------------------------------
+[FOCUSPUNCH]
+Name = Focus Punch
+Type = FIGHTING
+Category = Physical
+Power = 150
+Accuracy = 100
+TotalPP = 20
+Target = NearOther
+Priority = -3
+FunctionCode = FailsIfUserDamagedThisTurn
+Flags = Contact,CanProtect,Punching
+Description = The user focuses its mind before launching a punch. It will fail if the user is hit before it is used.
+#-------------------------------
+[FOLLOWME]
+Name = Follow Me
+Type = NORMAL
+Category = Status
+Accuracy = 0
+TotalPP = 20
+Target = User
+Priority = 2
+FunctionCode = RedirectAllMovesToUser
+Description = The user draws attention to itself, making all targets take aim only at the user.
+#-------------------------------
+[FORCEPALM]
+Name = Force Palm
+Type = FIGHTING
+Category = Physical
+Power = 60
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = ParalyzeTarget
+Flags = Contact,CanProtect,CanMirrorMove
+EffectChance = 30
+Description = The target is attacked with a shock wave. It may also leave the target with paralysis.
+#-------------------------------
+[FORESIGHT]
+Name = Foresight
+Type = NORMAL
+Category = Status
+Accuracy = 0
+TotalPP = 40
+Target = NearOther
+FunctionCode = StartNegateTargetEvasionStatStageAndGhostImmunity
+Flags = CanProtect,CanMirrorMove
+Description = Enables the user to hit a Ghost type with any kind of move. It also enables the user to hit an evasive foe.
+#-------------------------------
+[FORESTSCURSE]
+Name = Forest's Curse
+Type = GRASS
+Category = Status
+Accuracy = 100
+TotalPP = 20
+Target = NearOther
+FunctionCode = AddGrassTypeToTarget
+Flags = CanProtect,CanMirrorMove
+Description = The user puts a forest curse on the target. The target is now Grass type as well.
+#-------------------------------
+[FOULPLAY]
+Name = Foul Play
+Type = DARK
+Category = Physical
+Power = 95
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = UseTargetAttackInsteadOfUserAttack
+Flags = Contact,CanProtect,CanMirrorMove
+Description = The user turns the foe's power against it. It does more damage the higher the target's Attack stat.
+#-------------------------------
+[FREEZEDRY]
+Name = Freeze-Dry
+Type = ICE
+Category = Special
+Power = 70
+Accuracy = 100
+TotalPP = 20
+Target = NearOther
+FunctionCode = FreezeTargetSuperEffectiveAgainstWater
+Flags = CanProtect,CanMirrorMove
+EffectChance = 10
+Description = The user rapidly cools the target. This may freeze the target. Is super-effective on Water types.
+#-------------------------------
+[FREEZESHOCK]
+Name = Freeze Shock
+Type = ICE
+Category = Physical
+Power = 140
+Accuracy = 90
+TotalPP = 5
+Target = NearOther
+FunctionCode = TwoTurnAttackParalyzeTarget
+Flags = CanProtect,CanMirrorMove,CannotMetronome
+EffectChance = 30
+Description = On the second turn, the user hits the foe with electrically charged ice. It may also paralyze the foe.
+#-------------------------------
+[FREEZINGGLARE]
+Name = Freezing Glare
+Type = PSYCHIC
+Category = Special
+Power = 90
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = FreezeTarget
+Flags = CanProtect,CanMirrorMove,CannotMetronome
+EffectChance = 10
+Description = The user shoots its psychic power from its eyes to attack. This may also leave the target frozen.
+#-------------------------------
+[FREEZYFROST]
+Name = Freezy Frost
+Type = ICE
+Category = Special
+Power = 90
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = ResetAllBattlersStatStages
+Flags = CanProtect,CannnotMetronome
+Description = The user attacks with a crystal made of cold frozen haze. It eliminates every stat change among all the Pokémon engaged in battle.
+#-------------------------------
+[FRENZYPLANT]
+Name = Frenzy Plant
+Type = GRASS
+Category = Special
+Power = 150
+Accuracy = 90
+TotalPP = 5
+Target = NearOther
+FunctionCode = AttackAndSkipNextTurn
+Flags = CanProtect,CanMirrorMove
+Description = The user slams the target with an enormous tree. The user can't move on the next turn.
+#-------------------------------
+[FROSTBREATH]
+Name = Frost Breath
+Type = ICE
+Category = Special
+Power = 60
+Accuracy = 90
+TotalPP = 10
+Target = NearOther
+FunctionCode = AlwaysCriticalHit
+Flags = CanProtect,CanMirrorMove
+Description = The user blows a cold breath on the target. This attack always results in a critical hit.
+#-------------------------------
+[FRUSTRATION]
+Name = Frustration
+Type = NORMAL
+Category = Physical
+Power = 1
+Accuracy = 100
+TotalPP = 20
+Target = NearOther
+FunctionCode = PowerLowerWithUserHappiness
+Flags = Contact,CanProtect,CanMirrorMove
+Description = A full-power attack that grows more powerful the less the user likes its Trainer.
+#-------------------------------
+[FURYATTACK]
+Name = Fury Attack
+Type = NORMAL
+Category = Physical
+Power = 15
+Accuracy = 85
+TotalPP = 20
+Target = NearOther
+FunctionCode = HitTwoToFiveTimes
+Flags = Contact,CanProtect,CanMirrorMove
+Description = The target is jabbed repeatedly with a horn or beak two to five times in a row.
+#-------------------------------
+[FURYCUTTER]
+Name = Fury Cutter
+Type = BUG
+Category = Physical
+Power = 40
+Accuracy = 95
+TotalPP = 20
+Target = NearOther
+FunctionCode = PowerHigherWithConsecutiveUse
+Flags = Contact,CanProtect,CanMirrorMove
+Description = The target is slashed with scythes or claws. Its power increases if it hits in succession.
+#-------------------------------
+[FURYSWIPES]
+Name = Fury Swipes
+Type = NORMAL
+Category = Physical
+Power = 18
+Accuracy = 80
+TotalPP = 15
+Target = NearOther
+FunctionCode = HitTwoToFiveTimes
+Flags = Contact,CanProtect,CanMirrorMove
+Description = The target is raked with sharp claws or scythes for two to five times in quick succession.
+#-------------------------------
+[FUSIONBOLT]
+Name = Fusion Bolt
+Type = ELECTRIC
+Category = Physical
+Power = 100
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = DoublePowerAfterFusionFlare
+Flags = CanProtect,CanMirrorMove
+Description = The user throws down a giant thunderbolt. It does more damage if influenced by an enormous flame.
+#-------------------------------
+[FUSIONFLARE]
+Name = Fusion Flare
+Type = FIRE
+Category = Special
+Power = 100
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = DoublePowerAfterFusionBolt
+Flags = CanProtect,CanMirrorMove,ThawsUser
+Description = The user brings down a giant flame. It does more damage if influenced by an enormous thunderbolt.
+#-------------------------------
+[FUTURESIGHT]
+Name = Future Sight
+Type = PSYCHIC
+Category = Special
+Power = 120
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = AttackTwoTurnsLater
+Description = Two turns after this move is used, a hunk of psychic energy attacks the target.

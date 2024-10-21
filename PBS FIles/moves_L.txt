@@ -1,0 +1,295 @@
+﻿#-------------------------------
+[LANDSWRATH]
+Name = Land's Wrath
+Type = GROUND
+Category = Physical
+Power = 90
+Accuracy = 100
+TotalPP = 10
+Target = AllNearFoes
+FunctionCode = None
+Flags = CanProtect,CanMirrorMove
+Description = The user gathers the energy of the land and focuses that power on foes to damage them.
+#-------------------------------
+[LASERFOCUS]
+Name = Laser Focus
+Type = NORMAL
+Category = Status
+Accuracy = 0
+TotalPP = 30
+Target = User
+FunctionCode = EnsureNextCriticalHit
+Description = The user focuses intensely. The attack on the next turn always results in a critical hit.
+#-------------------------------
+[LASHOUT]
+Name = Lash Out
+Type = DARK
+Category = Physical
+Power = 75
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = DoublePowerIfUserStatsLoweredThisTurn
+Flags = Contact,CanProtect,CanMirrorMove
+Description = The user lashes out to vent its frustration. Power is doubled if its stats dropped this turn.
+#-------------------------------
+[LASTRESORT]
+Name = Last Resort
+Type = NORMAL
+Category = Physical
+Power = 140
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = FailsIfUserHasUnusedMove
+Flags = Contact,CanProtect,CanMirrorMove
+Description = This move can be used only after the user has used all the other moves it knows in the battle.
+#-------------------------------
+[LAVAPLUME]
+Name = Lava Plume
+Type = FIRE
+Category = Special
+Power = 80
+Accuracy = 100
+TotalPP = 15
+Target = AllNearOthers
+FunctionCode = BurnTarget
+Flags = CanProtect,CanMirrorMove
+EffectChance = 30
+Description = An inferno of scarlet flames torches everything around the user. It may leave targets with a burn.
+#-------------------------------
+[LEAFAGE]
+Name = Leafage
+Type = GRASS
+Category = Physical
+Power = 40
+Accuracy = 100
+TotalPP = 40
+Target = NearOther
+FunctionCode = None
+Flags = CanProtect,CanMirrorMove
+Description = The user attacks by pelting the target with leaves.
+#-------------------------------
+[LEAFBLADE]
+Name = Leaf Blade
+Type = GRASS
+Category = Physical
+Power = 90
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = None
+Flags = Contact,CanProtect,CanMirrorMove,HighCriticalHitRate
+Description = The user handles a sharp leaf like a sword and attacks by slashing. It has a high critical-hit ratio.
+#-------------------------------
+[LEAFSTORM]
+Name = Leaf Storm
+Type = GRASS
+Category = Special
+Power = 130
+Accuracy = 90
+TotalPP = 5
+Target = NearOther
+FunctionCode = LowerUserSpAtk2
+Flags = CanProtect,CanMirrorMove
+Description = A storm of sharp is whipped up. The attack's recoil harshly reduces the user's Sp. Atk stat.
+#-------------------------------
+[LEAFTORNADO]
+Name = Leaf Tornado
+Type = GRASS
+Category = Special
+Power = 65
+Accuracy = 90
+TotalPP = 10
+Target = NearOther
+FunctionCode = LowerTargetAccuracy1
+Flags = CanProtect,CanMirrorMove
+EffectChance = 50
+Description = The user attacks its foe by encircling it in sharp leaves. This attack may also lower the foe's accuracy.
+#-------------------------------
+[LEECHLIFE]
+Name = Leech Life
+Type = BUG
+Category = Physical
+Power = 80
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = HealUserByHalfOfDamageDone
+Flags = Contact,CanProtect,CanMirrorMove
+Description = The user drains the target's blood. The user's HP is restored by half the damage taken by the target.
+#-------------------------------
+[LEECHSEED]
+Name = Leech Seed
+Type = GRASS
+Category = Status
+Accuracy = 90
+TotalPP = 10
+Target = NearOther
+FunctionCode = StartLeechSeedTarget
+Flags = CanProtect,CanMirrorMove
+Description = A seed is planted on the target. It steals some HP from the target every turn.
+#-------------------------------
+[LEER]
+Name = Leer
+Type = NORMAL
+Category = Status
+Accuracy = 100
+TotalPP = 30
+Target = AllNearFoes
+FunctionCode = LowerTargetDefense1
+Flags = CanProtect,CanMirrorMove
+Description = The user gains an intimidating leer with sharp eyes. The target's Defense stat is reduced.
+#-------------------------------
+[LICK]
+Name = Lick
+Type = GHOST
+Category = Physical
+Power = 30
+Accuracy = 100
+TotalPP = 30
+Target = NearOther
+FunctionCode = ParalyzeTarget
+Flags = Contact,CanProtect,CanMirrorMove
+EffectChance = 30
+Description = The target is licked with a long tongue, causing damage. It may also leave the target with paralysis.
+#-------------------------------
+[LIFEDEW]
+Name = Life Dew
+Type = WATER
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = UserAndAllies
+FunctionCode = HealUserAndAlliesQuarterOfTotalHP
+Flags = CannotMetronome
+Description = The user scatters mysterious water around and restores the HP of itself and its allies.
+#-------------------------------
+[LIGHTOFRUIN]
+Name = Light of Ruin
+Type = FAIRY
+Category = Special
+Power = 140
+Accuracy = 90
+TotalPP = 5
+Target = NearOther
+FunctionCode = RecoilHalfOfDamageDealt
+Flags = CanProtect,CanMirrorMove,CannotMetronome
+Description = Fires a powerful beam of light drawn from the Eternal Flower. It also damages the user a lot.
+#-------------------------------
+[LIGHTSCREEN]
+Name = Light Screen
+Type = PSYCHIC
+Category = Status
+Accuracy = 0
+TotalPP = 30
+Target = UserSide
+FunctionCode = StartWeakenSpecialDamageAgainstUserSide
+Description = A wondrous wall of light is put up to suppress damage from special attacks for five turns.
+#-------------------------------
+[LIQUIDATION]
+Name = Liquidation
+Type = WATER
+Category = Physical
+Power = 85
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = LowerTargetDefense1
+Flags = Contact,CanProtect,CanMirrorMove
+EffectChance = 20
+Description = The user slams into the target using a full-force blast of water. May lower the target's Defense.
+#-------------------------------
+[LOCKON]
+Name = Lock-On
+Type = NORMAL
+Category = Status
+Accuracy = 0
+TotalPP = 5
+Target = NearOther
+FunctionCode = EnsureNextMoveAlwaysHits
+Flags = CanProtect,CanMirrorMove
+Description = The user takes sure aim at the target. It ensures the next attack does not fail to hit the target.
+#-------------------------------
+[LOVELYKISS]
+Name = Lovely Kiss
+Type = NORMAL
+Category = Status
+Accuracy = 75
+TotalPP = 10
+Target = NearOther
+FunctionCode = SleepTarget
+Flags = CanProtect,CanMirrorMove
+Description = With a scary face, the user tries to force a kiss on the target. If it suceeds, the target falls asleep.
+#-------------------------------
+[LOWKICK]
+Name = Low Kick
+Type = FIGHTING
+Category = Physical
+Power = 1
+Accuracy = 100
+TotalPP = 20
+Target = NearOther
+FunctionCode = PowerHigherWithTargetWeight
+Flags = Contact,CanProtect,CanMirrorMove
+Description = A powerful low kick that makes the foe fall over. It inflicts greater damage on heavier foes.
+#-------------------------------
+[LOWSWEEP]
+Name = Low Sweep
+Type = FIGHTING
+Category = Physical
+Power = 65
+Accuracy = 100
+TotalPP = 20
+Target = NearOther
+FunctionCode = LowerTargetSpeed1
+Flags = Contact,CanProtect,CanMirrorMove
+EffectChance = 100
+Description = The user attacks the target's legs swiftly, reducing the target's Speed stat.
+#-------------------------------
+[LUCKYCHANT]
+Name = Lucky Chant
+Type = NORMAL
+Category = Status
+Accuracy = 0
+TotalPP = 30
+Target = UserSide
+FunctionCode = StartPreventCriticalHitsAgainstUserSide
+Description = The user chants an incantation toward the sky, preventing the foe from landing critical hits.
+#-------------------------------
+[LUNARDANCE]
+Name = Lunar Dance
+Type = PSYCHIC
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = User
+FunctionCode = UserFaintsHealAndCureReplacementRestorePP
+Flags = Dance
+Description = The user faints. In return, the Pokémon taking its place will have its status and HP fully restored.
+#-------------------------------
+[LUNGE]
+Name = Lunge
+Type = BUG
+Category = Physical
+Power = 80
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = LowerTargetAttack1
+Flags = Contact,CanProtect,CanMirrorMove
+EffectChance = 100
+Description = The user makes a lunge at the target, attacking with full force. This lowers the target's Attack stat.
+#-------------------------------
+[LUSTERPURGE]
+Name = Luster Purge
+Type = PSYCHIC
+Category = Special
+Power = 70
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = LowerTargetSpDef1
+Flags = CanProtect,CanMirrorMove
+EffectChance = 50
+Description = The user lets loose a damaging burst of light. It may also reduce the target's Sp. Def stat.

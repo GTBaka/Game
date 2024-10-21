@@ -1,0 +1,46 @@
+﻿#-------------------------------
+[KARATECHOP]
+Name = Karate Chop
+Type = FIGHTING
+Category = Physical
+Power = 50
+Accuracy = 100
+TotalPP = 25
+Target = NearOther
+FunctionCode = None
+Flags = Contact,CanProtect,CanMirrorMove,HighCriticalHitRate
+Description = The target is attacked with a sharp chop. Critical hits land more easily.
+#-------------------------------
+[KINESIS]
+Name = Kinesis
+Type = PSYCHIC
+Category = Status
+Accuracy = 80
+TotalPP = 15
+Target = NearOther
+FunctionCode = LowerTargetAccuracy1
+Flags = CanProtect,CanMirrorMove
+Description = The user distracts the target by bending a spoon. It lowers the target's accuracy.
+#-------------------------------
+[KINGSSHIELD]
+Name = King's Shield
+Type = STEEL
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = User
+Priority = 4
+FunctionCode = ProtectUserFromDamagingMovesKingsShield
+Description = Protects itself from damage. It also harshly lowers the Attack of attackers that make contact.
+#-------------------------------
+[KNOCKOFF]
+Name = Knock Off
+Type = DARK
+Category = Physical
+Power = 65
+Accuracy = 100
+TotalPP = 20
+Target = NearOther
+FunctionCode = RemoveTargetItem
+Flags = Contact,CanProtect,CanMirrorMove
+Description = The user slaps down the target's held item, preventing that item from being used in the battle.

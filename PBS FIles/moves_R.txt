@@ -1,0 +1,420 @@
+﻿#-------------------------------
+[RAGE]
+Name = Rage
+Type = NORMAL
+Category = Physical
+Power = 20
+Accuracy = 100
+TotalPP = 20
+Target = NearOther
+FunctionCode = StartRaiseUserAtk1WhenDamaged
+Flags = Contact,CanProtect,CanMirrorMove
+Description = As long as this move is in use, the user's Attack rises each time the user is hit in battle.
+#-------------------------------
+[RAGEPOWDER]
+Name = Rage Powder
+Type = BUG
+Category = Status
+Accuracy = 0
+TotalPP = 20
+Target = User
+Priority = 2
+FunctionCode = RedirectAllMovesToUser
+Flags = Powder
+Description = The user scatters irritating powder to draw attention to itself. Opponents aim only at the user.
+#-------------------------------
+[RAINDANCE]
+Name = Rain Dance
+Type = WATER
+Category = Status
+Accuracy = 0
+TotalPP = 5
+Target = BothSides
+FunctionCode = StartRainWeather
+Description = The user summons a heavy rain that falls for five turns, powering up Water-type moves.
+#-------------------------------
+[RAPIDSPIN]
+Name = Rapid Spin
+Type = NORMAL
+Category = Physical
+Power = 50
+Accuracy = 100
+TotalPP = 40
+Target = NearOther
+FunctionCode = RemoveUserBindingAndEntryHazards
+Flags = Contact,CanProtect,CanMirrorMove
+EffectChance = 100
+Description = A spin attack that raises the user's Speed and eliminates the effects of Bind, Spikes, etc.
+#-------------------------------
+[RAZORLEAF]
+Name = Razor Leaf
+Type = GRASS
+Category = Physical
+Power = 55
+Accuracy = 95
+TotalPP = 25
+Target = AllNearFoes
+FunctionCode = None
+Flags = CanProtect,CanMirrorMove,HighCriticalHitRate
+Description = Sharp-edged leaves are launched to slash at the opposing team. Critical hits land more easily.
+#-------------------------------
+[RAZORSHELL]
+Name = Razor Shell
+Type = WATER
+Category = Physical
+Power = 75
+Accuracy = 95
+TotalPP = 10
+Target = NearOther
+FunctionCode = LowerTargetDefense1
+Flags = Contact,CanProtect,CanMirrorMove
+EffectChance = 50
+Description = The user cuts the foe with sharp shells. It may also lower the target's Defense stat.
+#-------------------------------
+[RAZORWIND]
+Name = Razor Wind
+Type = NORMAL
+Category = Special
+Power = 80
+Accuracy = 100
+TotalPP = 10
+Target = AllNearFoes
+FunctionCode = TwoTurnAttack
+Flags = CanProtect,CanMirrorMove,HighCriticalHitRate
+Description = A two-turn attack. Blades of wind hit the foe on the second turn. Critical hits land more easily.
+#-------------------------------
+[RECOVER]
+Name = Recover
+Type = NORMAL
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = User
+FunctionCode = HealUserHalfOfTotalHP
+Description = Restoring its own cells, the user restores its own HP by half of its max HP.
+#-------------------------------
+[RECYCLE]
+Name = Recycle
+Type = NORMAL
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = User
+FunctionCode = RestoreUserConsumedItem
+Description = The user recycles a held item that has been used in battle so it can be used again.
+#-------------------------------
+[REFLECT]
+Name = Reflect
+Type = PSYCHIC
+Category = Status
+Accuracy = 0
+TotalPP = 20
+Target = UserSide
+FunctionCode = StartWeakenPhysicalDamageAgainstUserSide
+Description = A wondrous wall of light is put up to suppress damage from physical attacks for five turns.
+#-------------------------------
+[REFLECTTYPE]
+Name = Reflect Type
+Type = NORMAL
+Category = Status
+Accuracy = 0
+TotalPP = 15
+Target = NearOther
+FunctionCode = SetUserTypesToTargetTypes
+Flags = CanProtect
+Description = The user reflects the target's type, making it the same type as the target.
+#-------------------------------
+[REFRESH]
+Name = Refresh
+Type = NORMAL
+Category = Status
+Accuracy = 0
+TotalPP = 20
+Target = User
+FunctionCode = CureUserBurnPoisonParalysis
+Description = The user rests to cure itself of a poisoning, burn, or paralysis.
+#-------------------------------
+[RELICSONG]
+Name = Relic Song
+Type = NORMAL
+Category = Special
+Power = 75
+Accuracy = 100
+TotalPP = 10
+Target = AllNearFoes
+FunctionCode = SleepTargetChangeUserMeloettaForm
+Flags = CanProtect,CanMirrorMove,Sound,CannotMetronome
+EffectChance = 10
+Description = An ancient song appeals to the hearts of those listening. It may also induce sleep.
+#-------------------------------
+[REST]
+Name = Rest
+Type = PSYCHIC
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = User
+FunctionCode = HealUserFullyAndFallAsleep
+Description = The user goes to sleep for two turns. It fully restores the user's HP and heals any status problem.
+#-------------------------------
+[RETALIATE]
+Name = Retaliate
+Type = NORMAL
+Category = Physical
+Power = 70
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = DoublePowerIfAllyFaintedLastTurn
+Flags = Contact,CanProtect,CanMirrorMove
+Description = Gets revenge for a fainted ally. If an ally fainted in the last turn, this attack's damage increases.
+#-------------------------------
+[RETURN]
+Name = Return
+Type = NORMAL
+Category = Physical
+Power = 1
+Accuracy = 100
+TotalPP = 20
+Target = NearOther
+FunctionCode = PowerHigherWithUserHappiness
+Flags = Contact,CanProtect,CanMirrorMove
+Description = A full-power attack that grows more powerful the more the user likes its Trainer.
+#-------------------------------
+[REVELATIONDANCE]
+Name = Revelation Dance
+Type = NORMAL
+Category = Special
+Power = 90
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = TypeIsUserFirstType
+Flags = CanProtect,CanMirrorMove,Dance
+Description = The user attacks the target by dancing very hard. The user's type determines the type of this move.
+#-------------------------------
+[REVENGE]
+Name = Revenge
+Type = FIGHTING
+Category = Physical
+Power = 60
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+Priority = -4
+FunctionCode = DoublePowerIfUserLostHPThisTurn
+Flags = Contact,CanProtect,CanMirrorMove
+Description = An attack move that inflicts double the damage if the user has been hurt by the foe in the same turn.
+#-------------------------------
+[REVERSAL]
+Name = Reversal
+Type = FIGHTING
+Category = Physical
+Power = 1
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = PowerLowerWithUserHP
+Flags = Contact,CanProtect,CanMirrorMove
+Description = An all-out attack that becomes more powerful the less HP the user has.
+#-------------------------------
+[RISINGVOLTAGE]
+Name = Rising Voltage
+Type = ELECTRIC
+Category = Special
+Power = 70
+Accuracy = 100
+TotalPP = 20
+Target = NearOther
+FunctionCode = DoublePowerInElectricTerrain
+Flags = CanProtect,CanMirrorMove
+Description = The user attacks with electric voltage rising from the ground. Power is doubled on Electric Terrain.
+#-------------------------------
+[ROAR]
+Name = Roar
+Type = NORMAL
+Category = Status
+Accuracy = 0
+TotalPP = 20
+Target = NearOther
+Priority = -6
+FunctionCode = SwitchOutTargetStatusMove
+Flags = CanMirrorMove,Sound
+Description = The target is scared off and replaced by another Pokémon in its party. In the wild, the battle ends.
+#-------------------------------
+[ROAROFTIME]
+Name = Roar of Time
+Type = DRAGON
+Category = Special
+Power = 150
+Accuracy = 90
+TotalPP = 5
+Target = NearOther
+FunctionCode = AttackAndSkipNextTurn
+Flags = CanProtect,CanMirrorMove
+Description = The user blasts the target with power that distorts even time. The user must rest on the next turn.
+#-------------------------------
+[ROCKBLAST]
+Name = Rock Blast
+Type = ROCK
+Category = Physical
+Power = 25
+Accuracy = 90
+TotalPP = 10
+Target = NearOther
+FunctionCode = HitTwoToFiveTimes
+Flags = CanProtect,CanMirrorMove,Bomb
+Description = The user hurls hard rocks at the target. Two to five rocks are launched in quick succession.
+#-------------------------------
+[ROCKCLIMB]
+Name = Rock Climb
+Type = NORMAL
+Category = Physical
+Power = 90
+Accuracy = 85
+TotalPP = 20
+Target = NearOther
+FunctionCode = ConfuseTarget
+Flags = Contact,CanProtect,CanMirrorMove
+EffectChance = 20
+Description = The user attacks the target by smashing into it with incredible force. It may also confuse the target.
+#-------------------------------
+[ROCKSMASH]
+Name = Rock Smash
+Type = FIGHTING
+Category = Physical
+Power = 40
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = LowerTargetDefense1
+Flags = Contact,CanProtect,CanMirrorMove
+EffectChance = 50
+Description = The user attacks with a punch that can shatter a rock. It may also lower the foe's Defense stat.
+#-------------------------------
+[ROCKPOLISH]
+Name = Rock Polish
+Type = ROCK
+Category = Status
+Accuracy = 0
+TotalPP = 20
+Target = User
+FunctionCode = RaiseUserSpeed2
+Description = The user polishes its body to reduce drag. It can sharply raise the Speed stat.
+#-------------------------------
+[ROCKSLIDE]
+Name = Rock Slide
+Type = ROCK
+Category = Physical
+Power = 75
+Accuracy = 90
+TotalPP = 10
+Target = AllNearFoes
+FunctionCode = FlinchTarget
+Flags = CanProtect,CanMirrorMove
+EffectChance = 30
+Description = Large boulders are hurled at the foes to inflict damage. It may also make the targets flinch.
+#-------------------------------
+[ROCKTHROW]
+Name = Rock Throw
+Type = ROCK
+Category = Physical
+Power = 50
+Accuracy = 90
+TotalPP = 15
+Target = NearOther
+FunctionCode = None
+Flags = CanProtect,CanMirrorMove
+Description = The user picks up and throws a small rock at the target to attack.
+#-------------------------------
+[ROCKTOMB]
+Name = Rock Tomb
+Type = ROCK
+Category = Physical
+Power = 60
+Accuracy = 95
+TotalPP = 15
+Target = NearOther
+FunctionCode = LowerTargetSpeed1
+Flags = CanProtect,CanMirrorMove
+EffectChance = 100
+Description = Boulders are hurled at the target. It also lowers the target's Speed by preventing its movement.
+#-------------------------------
+[ROCKWRECKER]
+Name = Rock Wrecker
+Type = ROCK
+Category = Physical
+Power = 150
+Accuracy = 90
+TotalPP = 5
+Target = NearOther
+FunctionCode = AttackAndSkipNextTurn
+Flags = CanProtect,CanMirrorMove,Bomb
+Description = The user launches a huge boulder at the target to attack. It must rest on the next turn, however.
+#-------------------------------
+[ROLEPLAY]
+Name = Role Play
+Type = PSYCHIC
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = NearOther
+FunctionCode = SetUserAbilityToTargetAbility
+Description = The user mimics the target completely, copying the target's natural Ability.
+#-------------------------------
+[ROLLINGKICK]
+Name = Rolling Kick
+Type = FIGHTING
+Category = Physical
+Power = 60
+Accuracy = 85
+TotalPP = 15
+Target = NearOther
+FunctionCode = FlinchTarget
+Flags = Contact,CanProtect,CanMirrorMove
+EffectChance = 30
+Description = The user lashes out with a quick, spinning kick. It may also make the target flinch.
+#-------------------------------
+[ROLLOUT]
+Name = Rollout
+Type = ROCK
+Category = Physical
+Power = 30
+Accuracy = 90
+TotalPP = 20
+Target = NearOther
+FunctionCode = MultiTurnAttackPowersUpEachTurn
+Flags = Contact,CanProtect,CanMirrorMove
+Description = The user continually rolls into the target over five turns. It becomes stronger each time it hits.
+#-------------------------------
+[ROOST]
+Name = Roost
+Type = FLYING
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = User
+FunctionCode = HealUserHalfOfTotalHPLoseFlyingTypeThisTurn
+Description = The user lands and rests its body. It restores the user's HP by up to half of its max HP.
+#-------------------------------
+[ROTOTILLER]
+Name = Rototiller
+Type = GROUND
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = AllBattlers
+FunctionCode = RaiseGroundedGrassBattlersAtkSpAtk1
+Description = The user tills the soil to encourage plant growth. This raises the Attack and Sp. Atk of Grass types.
+#-------------------------------
+[ROUND]
+Name = Round
+Type = NORMAL
+Category = Special
+Power = 60
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = UsedAfterAllyRoundWithDoublePower
+Flags = CanProtect,CanMirrorMove,Sound
+Description = The user attacks with a song. Others can join in the Round and make the attack do greater damage.

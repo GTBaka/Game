@@ -1,0 +1,24 @@
+﻿#-------------------------------
+[UPROAR]
+Name = Uproar
+Type = NORMAL
+Category = Special
+Power = 90
+Accuracy = 100
+TotalPP = 10
+Target = RandomNearFoe
+FunctionCode = MultiTurnAttackPreventSleeping
+Flags = CanProtect,CanMirrorMove,Sound
+Description = The user attacks in an uproar for three turns. Over that time, no one can fall asleep.
+#-------------------------------
+[UTURN]
+Name = U-turn
+Type = BUG
+Category = Physical
+Power = 70
+Accuracy = 100
+TotalPP = 20
+Target = NearOther
+FunctionCode = SwitchOutUserDamagingMove
+Flags = Contact,CanProtect,CanMirrorMove
+Description = After making its attack, the user rushes back to switch places with a party Pokémon in waiting.

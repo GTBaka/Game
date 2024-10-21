@@ -1,0 +1,48 @@
+﻿#-------------------------------
+[JAWLOCK]
+Name = Jaw Lock
+Type = DARK
+Category = Physical
+Power = 80
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = TrapUserAndTargetInBattle
+Flags = Contact,CanProtect,CanMirrorMove
+Description = This move prevents the user and the target from switching out until either of them faints.
+#-------------------------------
+[JUDGMENT]
+Name = Judgment
+Type = NORMAL
+Category = Special
+Power = 
+100
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = TypeDependsOnUserPlate
+Flags = CanProtect,CanMirrorMove
+Description = The user releases countless shots of light. Its type varies with the kind of Plate the user is holding.
+#-------------------------------
+[JUMPKICK]
+Name = Jump Kick
+Type = FIGHTING
+Category = Physical
+Power = 100
+Accuracy = 95
+TotalPP = 10
+Target = NearOther
+FunctionCode = CrashDamageIfFailsUnusableInGravity
+Flags = Contact,CanProtect,CanMirrorMove
+Description = The user jumps up high, then strikes with a kick. If the kick misses, the user hurts itself.
+#-------------------------------
+[JUNGLEHEALING]
+Name = Jungle Healing
+Type = GRASS
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = UserAndAllies
+FunctionCode = HealUserAndAlliesQuarterOfTotalHPCureStatus
+Flags = CannotMetronome
+Description = The user becomes one with the jungle, and restores HP and cures status conditions of itself and allies.

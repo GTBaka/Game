@@ -1,0 +1,526 @@
+﻿#-------------------------------
+[TACKLE]
+Name = Tackle
+Type = NORMAL
+Category = Physical
+Power = 40
+Accuracy = 100
+TotalPP = 35
+Target = NearOther
+FunctionCode = None
+Flags = Contact,CanProtect,CanMirrorMove
+Description = A physical attack in which the user charges and slams into the target with its whole body.
+#-------------------------------
+[TAILGLOW]
+Name = Tail Glow
+Type = BUG
+Category = Status
+Accuracy = 0
+TotalPP = 20
+Target = User
+FunctionCode = RaiseUserSpAtk3
+Description = The user stares at flashing lights to focus its mind, drastically raising its Sp. Atk stat.
+#-------------------------------
+[TAILSLAP]
+Name = Tail Slap
+Type = NORMAL
+Category = Physical
+Power = 25
+Accuracy = 85
+TotalPP = 10
+Target = NearOther
+FunctionCode = HitTwoToFiveTimes
+Flags = Contact,CanProtect,CanMirrorMove
+Description = The user attacks by striking the target with its hard tail. It hits the Pokémon two to five times in a row.
+#-------------------------------
+[TAILWHIP]
+Name = Tail Whip
+Type = NORMAL
+Category = Status
+Accuracy = 100
+TotalPP = 30
+Target = AllNearFoes
+FunctionCode = LowerTargetDefense1
+Flags = CanProtect,CanMirrorMove
+Description = The user wags its tail cutely, making opposing Pokémon less wary and lowering their Defense stat.
+----------------
+[TAILWIND]
+Name = Tailwind
+Type = FLYING
+Category = Status
+Accuracy = 0
+TotalPP = 15
+Target = UserSide
+FunctionCode = StartUserSideDoubleSpeed
+Description = The user whips up a turbulent whirlwind that ups the Speed of all party Pokémon for four turns.
+#-------------------------------
+[TAKEDOWN]
+Name = Take Down
+Type = NORMAL
+Category = Physical
+Power = 90
+Accuracy = 85
+TotalPP = 20
+Target = NearOther
+FunctionCode = RecoilQuarterOfDamageDealt
+Flags = Contact,CanProtect,CanMirrorMove
+Description = A reckless, full-body charge attack for slamming into the foe. It also damages the user a little.
+#-------------------------------
+[TARSHOT]
+Name = Tar Shot
+Type = ROCK
+Category = Status
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = LowerTargetSpeed1MakeTargetWeakerToFire
+Flags = CanProtect,CanMirrorMove
+Description = Pours sticky tar over the target, lowering its Speed and making it weaker to Fire-type moves.
+#-------------------------------
+[TAUNT]
+Name = Taunt
+Type = DARK
+Category = Status
+Accuracy = 100
+TotalPP = 20
+Target = NearOther
+FunctionCode = DisableTargetStatusMoves
+Flags = CanProtect,CanMirrorMove
+Description = The target is taunted into a rage that allows it to use only attack moves for three turns.
+#-------------------------------
+[TEARFULLOOK]
+Name = Tearful Look
+Type = NORMAL
+Category = Status
+Accuracy = 0
+TotalPP = 20
+Target = NearOther
+FunctionCode = LowerTargetAtkSpAtk1
+Flags = CanMirrorMove
+Description = Gets teary eyed to make the target lose its will to fight. Lowers the target's Attack and Sp. Atk.
+#-------------------------------
+[TEATIME]
+Name = Teatime
+Type = NORMAL
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = AllBattlers
+FunctionCode = AllBattlersConsumeBerry
+Description = The user has teatime with all the Pokémon in the battle. Each Pokémon eats its held Berry.
+#-------------------------------
+[TECHNOBLAST]
+Name = Techno Blast
+Type = NORMAL
+Category = Special
+Power = 120
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = TypeDependsOnUserDrive
+Flags = CanProtect,CanMirrorMove,CannotMetronome
+Description = The user fires a beam of light at its target. The type changes depending on the Drive the user holds.
+#-------------------------------
+[TEETERDANCE]
+Name = Teeter Dance
+Type = NORMAL
+Category = Status
+Accuracy = 100
+TotalPP = 20
+Target = AllNearOthers
+FunctionCode = ConfuseTarget
+Flags = CanProtect,CanMirrorMove,Dance
+Description = The user performs a wobbly dance that confuses the Pokémon around it.
+#-------------------------------
+[TELEKINESIS]
+Name = Telekinesis
+Type = PSYCHIC
+Category = Status
+Accuracy = 0
+TotalPP = 15
+Target = NearOther
+FunctionCode = StartTargetAirborneAndAlwaysHitByMoves
+Flags = CanProtect,CanMirrorMove
+Description = The user makes the target float with its psychic power. The target is easier to hit for three turns.
+#-------------------------------
+[TELEPORT]
+Name = Teleport
+Type = PSYCHIC
+Category = Status
+Accuracy = 0
+TotalPP = 20
+Target = User
+Priority = -6
+FunctionCode = SwitchOutUserStatusMove
+Description = The user switches place with a party Pokémon. Also warps to the last Pokémon Center visited.
+#-------------------------------
+[TERRAINPULSE]
+Name = Terrain Pulse
+Type = NORMAL
+Category = Special
+Power = 50
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = TypeAndPowerDependOnTerrain
+Flags = CanProtect,CanMirrorMove,Pulse
+Description = Utilizes the power of the terrain to attack. This move's type and power vary with the terrain.
+#-------------------------------
+[THIEF]
+Name = Thief
+Type = DARK
+Category = Physical
+Power = 60
+Accuracy = 100
+TotalPP = 25
+Target = NearOther
+FunctionCode = UserTakesTargetItem
+Flags = Contact,CanProtect,CanMirrorMove
+Description = The user attacks and steals the foe's held item simultaneously. It can't steal if the user holds an item.
+#-------------------------------
+[THOUSANDARROWS]
+Name = Thousand Arrows
+Type = GROUND
+Category = Physical
+Power = 90
+Accuracy = 100
+TotalPP = 10
+Target = AllNearFoes
+FunctionCode = HitsTargetInSkyGroundsTarget
+Flags = CanProtect,CanMirrorMove,CannotMetronome
+Description = This move also hits Pokémon that are in the air. Those Pokémon are knocked down to the ground.
+#-------------------------------
+[THOUSANDWAVES]
+Name = Thousand Waves
+Type = GROUND
+Category = Physical
+Power = 90
+Accuracy = 100
+TotalPP = 10
+Target = AllNearFoes
+FunctionCode = TrapTargetInBattleMainEffect
+Flags = CanProtect,CanMirrorMove,CannotMetronome
+Description = The user attacks with a wave that crawls along the ground. Those it hits can't flee from battle.
+#-------------------------------
+[THRASH]
+Name = Thrash
+Type = NORMAL
+Category = Physical
+Power = 120
+Accuracy = 100
+TotalPP = 10
+Target = RandomNearFoe
+FunctionCode = MultiTurnAttackConfuseUserAtEnd
+Flags = Contact,CanProtect,CanMirrorMove
+Description = The user rampages and attacks for two to three turns. It then becomes confused, however.
+#-------------------------------
+[THROATCHOP]
+Name = Throat Chop
+Type = DARK
+Category = Physical
+Power = 80
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = DisableTargetSoundMoves
+Flags = Contact,CanProtect,CanMirrorMove
+EffectChance = 100
+Description = The user attacks the target's throat. The target cannot use sound-based moves for two turns.
+#-------------------------------
+[THUNDER]
+Name = Thunder
+Type = ELECTRIC
+Category = Special
+Power = 110
+Accuracy = 70
+TotalPP = 10
+Target = NearOther
+FunctionCode = ParalyzeTargetAlwaysHitsInRainHitsTargetInSky
+Flags = CanProtect,CanMirrorMove
+EffectChance = 30
+Description = A wicked thunderbolt is dropped on the foe to inflict damage. It may also leave the target paralyzed.
+#-------------------------------
+[THUNDERBOLT]
+Name = Thunderbolt
+Type = ELECTRIC
+Category = Special
+Power = 90
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = ParalyzeTarget
+Flags = CanProtect,CanMirrorMove
+EffectChance = 10
+Description = A strong electric blast is loosed at the target. It may also leave the target with paralysis.
+#-------------------------------
+[THUNDERCAGE]
+Name = Thunder Cage
+Type = ELECTRIC
+Category = Special
+Power = 80
+Accuracy = 90
+TotalPP = 15
+Target = NearOther
+FunctionCode = BindTarget
+Flags = CanProtect,CanMirrorMove,CannotMetronome
+Description = The user traps the target in a cage of sparking electricity for four to five turns.
+#-------------------------------
+[THUNDERFANG]
+Name = Thunder Fang
+Type = ELECTRIC
+Category = Physical
+Power = 65
+Accuracy = 95
+TotalPP = 15
+Target = NearOther
+FunctionCode = ParalyzeFlinchTarget
+Flags = Contact,CanProtect,CanMirrorMove,Biting
+EffectChance = 101
+Description = The user bites with electrified fangs. It may also make the target flinch or leave it with paralysis.
+#-------------------------------
+[THUNDEROUSKICK]
+Name = Thunderous Kick
+Type = FIGHTING
+Category = Physical
+Power = 90
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = LowerTargetDefense1
+Flags = Contact,CanProtect,CanMirrorMove,CannotMetronome
+EffectChance = 100
+Description = Overwhelms the target with lightning-like movement, then kicks. Lowers the target's Defense stat.
+#-------------------------------
+[THUNDERPUNCH]
+Name = Thunder Punch
+Type = ELECTRIC
+Category = Physical
+Power = 75
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = ParalyzeTarget
+Flags = Contact,CanProtect,CanMirrorMove,Punching
+EffectChance = 10
+Description = The target is punched with an electrified fist. It may also leave the target with paralysis.
+#-------------------------------
+[THUNDERSHOCK]
+Name = Thunder Shock
+Type = ELECTRIC
+Category = Special
+Power = 40
+Accuracy = 100
+TotalPP = 30
+Target = NearOther
+FunctionCode = ParalyzeTarget
+Flags = CanProtect,CanMirrorMove
+EffectChance = 10
+Description = A jolt of electricity is hurled at the foe to inflict damage. It may also leave the target with paralysis.
+#-------------------------------
+[THUNDERWAVE]
+Name = Thunder Wave
+Type = ELECTRIC
+Category = Status
+Accuracy = 90
+TotalPP = 20
+Target = NearOther
+FunctionCode = ParalyzeTargetIfNotTypeImmune
+Flags = CanProtect,CanMirrorMove
+Description = A weak electric charge is launched at the target. It causes paralysis if it hits.
+#-------------------------------
+[TICKLE]
+Name = Tickle
+Type = NORMAL
+Category = Status
+Accuracy = 100
+TotalPP = 20
+Target = NearOther
+FunctionCode = LowerTargetAtkDef1
+Flags = CanProtect,CanMirrorMove
+Description = The user tickles the target into laughing, reducing its Attack and Defense stats.
+#-------------------------------
+[TOPSYTURVY]
+Name = Topsy-Turvy
+Type = DARK
+Category = Status
+Accuracy = 0
+TotalPP = 20
+Target = NearOther
+FunctionCode = InvertTargetStatStages
+Flags = CanProtect,CanMirrorMove
+Description = All stat changes affecting the target turn topsy-turvy and become the opposite of what they were.
+#-------------------------------
+[TORMENT]
+Name = Torment
+Type = DARK
+Category = Status
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = DisableTargetUsingSameMoveConsecutively
+Flags = CanProtect,CanMirrorMove
+Description = The user torments and enrages the foe, making it incapable of using the same move twice in a row.
+#-------------------------------
+[TOXIC]
+Name = Toxic
+Type = POISON
+Category = Status
+Accuracy = 90
+TotalPP = 10
+Target = NearOther
+FunctionCode = BadPoisonTarget
+Flags = CanProtect,CanMirrorMove
+Description = A move that leaves the target badly poisoned. Its poison damage worsens every turn.
+#-------------------------------
+[TOXICSPIKES]
+Name = Toxic Spikes
+Type = POISON
+Category = Status
+Accuracy = 0
+TotalPP = 20
+Target = FoeSide
+FunctionCode = AddToxicSpikesToFoeSide
+Description = The user lays a trap of poison spikes at the foe's feet. They poison foes that switch into battle.
+#-------------------------------
+[TOXICTHREAD]
+Name = Toxic Thread
+Type = POISON
+Category = Status
+Accuracy = 100
+TotalPP = 20
+Target = NearOther
+FunctionCode = PoisonTargetLowerTargetSpeed1
+Flags = CanProtect,CanMirrorMove
+Description = The user shoots poisonous threads to poison the target and lower the target's Speed stat.
+#-------------------------------
+[TRANSFORM]
+Name = Transform
+Type = NORMAL
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = NearOther
+FunctionCode = TransformUserIntoTarget
+Description = The user transforms into a copy of the target right down to having the same move set.
+#-------------------------------
+[TRIATTACK]
+Name = Tri Attack
+Type = NORMAL
+Category = Special
+Power = 80
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = ParalyzeBurnOrFreezeTarget
+Flags = CanProtect,CanMirrorMove
+EffectChance = 20
+Description = The user strikes with a simultaneous three-beam attack. May also paralyze, burn, or freeze the target.
+#-------------------------------
+[TRICK]
+Name = Trick
+Type = PSYCHIC
+Category = Status
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = UserTargetSwapItems
+Flags = CanProtect,CanMirrorMove
+Description = The user catches the target off guard and swaps its held item with its own.
+#-------------------------------
+[TRICKORTREAT]
+Name = Trick-or-Treat
+Type = GHOST
+Category = Status
+Accuracy = 100
+TotalPP = 20
+Target = NearOther
+FunctionCode = AddGhostTypeToTarget
+Flags = CanProtect,CanMirrorMove
+Description = The user takes the target trick-or-treating. This adds Ghost type to the target's type.
+#-------------------------------
+[TRICKROOM]
+Name = Trick Room
+Type = PSYCHIC
+Category = Status
+Accuracy = 0
+TotalPP = 5
+Target = BothSides
+Priority = -7
+FunctionCode = StartSlowerBattlersActFirst
+Flags = CanMirrorMove
+Description = The user creates a bizarre area in which slower Pokémon get to move first for five turns.
+#-------------------------------
+[TRIPLEAXEL]
+Name = Triple Axel
+Type = ICE
+Category = Physical
+Power = 20
+Accuracy = 90
+TotalPP = 10
+Target = NearOther
+FunctionCode = HitThreeTimesPowersUpWithEachHit
+Flags = Contact,CanProtect,CanMirrorMove
+Description = A consecutive three-kick attack that becomes more powerful with each successful hit.
+#-------------------------------
+[TRIPLEKICK]
+Name = Triple Kick
+Type = FIGHTING
+Category = Physical
+Power = 10
+Accuracy = 90
+TotalPP = 10
+Target = NearOther
+FunctionCode = HitThreeTimesPowersUpWithEachHit
+Flags = Contact,CanProtect,CanMirrorMove
+Description = A consecutive three-kick attack that becomes more powerful with each successive hit.
+#-------------------------------
+[TROPKICK]
+Name = Trop Kick
+Type = GRASS
+Category = Physical
+Power = 70
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = LowerTargetAttack1
+Flags = Contact,CanProtect,CanMirrorMove
+EffectChance = 100
+Description = The user lands an intense tropical kick on the target. This also lowers the target's Attack stat.
+#-------------------------------
+[TRUMPCARD]
+Name = Trump Card
+Type = NORMAL
+Category = Special
+Power = 1
+Accuracy = 0
+TotalPP = 5
+Target = NearOther
+FunctionCode = PowerHigherWithLessPP
+Flags = Contact,CanProtect,CanMirrorMove
+Description = The fewer PP this move has, the greater its attack power.
+#-------------------------------
+[TWINEEDLE]
+Name = Twineedle
+Type = BUG
+Category = Physical
+Power = 25
+Accuracy = 100
+TotalPP = 20
+Target = NearOther
+FunctionCode = HitTwoTimesPoisonTarget
+Flags = CanProtect,CanMirrorMove
+EffectChance = 20
+Description = The foe is stabbed twice by a pair of stingers. It may also poison the target.
+#-------------------------------
+[TWISTER]
+Name = Twister
+Type = DRAGON
+Category = Special
+Power = 40
+Accuracy = 100
+TotalPP = 20
+Target = AllNearFoes
+FunctionCode = FlinchTargetDoublePowerIfTargetInSky
+Flags = CanProtect,CanMirrorMove
+EffectChance = 20
+Description = The user whips up a vicious tornado to tear at the opposing team. It may also make targets flinch.

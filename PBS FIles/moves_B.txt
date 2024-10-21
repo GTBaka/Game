@@ -1,0 +1,582 @@
+﻿#-------------------------------
+[BABYDOLLEYES]
+Name = Baby-Doll Eyes
+Type = FAIRY
+Category = Status
+Accuracy = 100
+TotalPP = 30
+Target = NearOther
+Priority = 1
+FunctionCode = LowerTargetAttack1
+Flags = CanProtect,CanMirrorMove
+Description = The user stares with its baby-doll eyes, which lowers the target's Attack stat. Always goes first.
+#-------------------------------
+[BADDYBAD]
+Name = Baddy Bad
+Type = DARK
+Category = Special
+Power = 90
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = StartWeakenPhysicalDamageAgainstUserSide
+Flags = CanProtect,CannnotMetronome
+Description = The user acts bad and attacks the target. A wondrous wall of light is put up to weaken the power of the opposing Pokémon’s physical moves.
+#-------------------------------
+[BANEFULBUNKER]
+Name = Baneful Bunker
+Type = POISON
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = User
+Priority = 4
+FunctionCode = ProtectUserBanefulBunker
+Description = Protects the user from attacks. Also poisons any attacker that makes contact with the user.
+#-------------------------------
+[BARRAGE]
+Name = Barrage
+Type = NORMAL
+Category = Physical
+Power = 15
+Accuracy = 85
+TotalPP = 20
+Target = NearOther
+FunctionCode = HitTwoToFiveTimes
+Flags = CanProtect,CanMirrorMove,Bomb
+Description = Round objects are hurled at the target to strike two to five times in a row.
+#-------------------------------
+[BARRIER]
+Name = Barrier
+Type = PSYCHIC
+Category = Status
+Accuracy = 0
+TotalPP = 20
+Target = User
+FunctionCode = RaiseUserDefense2
+Description = The user throws up a sturdy wall that sharply raises its Defense stat.
+#-------------------------------
+[BATONPASS]
+Name = Baton Pass
+Type = NORMAL
+Category = Status
+Accuracy = 0
+TotalPP = 40
+Target = User
+FunctionCode = SwitchOutUserPassOnEffects
+Description = The user switches places with a party Pokémon in waiting, passing along any stat changes.
+#-------------------------------
+[BEAKBLAST]
+Name = Beak Blast
+Type = FLYING
+Category = Physical
+Power = 100
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+Priority = -3
+FunctionCode = BurnAttackerBeforeUserActs
+Flags = CanProtect,Bomb
+Description = The user heats up its beak before attacking. Making contact in this time results in a burn.
+#-------------------------------
+[BEATUP]
+Name = Beat Up
+Type = DARK
+Category = Physical
+Power = 1
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = HitOncePerUserTeamMember
+Flags = CanProtect,CanMirrorMove
+Description = The user gets all the party Pokémon to attack the foe. The more party Pokémon, the more damage.
+#-------------------------------
+[BEHEMOTHBASH]
+Name = Behemoth Bash
+Type = STEEL
+Category = Physical
+Power = 100
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = None
+Flags = Contact,CanProtect,CanMirrorMove,CannotMetronome
+Description = The user becomes a gigantic shield and slams into the target.
+#-------------------------------
+[BEHEMOTHBLADE]
+Name = Behemoth Blade
+Type = STEEL
+Category = Physical
+Power = 100
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = None
+Flags = Contact,CanProtect,CanMirrorMove,CannotMetronome
+Description = The user becomes a gigantic sword and cuts the target.
+#-------------------------------
+[BELCH]
+Name = Belch
+Type = POISON
+Category = Special
+Power = 120
+Accuracy = 90
+TotalPP = 10
+Target = NearOther
+FunctionCode = FailsIfUserNotConsumedBerry
+Flags = CanProtect
+Description = The user lets out a damaging belch at the target. The user must eat a held Berry to use this move.
+#-------------------------------
+[BELLYDRUM]
+Name = Belly Drum
+Type = NORMAL
+Category = Status
+Accuracy = 0
+TotalPP = 10
+Target = User
+FunctionCode = MaxUserAttackLoseHalfOfTotalHP
+Description = The user maximizes its Attack stat in exchange for HP equal to half its max HP.
+#-------------------------------
+[BESTOW]
+Name = Bestow
+Type = NORMAL
+Category = Status
+Accuracy = 0
+TotalPP = 15
+Target = NearOther
+FunctionCode = TargetTakesUserItem
+Flags = CanMirrorMove
+Description = The user passes its held item to the target when the target isn't holding an item.
+#-------------------------------
+[BIDE]
+Name = Bide
+Type = NORMAL
+Category = Physical
+Power = 1
+Accuracy = 0
+TotalPP = 10
+Target = None
+Priority = 1
+FunctionCode = MultiTurnAttackBideThenReturnDoubleDamage
+Flags = Contact,CanProtect
+Description = The user endures attacks for two turns, then strikes back to cause double the damage taken.
+#-------------------------------
+[BIND]
+Name = Bind
+Type = NORMAL
+Category = Physical
+Power = 15
+Accuracy = 85
+TotalPP = 20
+Target = NearOther
+FunctionCode = BindTarget
+Flags = Contact,CanProtect,CanMirrorMove
+Description = Things such as long bodies or tentacles are used to bind and squeeze the foe for four to five turns.
+#-------------------------------
+[BITE]
+Name = Bite
+Type = DARK
+Category = Physical
+Power = 60
+Accuracy = 100
+TotalPP = 25
+Target = NearOther
+FunctionCode = FlinchTarget
+Flags = Contact,CanProtect,CanMirrorMove,Biting
+EffectChance = 30
+Description = The target is bitten with viciously sharp fangs. It may make the target flinch.
+#-------------------------------
+[BLASTBURN]
+Name = Blast Burn
+Type = FIRE
+Category = Special
+Power = 150
+Accuracy = 90
+TotalPP = 5
+Target = NearOther
+FunctionCode = AttackAndSkipNextTurn
+Flags = CanProtect,CanMirrorMove
+Description = The target is razed by a fiery explosion. The user must rest on the next turn, however.
+#-------------------------------
+[BLAZEKICK]
+Name = Blaze Kick
+Type = FIRE
+Category = Physical
+Power = 85
+Accuracy = 90
+TotalPP = 10
+Target = NearOther
+FunctionCode = BurnTarget
+Flags = Contact,CanProtect,CanMirrorMove,HighCriticalHitRate
+EffectChance = 10
+Description = The user launches a kick with a high critical-hit ratio. It may also leave the target with a burn.
+#-------------------------------
+[BLIZZARD]
+Name = Blizzard
+Type = ICE
+Category = Special
+Power = 110
+Accuracy = 70
+TotalPP = 5
+Target = AllNearFoes
+FunctionCode = FreezeTargetAlwaysHitsInHail
+Flags = CanProtect,CanMirrorMove
+EffectChance = 10
+Description = A howling blizzard is summoned to strike the opposing team. It may also freeze them solid.
+#-------------------------------
+[BLOCK]
+Name = Block
+Type = NORMAL
+Category = Status
+Accuracy = 0
+TotalPP = 5
+Target = NearOther
+FunctionCode = TrapTargetInBattle
+Flags = CanMirrorMove
+Description = The user blocks the target's way with arms spread wide to prevent escape.
+#-------------------------------
+[BLUEFLARE]
+Name = Blue Flare
+Type = FIRE
+Category = Special
+Power = 130
+Accuracy = 85
+TotalPP = 5
+Target = NearOther
+FunctionCode = BurnTarget
+Flags = CanProtect,CanMirrorMove
+EffectChance = 20
+Description = The user attacks by engulfing the foe in a beautiful, yet intense, blue flame. It may also burn the foe.
+#-------------------------------
+[BODYPRESS]
+Name = Body Press
+Type = FIGHTING
+Category = Physical
+Power = 80
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = UseUserDefenseInsteadOfUserAttack
+Flags = Contact,CanProtect,CanMirrorMove,CannotMetronome
+Description = The user attacks by slamming its body into the target. Power increases the higher the user's Defense is.
+#-------------------------------
+[BODYSLAM]
+Name = Body Slam
+Type = NORMAL
+Category = Physical
+Power = 85
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = ParalyzeTarget
+Flags = Contact,CanProtect,CanMirrorMove,TramplesMinimize
+EffectChance = 30
+Description = The user drops onto the target with its full body weight. It may leave the target with paralysis.
+#-------------------------------
+[BOLTBEAK]
+Name = Bolt Beak
+Type = ELECTRIC
+Category = Physical
+Power = 85
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = DoublePowerIfTargetNotActed
+Flags = Contact,CanProtect,CanMirrorMove
+Description = Stabs the target with an electrified beak. Power is doubled if the user attacks first.
+#-------------------------------
+[BOLTSTRIKE]
+Name = Bolt Strike
+Type = ELECTRIC
+Category = Physical
+Power = 130
+Accuracy = 85
+TotalPP = 5
+Target = NearOther
+FunctionCode = ParalyzeTarget
+Flags = Contact,CanProtect,CanMirrorMove
+EffectChance = 20
+Description = The user charges at its foe, surrounding itself with lightning. It may also leave the target paralyzed.
+#-------------------------------
+[BONECLUB]
+Name = Bone Club
+Type = GROUND
+Category = Physical
+Power = 65
+Accuracy = 85
+TotalPP = 20
+Target = NearOther
+FunctionCode = FlinchTarget
+Flags = CanProtect,CanMirrorMove
+EffectChance = 10
+Description = The user clubs the target with a bone. It may also make the target flinch.
+#-------------------------------
+[BONEMERANG]
+Name = Bonemerang
+Type = GROUND
+Category = Physical
+Power = 50
+Accuracy = 90
+TotalPP = 10
+Target = NearOther
+FunctionCode = HitTwoTimes
+Flags = CanProtect,CanMirrorMove
+Description = The user throws the bone it holds. The bone loops to hit the target twice, coming and going.
+#-------------------------------
+[BONERUSH]
+Name = Bone Rush
+Type = GROUND
+Category = Physical
+Power = 25
+Accuracy = 90
+TotalPP = 10
+Target = NearOther
+FunctionCode = HitTwoToFiveTimes
+Flags = CanProtect,CanMirrorMove
+Description = The user strikes the target with a hard bone two to five times in a row.
+#-------------------------------
+[BOOMBURST]
+Name = Boomburst
+Type = NORMAL
+Category = Special
+Power = 140
+Accuracy = 100
+TotalPP = 10
+Target = AllNearOthers
+FunctionCode = None
+Flags = CanProtect,CanMirrorMove,Sound
+Description = The user attacks everything around it with the destructive power of a terrible, explosive sound.
+#-------------------------------
+[BOUNCE]
+Name = Bounce
+Type = FLYING
+Category = Physical
+Power = 85
+Accuracy = 85
+TotalPP = 5
+Target = Other
+FunctionCode = TwoTurnAttackInvulnerableInSkyParalyzeTarget
+Flags = Contact,CanProtect,CanMirrorMove
+EffectChance = 30
+Description = The user bounces up high, then drops on the foe on the second turn. It may also paralyze the foe.
+#-------------------------------
+[BOUNCYBUBBLE]
+Name = Bouncy Bubble
+Type = WATER
+Category = Special
+Power = 90
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = HealUserByHalfOfDamageDone
+Flags = CanProtect,CannnotMetronome
+Description = The user attacks by shooting water bubbles at the target. It then absorbs water and restores its HP by half the damage taken by the target.
+#-------------------------------
+[BRANCHPOKE]
+Name = Branch Poke
+Type = GRASS
+Category = Physical
+Power = 40
+Accuracy = 100
+TotalPP = 40
+Target = NearOther
+FunctionCode = None
+Flags = Contact,CanProtect,CanMirrorMove,CannotMetronome
+Description = The user attacks the target by poking it with a sharply pointed branch.
+#-------------------------------
+[BRAVEBIRD]
+Name = Brave Bird
+Type = FLYING
+Category = Physical
+Power = 120
+Accuracy = 100
+TotalPP = 15
+Target = Other
+FunctionCode = RecoilThirdOfDamageDealt
+Flags = Contact,CanProtect,CanMirrorMove
+Description = The user tucks in its wings and charges from a low altitude. The user also takes serious damage.
+#-------------------------------
+[BREAKINGSWIPE]
+Name = Breaking Swipe
+Type = DRAGON
+Category = Physical
+Power = 60
+Accuracy = 100
+TotalPP = 15
+Target = AllNearFoes
+FunctionCode = LowerTargetAttack1
+Flags = Contact,CanProtect,CanMirrorMove,CannotMetronome
+EffectChance = 100
+Description = The user swings its tough tail wildly and attacks all foes. This also lowers their Attack stats.
+#-------------------------------
+[BRICKBREAK]
+Name = Brick Break
+Type = FIGHTING
+Category = Physical
+Power = 75
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = RemoveScreens
+Flags = Contact,CanProtect,CanMirrorMove
+Description = The user attacks with a swift chop. It can also break any barrier such as Light Screen and Reflect.
+#-------------------------------
+[BRINE]
+Name = Brine
+Type = WATER
+Category = Special
+Power = 65
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = DoublePowerIfTargetHPLessThanHalf
+Flags = CanProtect,CanMirrorMove
+Description = If the target's HP is down to about half, this attack will hit with double the power.
+#-------------------------------
+[BRUTALSWING]
+Name = Brutal Swing
+Type = DARK
+Category = Physical
+Power = 60
+Accuracy = 100
+TotalPP = 20
+Target = AllNearOthers
+FunctionCode = None
+Flags = Contact,CanProtect,CanMirrorMove
+Description = The user swings its body around violently to inflict damage on everything in its vicinity.
+#-------------------------------
+[BUBBLE]
+Name = Bubble
+Type = WATER
+Category = Special
+Power = 40
+Accuracy = 100
+TotalPP = 30
+Target = AllNearFoes
+FunctionCode = LowerTargetSpeed1
+Flags = CanProtect,CanMirrorMove
+EffectChance = 10
+Description = A spray of countless bubbles is jetted at the opposing team. It may also lower the targets' Speed stats.
+#-------------------------------
+[BUBBLEBEAM]
+Name = Bubble Beam
+Type = WATER
+Category = Special
+Power = 65
+Accuracy = 100
+TotalPP = 20
+Target = NearOther
+FunctionCode = LowerTargetSpeed1
+Flags = CanProtect,CanMirrorMove
+EffectChance = 10
+Description = A spray of bubbles is forcefully ejected at the target. It may also lower its Speed stat.
+#-------------------------------
+[BUGBITE]
+Name = Bug Bite
+Type = BUG
+Category = Physical
+Power = 60
+Accuracy = 100
+TotalPP = 20
+Target = NearOther
+FunctionCode = UserConsumeTargetBerry
+Flags = Contact,CanProtect,CanMirrorMove
+Description = The user bites the target. If the target is holding a Berry, the user eats it and gains its effect.
+#-------------------------------
+[BUGBUZZ]
+Name = Bug Buzz
+Type = BUG
+Category = Special
+Power = 90
+Accuracy = 100
+TotalPP = 10
+Target = NearOther
+FunctionCode = LowerTargetSpDef1
+Flags = CanProtect,CanMirrorMove,Sound
+EffectChance = 10
+Description = The user vibrates its wings to generate a damaging sound wave. It may also lower the target's Sp. Def stat.
+#-------------------------------
+[BULKUP]
+Name = Bulk Up
+Type = FIGHTING
+Category = Status
+Accuracy = 0
+TotalPP = 20
+Target = User
+FunctionCode = RaiseUserAtkDef1
+Description = The user tenses its muscles to bulk up its body, boosting both its Attack and Defense stats.
+#-------------------------------
+[BULLDOZE]
+Name = Bulldoze
+Type = GROUND
+Category = Physical
+Power = 60
+Accuracy = 100
+TotalPP = 20
+Target = AllNearOthers
+FunctionCode = LowerTargetSpeed1WeakerInGrassyTerrain
+Flags = CanProtect,CanMirrorMove
+EffectChance = 100
+Description = The user strikes everything around it by stomping on the ground. It reduces hit Pokémon's Speed.
+#-------------------------------
+[BULLETPUNCH]
+Name = Bullet Punch
+Type = STEEL
+Category = Physical
+Power = 40
+Accuracy = 100
+TotalPP = 30
+Target = NearOther
+Priority = 1
+FunctionCode = None
+Flags = Contact,CanProtect,CanMirrorMove,Punching
+Description = The user strikes the target with tough punches as fast as bullets. This move always goes first.
+#-------------------------------
+[BULLETSEED]
+Name = Bullet Seed
+Type = GRASS
+Category = Physical
+Power = 25
+Accuracy = 100
+TotalPP = 30
+Target = NearOther
+FunctionCode = HitTwoToFiveTimes
+Flags = CanProtect,CanMirrorMove,Bomb
+Description = The user forcefully shoots seeds at the target. Two to five seeds are shot in rapid succession.
+#-------------------------------
+[BURNINGJEALOUSY]
+Name = Burning Jealousy
+Type = FIRE
+Category = Special
+Power = 70
+Accuracy = 100
+TotalPP = 5
+Target = AllNearFoes
+FunctionCode = BurnTargetIfTargetStatsRaisedThisTurn
+Flags = CanProtect,CanMirrorMove
+EffectChance = 100
+Description = The user attacks with energy from jealousy. This burns all foes that had their stats boosted this turn.
+#-------------------------------
+[BURNUP]
+Name = Burn Up
+Type = FIRE
+Category = Special
+Power = 130
+Accuracy = 100
+TotalPP = 5
+Target = NearOther
+FunctionCode = UserLosesFireType
+Flags = CanProtect,CanMirrorMove,ThawsUser
+Description = To inflict massive damage, the user burns itself out. The user will no longer be Fire type.
+#-------------------------------
+[BUZZYBUZZ]
+Name = Buzzy Buzz
+Type = ELECTRIC
+Category = Special
+Power = 90
+Accuracy = 100
+TotalPP = 15
+Target = NearOther
+FunctionCode = ParalyzeTargetIfNotTypeImmune
+Flags = CanProtect,CannnotMetronome
+Description = The user shoots a jolt of electricity to attack the target. This also leaves the target with paralysis.
