@@ -43,7 +43,7 @@ Target = AllNearFoes
 FunctionCode = LowerTargetDefense1
 Flags = CanProtect,CanMirrorMove
 Description = The user wags its tail cutely, making opposing Pokémon less wary and lowering their Defense stat.
-----------------
+#-------------------------------
 [TAILWIND]
 Name = Tailwind
 Type = FLYING
